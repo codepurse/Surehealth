@@ -1,0 +1,206 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1400px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.padd {
+    font-family: Muli Semibold;
+    color: #424242;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btnservices:hover, .btnpackages:hover, .btnfinddoctor:hover, .btnclinic:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: #00C853 !important;
+}
+
+.btncontact {
+    color: #00C853 !important;
+    padding: 10px 20px 10px 20px !important;
+    border: 2px solid #00C853;
+    background-color: transparent;
+    border-radius: 25px;
+    font-family: Muli;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.btncontact:hover {
+    color: white !important;
+    background-color: #00C853;
+}
+
+.hrheader {
+    width: 97%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E0E0E0;
+    border: 0 none;
+}
+
+.pquestion {
+    font-family: Avenir LT Std 45;
+    font-weight: bold;
+    font-size: 55px;
+    color: #424242;
+    margin-top: 5%;
+}
+
+.pquestion1 {
+    font-family: muli semibold;
+    font-size: 15px;
+    color: #757575;
+    margin-top: -10px;
+}
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #424242;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: hind;
+}
+
+.accordion a:hover, .accordion a:hover::after {
+    cursor: pointer;
+    color: #00C853;
+}
+
+.accordion a.active {
+    color: #00C853;
+    border-bottom: 1px solid #00C853;
+}
+
+.accordion a::after {
+    font-family: 'Keep Calm';
+    content: '+';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #424242;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.accordion a.active::after {
+    font-family: 'Keep Calm';
+    content: '-';
+    color: #00C853;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+    font-size: 1rem;
+    font-family: hind;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding-top: 1em;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
+.pready {
+    font-family: Hind Semibold;
+    font-size: 30px;
+    color: #424242;
+    margin-top: 15px;
+}
+
+.ready1 {
+    font-family: hind Semibold;
+    font-size: 15px;
+    color: #9E9E9E;
+}
+
+.btnbuynow {
+    color: #00C853 !important;
+    padding: 10px 20px 10px 20px !important;
+    border: 2px solid #00C853;
+    background-color: transparent;
+    border-radius: 25px;
+    font-family: Muli;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnbuynow:hover {
+    color: white !important;
+    background-color: #00C853
+}
+
+.footer {
+    border-radius: 8px;
+}
+
+.pfooter {
+    font-family: hind;
+    color: #EEEEEE;
+    font-size: 14px;
+}
+
+.pcell ,.pemail {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #424242;
+    font-weight: bold;
+    margin-top:12px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pcell:hover , .pemail:hover {
+    color: #00C853;
+}
+
+.plastfooter {
+    font-family: hind;
+    font-weight: bold;
+    font-size:12px;
+    color:#424242;
+}
