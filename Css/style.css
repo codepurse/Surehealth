@@ -4,19 +4,38 @@
     }
 }
 
+@media only screen and (max-width: 939px) {
+    .conheader {
+       display: none;
+    }
+    .navbar {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .lblwhychoosesub {
+        width: 100% !important;
+    }
+    #mapid {
+        margin-top: 20px;
+    }
+}
+
+
 @font-face {
-	font-family: "muli";
-	src: url("../Font/Muli/muli/Muli.ttf");
+    font-family: "muli";
+    src: url("../Font/Muli/muli/Muli.ttf");
 }
 
 @font-face {
-	font-family: "Muli";
-	src: url("../Font/Muli/muli/Muli.ttf");
+    font-family: "Muli";
+    src: url("../Font/Muli/muli/Muli.ttf");
 }
 
 @font-face {
-	font-family: "Keep Calm";
-	src: url("../Font/keep calm/KeepCalm-Medium.ttf");
+    font-family: "Keep Calm";
+    src: url("../Font/keep calm/KeepCalm-Medium.ttf");
 }
 
 body, html {
@@ -24,6 +43,10 @@ body, html {
     height: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F5F5;
 }
 
 .maincontainer {
@@ -87,7 +110,7 @@ body, html {
     font-family: Keep Calm;
     font-weight: bold;
     font-size: 40px;
-    color: #323232;
+    color: #1E3056;
 }
 
 .psure1 {
@@ -128,7 +151,7 @@ body, html {
 
 .surehealthcard {
     border: 0px;
-    background-color: #FAFAFA;
+    background-color: white;
     padding-top: 40px;
     border-radius: 10px;
     transition: 0.2s;
@@ -136,22 +159,27 @@ body, html {
 }
 
 .surehealthcard:hover {
-    transform: scale(1.05);
-    border-top: 2px solid #388E3C;
+    transform: scale(1.03);
+    -webkit-box-shadow: 1px 1px 15px -7px #000000;
+    box-shadow: 1px 1px 17px -7px #000000;
+    border-radius: 10px;
 }
 
 .pprice {
     font-family: lato;
-    font-size:25px;
-    color: #1565C0;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1E3056;
     font-weight: 600;
 }
+
+
 ul {
     list-style: none;
 }
 
 ul>.a {
-    background: url(bullet.png) no-repeat top left;
+    background: url(../Image/check.png) no-repeat top left;
     background-position: 0 5px;
     padding: 4px 0 4px 30px;
 }
@@ -164,11 +192,13 @@ ul>.b {
     background: url(bulletblack.png) no-repeat top left;
     background-position: 0 5px;
     padding: 4px 0 4px 30px;
-    font-family: muli;
-    font-weight: bold;
-    color: #424242;
 }
 
+.pdescription {
+    font-family: muli semibold;
+    font-size: 15px;
+    color: #424242;
+}
 .btnsurehealth {
     font-family: Muli;
     font-size: 15px;
@@ -186,55 +216,39 @@ ul>.b {
     background-color: #43A047;
 }
 
-.pfooter {
-    font-size: 15px;
-    font-family: Muli;
+/* Contact us */
+
+.pcontactus {
+    font-family: Keep Calm;
+    font-size: 25px;
     color: #424242;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
 }
 
-.pfooter:hover {
-    color: #00C853;
+.pstorehours {
+    font-family: muli semibold;
+    font-size:15px;
+    color: #525252;
 }
 
-.btnsubscribe {
+.btnviewallstores {
+    font-family: muli semibold;
+    font-size:15px;
     color: white;
     background-color: #00C853;
-    padding: 10px 30px 10px 30px !important;
-    font-family: Muli;
-    font-weight: bold;
     border: 0px;
+    padding:10px 20px;
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top:5px;
     cursor: pointer;
-    transition: 0.2s;
-    outline: none;
 }
 
-.btnsubscribe:hover, .btnterms:hover {
-    background-color: #43A047;
+#mapid , #mapid2  {
+    height: 400px;
+    width: auto;
+    -webkit-box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
 }
-
-.txtsubscription {
-    border: 1px solid #E0E0E0;
-    font-family: muli;
-    font-weight: bold;
-    color: #E0E0E0;
-    padding: 7px 20px 7px 20px !important;
-    outline: none;
-    font-size: 15px;
-    outline: none;
-}
-
-hr {
-    height: 2px;
-    background-color: #EEEEEE;
-    width: 100%;
-    border: 0px;
-}
-
 .pterms {
     font-family: Keep Calm;
     color: #424242;
@@ -276,4 +290,79 @@ hr {
     cursor: pointer;
     transition: 0.2s;
     outline: none;
+}
+
+/* Footer */
+
+.psubscribe {
+    color: white;
+    font-family: Muli;
+    font-size: 14px;
+}
+
+.btnsubscribe {
+    font-family: muli;
+    color: #424242;
+    border-radius: 25px;
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    border: 0px;
+    width: 350px;
+    margin-top: -20px;
+}
+
+.hrfooter {
+    width: 100%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0 none;
+    margin-top: 50px;
+}
+
+.ptime {
+    font-family: muli;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.ptel {
+    font-family: muli;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    margin-left: 45px;
+    margin-top: -10px !important;
+}
+
+.pmorelinks {
+    font-family: muli;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.pfooterlinks {
+    font-family: muli;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.pfooterlinks:hover {
+    color: #00C853;
+}
+
+.pcopyright {
+    font-family: muli semibold;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    margin: auto;
+    padding-bottom: 10px;
 }

@@ -16,44 +16,16 @@ body, html {
     }
 }
 
-@media only screen and (max-width: 986px) {
-    .colright {
-      display: none !important;
-    }
-    .maincontainer {
-      height: 100vh;
-      background: linear-gradient(
-        to right, 
-        #F5F5F5 0%, 
-        #F5F5F5 50%, 
-        #f5f5f5 50%, 
-        #f5f5f5 100%
-      ) !important;
-    }
-    
-}
-
-@media only screen and (max-width: 762px) {
-  .txtpassword, .txtusername , .btnlogin {
-    width: 100% !important;
-  }
-  .psignin {
-    margin-top: 20px !important;
-  }
-}
-
 .maincontainer {
 	height: 100vh;
 	background: linear-gradient(
     to right, 
     #F5F5F5 0%, 
-    #F5F5F5 50%, 
-    #1976D2 50%, 
+    #F5F5F5 53%, 
+    #1976D2 47%, 
     #1976D2 100%
   );
 }
-
-
 
 .btnservices, .btnpackages, .btncontact, .btnregister {
     color: white;
@@ -86,13 +58,11 @@ body, html {
 
 input[type="text"] {
     box-sizing: border-box;
-    width: 58%;
+    width: 200px;
     height: calc(3em + 2px);
-    margin: 0 0 1em;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1.5em;
-    resize: none;
     outline: none;
   }
   input[type="text"][required]:focus {
@@ -133,7 +103,7 @@ input[type="text"] {
  
   input[type="password"] {
     box-sizing: border-box;
-    width: 58%;
+    width: 400px;
     height: calc(3em + 2px);
     margin: 0 0 1em;
     padding: 1em;
@@ -182,7 +152,7 @@ input[type="text"] {
     background-image: url(../Image/username.png);
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: 370px 15px;;
+    background-position: 350px 15px;;
     vertical-align: middle;
 }
 
@@ -190,7 +160,7 @@ input[type="text"] {
     background-image: url(../Image/password.png);
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: 370px 15px;;
+    background-position: 350px 15px;;
     vertical-align: middle;
 }
 
@@ -253,15 +223,12 @@ input[type="text"] {
 }
 
 .phealth1 {
-  font-family: hind;
-  color: white;
-  font-size:18px;
-  margin-top:10px;
+    font-family: hind;
+    color: white;
+    font-size:18px;
+    margin-top:10px;
 }
 
-.psubtext {
-    font-family: hind;
-    font-size:18px;
-    color: white;
-    margin-top:10px;
+.imgfooterlogo:hover {
+    filter: invert(90%) sepia(15%) saturate(1533%) hue-rotate(81deg) brightness(102%) contrast(88%);
 }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/login.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <title>Surehealth - Login</title>
+</head>
+
+<body>
+    <div class="container-fluid maincontainer flex-fil">
+        <nav class="navbar navbar-expand-md nav-dark sticky-top">
+            <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-brand" href="#">
+                <span style="margin-left: 5px;color:white"></span>
+            </nav>
+            <nav class="navbar-brand" href="#">
+
+            </nav>
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="col2 ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-link btnservices" href="#" style="margin-right: 10px;">Services</a></li>
+                        <li><a class="nav-link btnpackages" href="#" style="margin-right: 10px;">Packages</a></li>
+                        <li><a class="nav-link btncontact" href="#contact" style="margin-right: 10px;">Contact</a></li>
+                        <li><a class="nav-link btnregister" href="#works">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center" style="position: relative;">
+                <div class="col-lg-7" style="margin-top:-100px;">
+                    <img src="Image/surehealthtrans.png" class="img-fluid" style="width:100px;">
+                    <p class="psignin">Create an account</p>
+                    <p class="psignin1">Please fill up the credentials below <br>and start insuring your family</p>
+                    <div class="form-group" style="margin-top:40px;">
+                        <form>
+                            <input required='' type='text' class="txtusername">
+                            <label alt='Username' placeholder='Username'></label>
+                        </form>
+                        <form>
+                            <input required='' type='password' class="txtpassword"
+                                onkeyup="validatePassword(this.value);">
+                            <label alt='Password' placeholder='Password'></label>
+                        </form>
+                        <div class="form-inline">
+                            <span id="msg"
+                                style="font-family: hind semibold;font-size:13px;margin-left: 10px;">
+                        </span>
+                        <span id = "prog" style = "background-color: crimson;height: 8px;border-radius: 5px;margin-top:-15px;margin-left: 10px;transition: all 0.2s;"></span>
+                        </div>
+                        <form>
+                            <input required='' type='password' class="txtpassword">
+                            <label alt='Confirm Password' placeholder='Confirm Password'></label>
+                        </form id = "form1">
+                        <div class="div1">
+                            <label class="lblrememberme"><input type="checkbox" style="margin-top:10px;"> I agree all statements included in Terms of Use</label>
+                        </div>
+                        <input type="button" class="btnlogin" value="Login">
+                        <p class="lbldonthave">Allready have an account? <a href="login.html"><span class="lblsign">Log in 
+                                    here</span></a></p>
+                    </div>
+
+                </div>
+                <p
+                    style="position: absolute;bottom:6%;font-family:hind;font-size:14px;color: #9E9E9E;margin-left: 10px;">
+                    2019 All rights Reserved Surehealth by Aventus Privacy and Terms.</p>
+                <div class="col-lg-5">
+                    <label class="phealth">Surehealth</label><br>
+                    <p class="phealth1">Start insuring your family's health. Insuring life insuring healthcare.Gain
+                        access to unlimited free consultations with our experts for one whole year, and enjoy generous
+                        discounts on various medical procedures.</p><br>
+                    <div class="form-inline">
+                        <hr class="hr1"
+                            style="border:0px;background-color: white;width: 40px;height:3px;margin: 0 0 !important;text-align: left !important; margin-right: 10px !important;cursor: pointer;border-radius: 25px;">
+                        <hr class="hr2"
+                            style="border:0px;background-color: rgba(255,255,255,0.5);width: 40px;height:3px;margin: 0 0 !important;text-align: left !important; margin-right: 10px !important;cursor: pointer;border-radius: 25px;">
+                        <hr class="hr3"
+                            style="border:0px;background-color: rgba(255,255,255,0.5);width: 40px;height:3px;margin: 0 0 !important;text-align: left !important; margin-right: 10px !important;cursor: pointer;border-radius: 25px;">
+                    </div>
+                    <div class="form-inline" style="margin-top: 50px;">
+                        <img src="Image/facebookfooter.png" class="img-fluid imgfooterlogo"
+                            style="width: 20px;margin-right: 20px;cursor: pointer;">
+                        <img src="Image/twitterfooter.png" class="img-fluid imgfooterlogo"
+                            style="width: 20px;margin-right: 20px;cursor: pointer;">
+                        <img src="Image/gmail.png" class="img-fluid imgfooterlogo"
+                            style="width: 20px;margin-right: 20px;cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    $('.hr1').click(function (e) {
+        $(".phealth").fadeOut(300, function () {
+            $(this).html("Surehealth").fadeIn(300);
+        });
+        $(".phealth1").fadeOut(300, function () {
+            $(this).html("Start insuring your family's health. Insuring life insuring healthcare.Gain access to unlimited free consultations with our experts for one whole year, and enjoy generous discounts on various medical procedures.").fadeIn(300);
+        });
+        $(this).css("background-color", "white");
+        $('.hr2').css("background-color", "rgba(255,255,255,0.5)");
+        $('.hr3').css("background-color", "rgba(255,255,255,0.5)");
+    });
+
+    $('.hr2').click(function (e) {
+        $(".phealth").fadeOut(300, function () {
+            $(this).html("Card Variant").fadeIn(300);
+        });
+        $(".phealth1").fadeOut(300, function () {
+            $(this).html("Get the benefits you need at the price you want with our 6 SUREHEALTH card variants: Classic, Elite, Premium, Prestige, Kiddie, and Prime.").fadeIn(300);
+        });
+        $(this).css("background-color", "white");
+        $('.hr1').css("background-color", "rgba(255,255,255,0.5)");
+        $('.hr3').css("background-color", "rgba(255,255,255,0.5)");
+    });
+
+    $('.hr3').click(function (e) {
+        $(".phealth").fadeOut(300, function () {
+            $(this).html("Aventus").fadeIn(300);
+        });
+        $(".phealth1").fadeOut(300, function () {
+            $(this).html("We at Aventus Medical Care, Inc. are devoted to providing high-quality, effective, and efficient clinic services intended to improve the health and well-being of the communities we serve.").fadeIn(300);
+        });
+        $(this).css("background-color", "white");
+        $('.hr1').css("background-color", "rgba(255,255,255,0.5)");
+        $('.hr2').css("background-color", "rgba(255,255,255,0.5)");
+    });
+
+
+    function validatePassword(password) {
+        
+        if (password.length === 0) {
+            document.getElementById("msg").innerHTML = "";
+            document.getElementById("msg").style.marginBottom = "0px";
+            document.getElementById("prog").style.width = "0%";
+            return;
+        }
+        else {
+            document.getElementById("msg").style.marginBottom = "14px";
+        }
+
+        var matchedCase = new Array();
+        matchedCase.push("[$@$!%*#?&]"); 
+        matchedCase.push("[A-Z]");    
+        matchedCase.push("[0-9]");      
+        matchedCase.push("[a-z]");   
+
+        var ctr = 0;
+        for (var i = 0; i < matchedCase.length; i++) {
+            if (new RegExp(matchedCase[i]).test(password)) {
+                ctr++;
+            }
+        }
+       
+        var color = "";
+        var strength = "";
+        switch (ctr) {
+            case 0:
+            case 1:
+            case 2:
+                strength = "Very Weak";
+                color = "red";
+                break;
+            case 3:
+                strength = "Medium";
+                color = "orange";
+                break;
+            case 4:
+                strength = "Strong";
+                color = "green";
+                break;
+        }
+        document.getElementById("msg").innerHTML = strength;
+        document.getElementById("msg").style.color = color;
+
+
+        if (strength === "Very Weak") {
+            document.getElementById("prog").style.width = "10%";
+            document.getElementById("prog").style.backgroundColor = "red";
+        }
+        else if (strength === "Medium") {
+            document.getElementById("prog").style.width = "25%";
+            document.getElementById("prog").style.backgroundColor = "orange";
+        }
+        else if (strength === "Strong") {
+            document.getElementById("prog").style.width = "46%";
+            document.getElementById("prog").style.backgroundColor = "green";
+        }
+    }
+</script>
+
+</html>
