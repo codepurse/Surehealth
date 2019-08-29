@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/info.css' rel='stylesheet' type='text/css'>
+    <link href='Css/bootstrap-combobox.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <script src='Script\bootstrap-combobox.js'></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/ax5ui/ax5core/master/dist/ax5core.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.min.js"></script>
+    <title>Surehealth - Add Info</title>
+</head>
+
+<body>
+    <div class="container con conheader">
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-6">
+                <div class="form-inline d-flex">
+                    <img src="Image/maps.png" class="img-fluid"
+                        style="width:25px;margin-left: 20px;margin-right:5px;" />
+                    <p class="padd">6F Filomena Building, #104 Amorsolo St., Legaspi Village, Makati, Metro Manila 1229
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-inline" style="margin-right: 25px;">
+                    <img src="Image/mail.png" class="img-fluid ml-auto"
+                        style="width:20px;margin-top:-4px;margin-right:5px;" />
+                    <p class="padd" style="margin-right:10px;">aventusmedical@gmail.com</p>
+                    <img src="Image/cel.png" class="img-fluid" style="width:20px;margin-right:5px;margin-top:-4px;" />
+                    <p class="padd">63-2-840-0588</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:-10px;">
+            <div class="col-lg-12">
+                <hr class="hrheader">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container con" style="margin-top:-14px;">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logotrans.png" class="img-fluid" style="width: 220px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnservices"
+                                    style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
+                                    href="404.html">Services</a></li>
+                            <li><a class="nav-link btnpackages"
+                                    style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15x;"
+                                    href="404.html">Packages</a></li>
+                            <li><a class="nav-link btnpackages"
+                                    style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15x;"
+                                    href="contact.html">Contact</a></li>
+                            <li><a class="nav-link btncontact" target="_self" href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top:20px;">
+                <div class="col-lg-12 text-center">
+                    <p class="ptitle">Application form</p>
+                    <label class="ptitlesub">Please ensure that the details that you've input are correct. Kindly
+                        double-check all of your information before proceeding. Fill up all the required fields.</label>
+                    <p class="pasterisk">All fields marked with <span style="color: red;">*</span> are required</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container" style="padding-left: 50px;padding-right: 50px;">
+                            <p class="pclientinformation">CLIENT INFORMATION</p>
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-lg-12 text-center">
+                                    <div class="image-upload">
+                                        <label for="imgInp">
+                                            <div class="circle mx-auto d-block">
+                                                <img src="Image/noprofile.jpg" id="blah" alt="" class="img-fluid"
+                                                    style="cursor: pointer;">
+                                            </div>
+                                        </label>
+
+                                        <input id="imgInp" type="file" style="display: none;"
+                                            onchange="readURL(this.value)" />
+                                    </div>
+
+                                    <p class="pfullname"></p>
+                                    <p onclick="changePicture(); return false" id="upload"
+                                        style="font-family: muli semibold;color: #1976D2;font-size:15px;cursor: pointer;">
+                                        Click the image to change the picture</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">FIRST NAME</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text txtusername">
+                                    </div>
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">GENDER</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <select class = "input-large form-control">
+                                            <option value = "">Select Gender</option>
+                                            <option value = "M">Male</option>
+                                            <option value = "F">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">MIDDLE INITIAL</p>
+                                        </div>
+                                        <input type="text" class="text txtmiddle">
+                                    </div>
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">BIRTHDAY</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="date" name="bday" class="bday">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">LAST NAME</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text txtlast">
+                                    </div>
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">CIVIL</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <select class = "input-large form-control">
+                                            <option value = "">Select Civil </option>
+                                            <option value = "AL">Single</option>
+                                            <option value = "AL">Married</option>
+                                            <option value = "AL">Widowed</option>
+                                            <option value = "AL">Seperated</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group" style="margin-top: 25px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">PERMANENT ADDRESS</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">BARANGAY</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">CITY</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">ZIP CODE</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text" onkeypress="return isNumber(event)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">PHONE NUNBER</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text" onkeypress="return isNumber(event)">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">MOBILE NUMBER</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group" style="margin-top: 30px;">
+                                        <div class="form-inline">
+                                            <p class="ptitleinfo">EMAIL</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                        </div>
+                                        <input type="text" class="text" onkeypress="return isNumber(event)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <div class="col-lg-12 text-right">
+                                    <input type="button" class="btnsave" value="Proceed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #233645;margin-top:40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 70px;padding-bottom: 40px;">
+                <div class="col-lg-5">
+                    <img src="Image/logo white.png" class="img-fluid" style="width: 250px;">
+                </div>
+                <div class="col-lg-7">
+                    <div class="form-inline float-right">
+                        <p class="psubscribe">Subscribe to<br>Our Newsletter</p>
+                        <input type="text" class="btnsubscribe" placeholder="Your email Address....">
+                    </div>
+                </div>
+                <hr class="hrfooter">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group" class="float-right">
+                        <img src="Image/call1.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">MON TO SUN : 8:00 - 10:00</label>
+                        <label class="ptel">+632-840-0588</label>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/newsletter.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">DO YOU HAVE A QUESTION?</label>
+                        <label class="ptel">aventusmedical@gmail.com</label>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/social.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">SOCIAL NETWORK</label>
+                        <div class="form-inline" style="margin-left: 45px;">
+                            <img src="Image/facebookfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/twitterfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/linkedinfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <p class="pmorelinks">Location</p>
+                    <p class="pfooterlinks">Alabang, Muntinlupa</p>
+                    <p class="pfooterlinks">BGC, Taguig</p>
+                    <p class="pfooterlinks">Calamba, Laguna</p>
+                    <p class="pfooterlinks">Cebu IT Park</p>
+                    <p class="pfooterlinks">Cebu Cybergate</p>
+                    <p class="pfooterlinks">Clark, Pampanga</p>
+                </div>
+                <div class="col-lg-2">
+                    <p class="pmorelinks" style="color: #233645;">Location</p>
+                    <p class="pfooterlinks">Makati</p>
+                    <p class="pfooterlinks">Manila</p>
+                    <p class="pfooterlinks">Ortigas</p>
+                    <p class="pfooterlinks">Pasay</p>
+                    <p class="pfooterlinks">Quezon</p>
+                    <p class="pfooterlinks">Sta. Rosa</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="Image/surehealthtrans.png" class="img-fluid" style="width:70px;">
+                    <p class="pfooterlinks" style="margin-top:20px;">Get the benefits you need at the price you want
+                        with our 6 SUREHEALTH card variants: Classic,
+                        Elite, Premium, Prestige, Kiddie, and Prime. Gain access to unlimited free consultations with
+                        our experts for one whole year, and enjoy generous discounts on various medical procedures.</p>
+                </div>
+                <hr class="hrfooter">
+                <p class="pcopyright">Copyright&copy;SUREHEALTH. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    $('.txtusername').keyup(function (event) {
+        newText = $('.txtusername').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+        $('.pfullname').text(newText);
+    });
+    $('.txtmiddle').keyup(function (event) {
+        newText = $('.txtusername').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+        $('.pfullname').text(newText);
+    });
+    $('.txtlast').keyup(function (event) {
+        newText = $('.txtusername').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+        $('.pfullname').text(newText);
+    });
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function () {
+        readURL(this);
+    });
+</script>
+
+</html>
