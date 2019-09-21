@@ -265,7 +265,6 @@ input[type="text"] {
     color: white;
     margin-top:10px;
 }
-
-.txtfirstname, .txtlastname {
-  width: 210px !important;
+.txtfirstname {
+  width: 100% !important;
 }

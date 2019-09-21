@@ -4,6 +4,54 @@
     }
 }
 
+@media only screen and (max-width: 1320px) {
+    .conheader {
+       display: none !important;
+    }
+    .navbar {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 397px) {
+  .imglogo {
+      width: 180px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    .consubscribe {
+        margin-top: 30px;  
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        text-align: center !important;
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .psubscribe {
+        text-align: center !important;
+    }
+    .btnsubscribe {
+        width: auto !important;
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .ptitlesub {
+        font-size: 14px !important;
+        width: 100% !important; 
+    }
+    .pclientinformation {
+        text-align: center;
+    }
+}
+
+
 body, html {
     width: 100%;
     height: auto;
@@ -73,7 +121,7 @@ body {
 .ptitle {
     font-family: Mont DEMO;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 5vmin;
     color: #323640;
 }
 
@@ -108,7 +156,7 @@ body {
 .pclientinformation {
     color: #00C853;
     font-family: hind semibold;
-    font-size: 24px;
+    font-size: 3.9vmin;
 }
 
 .ptitleinfo {

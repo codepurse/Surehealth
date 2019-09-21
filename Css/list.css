@@ -19,14 +19,23 @@
     }
 }
 
-@media only screen and (max-width: 1320px) {
-    .conheader {
-        display: none !important;
+@media only screen and (max-width: 753px) {
+    .txtsearch {
+        width: 100% !important;
     }
-    .navbar {
-        margin-top: 20px;
+    .btnadd {
+        width: 100% !important;
     }
 }
+
+@media only screen and (max-width: 760px) {
+    .btnadd {
+        float:none !important;
+        margin-top: 10px;
+    }
+}
+
+
 
 body, html {
     width: 100%;
@@ -34,6 +43,11 @@ body, html {
     background-color: #F5F5F5;
 }
 
+.btnhome:hover , .btnpackage:hover , .btnabout:hover {
+    color: #00C853 !important;
+}
+
+ul{ list-style-type: none; }
 .imgprof {
     width: 30px;
     border-radius: 50px;
@@ -114,3 +128,5 @@ tr:hover {
     background-repeat: no-repeat;
     font-size: 1rem;
 }
+
+
