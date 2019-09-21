@@ -4,6 +4,70 @@
     }
 }
 
+@media only screen and (max-width: 1317px) {
+    .conheader {
+        display: none !important;
+    }
+    .connav {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .pquestion {
+        font-size: 35px !important;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .pquestion {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .pquestion {
+        font-size: 25px !important;
+    }
+    .pquestion1 {
+        font-size: 13px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .consubscribe {
+        margin-top: 30px;  
+        display:inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        text-align: center !important;
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .psubscribe {
+        text-align: center !important;
+    }
+    .btnsubscribe {
+        width: auto !important;
+        margin-top:20px;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .col-location {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
 body, html {
     width: 100%;
     height: auto;
@@ -170,7 +234,7 @@ body, html {
 
 .btnbuynow:hover {
     color: white !important;
-    background-color: #00C853
+    background-color: #00C853;
 }
 
 /* Footer */
@@ -190,7 +254,6 @@ body, html {
     margin-left: 20px;
     border: 0px;
     width: 350px;
-    margin-top:-20px;
 }
 
 .hrfooter {
