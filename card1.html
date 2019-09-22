@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/card1.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <script src='Script\card.js'></script>
+    <title>Document - Payment</title>
+</head>
+
+<body class="d-flex flex-column">
+    <div class="container-fluid" style="padding:0px 0px;background-color: white; border-bottom: 1px solid lightgray;">
+        <div class="container con">
+            <nav class="navbar navbar-expand-sm">
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logotrans.png" class="img-fluid" style="width: 170px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnaccount" target="_self"><img src="Image/notification1.png"
+                                        onmouseover="this.src='Image/bellgreen.png'"
+                                        onmouseout="this.src='Image/notification1.png'" class="img-fluid"
+                                        style="width:18px;margin-top:4px;margin-right: 10px;cursor: pointer;"></a></li>
+                            <li><a class="nav-link btnaccount" target="_self" href="login.html"><img src="Image/dp.jpeg"
+                                        class="img-fluid imgprof">
+                            <li class="nav-item dropdown" style="margin-top: -15px;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: #424242;font-family: Muli Semibold;font-size: 1rem;letter-spacing: -0.5px;">
+                                    Alfon Labadan
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                </div>
+                            </li></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding:0px;background-color: white; border-bottom: 1px solid lightgray;">
+        <div class="container con">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="mr-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnhome" target="index.html"
+                                    style="color: #424242;font-family: Muli Semibold;font-size: 1rem;letter-spacing: -0.5px;cursor: pointer;margin-right: 5px;"><img
+                                        src="Image/home.png" class="img-fluid"
+                                        style="width:16px;margin-top:-4px;margin-right: 4px;cursor: pointer;">Home</a>
+                            </li>
+                            <li><a class="nav-link btnpackage" target="index.html"
+                                    style="color: #424242;font-family: Muli Semibold;font-size: 1rem;letter-spacing: -0.5px;cursor: pointer;"><img
+                                        src="Image/package.png" class="img-fluid"
+                                        style="width:16px;margin-top:-4px;margin-right: 4px;cursor: pointer;">Package</a>
+                            </li>
+                            <li><a class="nav-link btnabout" target="index.html"
+                                    style="color: #424242;font-family: Muli Semibold;font-size: 1rem;letter-spacing: -0.5px;cursor: pointer;"><img
+                                        src="Image/information.png" class="img-fluid"
+                                        style="width:16px;margin-top:-4px;margin-right: 4px;cursor: pointer;">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container conbody h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6">
+                <div class='card-wrapper'></div>
+            </div>
+            <div class="col-lg-6">
+                <p class="pinfo">Payment Info</p>
+                <p class="pinfo1">Please add your payment method to complete your order.</p>
+                <form>
+                    <div class="divname" style="margin-top: 50px;line-height: 12px;">
+                        <p class="pname pname1">Cardholder Name</p>
+                        <input type="text" class="txtname" name="name" placeholder="" autocomplete="off" />
+                    </div>
+                    <div class="divnumber" style="margin-top: 20px;line-height: 12px;">
+                        <p class="pname pnumber">Cardholder Number</p>
+                        <input type="text" class="txtcardnumber" name="number" placeholder="" autocomplete="off" />
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="divexpiry" style="margin-top: 20px;line-height: 12px;">
+                                <p class="pname pexpiry">Expiry Date</p>
+                                <input type="text" class="txtexpiry" name="expiry" placeholder="MM/YYYY"
+                                    autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="divexpiry" style="margin-top: 20px;line-height: 12px;">
+                                <p class="pname pcvc">CVC</p>
+                                <input type="text" class="txtcvc" name="cvc" placeholder="" autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="btncard">Add card</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var card = new Card({
+        form: 'form',
+        container: '.card-wrapper',
+
+        placeholders: {
+            number: '**** **** **** ****',
+            name: 'Full Name',
+            expiry: '**/****',
+            cvc: '***'
+        }
+    });
+
+    $(function () {
+        $(".txtname").focus(function () {
+            $(".pname1").css("color", "#00C853");
+        });
+    })
+
+    $(function () {
+        $(".txtname").blur(function () {
+            $(".pname1").css("color", "#757575");
+        });
+    })
+    
+    $(function () {
+        $(".txtcardnumber").focus(function () {
+            $(".pnumber").css("color", "#00C853");
+        });
+    })
+
+    $(function () {
+        $(".txtcardnumber").blur(function () {
+            $(".pnumber").css("color", "#757575");
+        });
+    })
+
+    $(function () {
+        $(".txtexpiry").focus(function () {
+            $(".pexpiry").css("color", "#00C853");
+        });
+    })
+
+    $(function () {
+        $(".txtexpiry").blur(function () {
+            $(".pexpiry").css("color", "#757575");
+        });
+    })
+
+    $(function () {
+        $(".txtcvc").focus(function () {
+            $(".pcvc").css("color", "#00C853");
+        });
+    })
+
+    $(function () {
+        $(".txtcvc").blur(function () {
+            $(".pcvc").css("color", "#757575");
+        });
+    })
+</script>
+
+</html>
