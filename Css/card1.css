@@ -18,25 +18,85 @@
         max-width: 1400px !important;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .col-md-6 {
+        margin-top: 20px !important;
+    }
+    .footer {
+        margin-top: 140px;
+    }
+    .colinfo {
+        padding-bottom: 50px !important;
+    }
+    .lblusername {
+        display: none;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .row1 {
+        padding: 0px !important;
+       padding-right: 10px !important;
+       margin-top: -10px;
+    }
+    .dropdownMenuLink {
+        width: 50px !important;
+        padding: 0px !important;
+    }
+    .dropdown-menu {
+        text-align: left;
+        width:100px !important;
+    }
+    .btncard {
+        width: 100% !important;
+    }
+    .pfooter {
+        font-size: 0.9rem !important;
+    }
+    body {
+        overflow-y: scroll !important;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .btnlogout {
+        visibility: visible !important;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .pinfo {
+        font-size: 25px !important;
+    }
+    .pinfo1 {
+        font-size: 15px !important;
+    }
+}
+
 body, html {
     width: 100%;
     height: 100%;
     background-color: #F5F5F5;
+    overflow-y: hidden;
 }
 
 .conbody {
     height: calc(100vh - 100px) !important;
 }
 
-.btnhome:hover , .btnpackage:hover , .btnabout:hover {
+.btnhome:hover, .btnpackage:hover, .btnabout:hover, .btnlogout:hover {
     color: #00C853 !important;
 }
 
-ul{ list-style-type: none; }
+ul {
+    list-style-type: none;
+}
+
 .imgprof {
     width: 30px;
     border-radius: 50px;
-    margin-right: 2px;
+    margin-right: 0px;
 }
 
 .dropdown-toggle:hover {
@@ -89,7 +149,7 @@ ul{ list-style-type: none; }
     background-size: 17px;
 }
 
-.txtcardnumber{
+.txtcardnumber {
     font-family: Muli Semibold;
     color: #424242;
     font-size: 15px;
@@ -115,7 +175,7 @@ ul{ list-style-type: none; }
     background-size: 17px;
 }
 
-.txtexpiry{
+.txtexpiry {
     font-family: Muli Semibold;
     color: #424242;
     font-size: 15px;
@@ -186,4 +246,9 @@ ul{ list-style-type: none; }
     background-color: #00C853;
 }
 
-
+.pfooter {
+    font-family: Muli;
+    color: white;
+    padding-top: 10px;
+    font-size: 1rem;
+}
