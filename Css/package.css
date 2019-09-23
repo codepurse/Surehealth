@@ -60,6 +60,18 @@
     .pgain1 {
         font-size:0.9rem !important;
     }
+    .btnlogin {
+        border: 0px !important;
+        padding: 0px !important;
+        color: #424242 !important;
+        font-weight: normal !important;
+        font-family: muli semibold !important;
+        margin-top: 5px;
+    }
+    .btnlogin:hover {
+        background-color: transparent !important;
+        color: #424242 !important;
+    }
 }
 
 @media only screen and (max-width: 572px) {

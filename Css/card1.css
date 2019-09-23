@@ -23,9 +23,6 @@
     .col-md-6 {
         margin-top: 20px !important;
     }
-    .footer {
-        margin-top: 140px;
-    }
     .colinfo {
         padding-bottom: 50px !important;
     }
@@ -37,8 +34,8 @@
     }
     .row1 {
         padding: 0px !important;
-       padding-right: 10px !important;
-       margin-top: -10px;
+        padding-right: 10px !important;
+        margin-top: -10px;
     }
     .dropdownMenuLink {
         width: 50px !important;
@@ -46,13 +43,16 @@
     }
     .dropdown-menu {
         text-align: left;
-        width:100px !important;
+        width: 100px !important;
     }
     .btncard {
         width: 100% !important;
     }
     .pfooter {
         font-size: 0.9rem !important;
+    }
+    .btncard {
+        margin-bottom: 70px !important;
     }
     body {
         overflow-y: scroll !important;
@@ -78,7 +78,7 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #F5F5F5;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .conbody {
@@ -244,6 +244,13 @@ ul {
 .btncard:hover {
     color: white;
     background-color: #00C853;
+}
+
+.footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .pfooter {
