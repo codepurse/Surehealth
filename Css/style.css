@@ -6,17 +6,44 @@
 
 @media only screen and (max-width: 1320px) {
     .conheader {
-       display: none !important;
+        display: none !important;
     }
     .navbar {
         margin-top: 20px;
     }
 }
 
-@media only screen and (max-width: 397px) {
-  .imglogo {
-      width: 180px !important;
-  }
+@media only screen and (max-width: 990px) {
+    #mapid {
+        margin-top: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    #mapid {
+        margin-top: 20px !important;
+    }
+    .btnlogin {
+        border: 0px !important;
+        padding: 0px !important;
+        color: #424242 !important;
+        font-weight: normal !important;
+        font-family: muli semibold !important;
+        margin-top: 5px;
+    }
+    .btnlogin:hover {
+        background-color: transparent !important;
+        color: #424242 !important;
+    }
+    .lblwhychoosesub {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .card-columns {
+        column-count: 1;
+    }
 }
 
 @media only screen and (max-width: 465px) {
@@ -28,17 +55,22 @@
     }
 }
 
-@media only screen and (max-width: 990px) {
-    #mapid {
-        margin-top: 20px !important;
+@media only screen and (max-width: 411px) {
+    .card1 {
+        height: 210px;
     }
 }
 
+@media only screen and (max-width: 397px) {
+    .imglogo {
+        width: 180px !important;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .consubscribe {
-        margin-top: 30px;  
-        display:inline-block;
+        margin-top: 30px;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
         clear: both;
@@ -57,13 +89,11 @@
     }
 }
 
-
 @media only screen and (max-width: 572px) {
     .col-location {
         margin-top: 20px;
     }
 }
-
 
 @font-face {
     font-family: "muli";
@@ -113,9 +143,7 @@ body {
     color: #00C853 !important;
 }
 
-.btncontact {
-    color: #00C853 !important;
-    padding: 10px 20px 10px 20px !important;
+.btnlogin {
     border: 2px solid #00C853;
     background-color: transparent;
     border-radius: 25px;
@@ -125,7 +153,7 @@ body {
     transition: 0.2s;
 }
 
-.btncontact:hover {
+.btnlogin:hover {
     color: white !important;
     background-color: #00C853;
 }
@@ -215,7 +243,6 @@ body {
     font-weight: 600;
 }
 
-
 ul {
     list-style: none;
 }
@@ -241,6 +268,7 @@ ul>.b {
     font-size: 15px;
     color: #424242;
 }
+
 .btnsurehealth {
     font-family: Muli;
     font-size: 15px;
@@ -268,29 +296,30 @@ ul>.b {
 
 .pstorehours {
     font-family: muli semibold;
-    font-size:15px;
+    font-size: 15px;
     color: #525252;
 }
 
 .btnviewallstores {
     font-family: muli semibold;
-    font-size:15px;
+    font-size: 15px;
     color: white;
     background-color: #00C853;
     border: 0px;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 25px;
-    margin-top:5px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
-#mapid , #mapid2  {
+#mapid, #mapid2 {
     height: 400px;
     width: auto;
-    -webkit-box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 68px -42px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
 }
+
 .pterms {
     font-family: Keep Calm;
     color: #424242;

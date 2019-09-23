@@ -97,27 +97,29 @@
         </div>
     </div>
     <div class="container con">
-        <div class="row">
+        <div class="row rowtable">
             <div class="col-lg-12">
-                <table class="table table-responsive table-borderless w-100 d-block d-md-table" id="table"
-                    style="margin-top: 10px;border-collapse: collapse;">
+                <table class=" table table-borderless" id="table" style="margin-top: 10px;">
                     <thead>
                         <tr>
-                            <th scope="col">Num</th>
-                            <th scope="col">Full Name</th>
-                            <th scope="col">Variant</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Expiry</th>
-                            <th scope="col">Action</th>
+                            <th>Num</th>
+                            <th>Full Name</th>
+                            <th>Variant</th>
+                            <th>Email</th>
+                            <th>Expiry</th>
+                            <th>Action</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <td scope="row">1</td>
-                            <td><img src="Image/dp.jpeg" class="imgprof" style="margin-right: 5px;width:40px;">Alfon
+                            <td scope="row" data-column="Num">1</td>
+                            <td data-column="Full Name"><img src="Image/dp.jpeg" class="imgprof"
+                                    style="margin-right: 5px;width:40px;">Alfon
                                 Labadan</td>
-                            <td>Prestige</td>
-                            <td>alfonlabadan@gmail.com</td>
-                            <td class="tdate">25/12/2018</td>
-                            <td><img src="Image/view.png" class="img-fluid imgview"
+                            <td data-column="Variant">Prestige</td>
+                            <td data-column="Email">alfonlabadan@gmail.com</td>
+                            <td class="tdate" data-column="Expiry">25/12/2018</td>
+                            <td data-column="Action"><img src="Image/view.png" class="img-fluid imgview"
                                     onmouseover="this.src='Image/viewgreen.png'"
                                     onmouseout="this.src='Image/view.png'"><img src="Image/renew.png" class="img-fluid"
                                     style="margin-left: 15px;width:18px;" onmouseover="this.src='Image/renewgreen.png'"
@@ -125,49 +127,82 @@
 
                         </tr>
                         <tr>
-                            <td scope="row">2</td>
-                            <td> <img src="Image/dp.jpeg" class="imgprof" style="margin-right: 5px;width:40px;">Randolh
-                                Yu</td>
-                            <td>Prestige</td>
-                            <td>randolphyu@guerilla360.com</td>
-                            <td class="tdate">25/12/2018</td>
-                            <td><img src="Image/view.png" class="img-fluid imgview"
+                            <td scope="row" data-column="Num">2</td>
+                            <td data-column="Full Name"><img src="Image/dp.jpeg" class="imgprof"
+                                    style="margin-right: 5px;width:40px;">Eskye Custodio</td>
+                            <td data-column="Variant">Veteran</td>
+                            <td data-column="Email">skyisthelimit@gmail.co</td>
+                            <td class="tdate" data-column="Expiry">25/12/2020</td>
+                            <td data-column="Action"><img src="Image/view.png" class="img-fluid imgview"
                                     onmouseover="this.src='Image/viewgreen.png'"
                                     onmouseout="this.src='Image/view.png'"><img src="Image/renew.png" class="img-fluid"
                                     style="margin-left: 15px;width:18px;" onmouseover="this.src='Image/renewgreen.png'"
                                     onmouseout="this.src='Image/renew.png'"></td>
+
                         </tr>
                         <tr>
-                            <td scope="row">3</td>
-                            <td><img src="Image/dp.jpeg" class="imgprof" style="margin-right: 5px;width:40px;">Eskye
-                                Custodio</td>
-                            <td>Veteran</td>
-                            <td>skyisthelimit@gmail.com</td>
-                            <td class="tdate">25/12/2018</td>
-                            <td><img src="Image/view.png" class="img-fluid" onmouseover="this.src='Image/viewgreen.png'"
+                            <td scope="row" data-column="Num">3</td>
+                            <td data-column="Full Name"><img src="Image/dp.jpeg" class="imgprof"
+                                    style="margin-right: 5px;width:40px;">Bryan Alburo</td>
+                            <td data-column="Variant">Prestige</td>
+                            <td data-column="Email">machogwapito@gmail.com</td>
+                            <td class="tdate" data-column="Expiry">25/12/2018</td>
+                            <td data-column="Action"><img src="Image/view.png" class="img-fluid imgview"
+                                    onmouseover="this.src='Image/viewgreen.png'"
                                     onmouseout="this.src='Image/view.png'"><img src="Image/renew.png" class="img-fluid"
                                     style="margin-left: 15px;width:18px;" onmouseover="this.src='Image/renewgreen.png'"
                                     onmouseout="this.src='Image/renew.png'"></td>
+
                         </tr>
                         <tr>
-                            <td scope="row">4</td>
-                            <td><img src="Image/dp.jpeg" class="imgprof" style="margin-right: 5px;width:40px;">Leo
-                                Sanico</td>
-                            <td>Classic</td>
-                            <td>leosanico@yahoo.com</td>
-                            <td class="tdate">25/12/2020</td>
-                            <td><img src="Image/view.png" class="img-fluid" onmouseover="this.src='Image/viewgreen.png'"
+                            <td scope="row" data-column="Num">4</td>
+                            <td data-column="Full Name"><img src="Image/dp.jpeg" class="imgprof"
+                                    style="margin-right: 5px;width:40px;">Leo Sanico</td>
+                            <td data-column="Variant">Prime</td>
+                            <td data-column="Email">ilovetwicesomuch@gmail.com</td>
+                            <td class="tdate" data-column="Expiry">25/12/2018</td>
+                            <td data-column="Action"><img src="Image/view.png" class="img-fluid imgview"
+                                    onmouseover="this.src='Image/viewgreen.png'"
                                     onmouseout="this.src='Image/view.png'"><img src="Image/renew.png" class="img-fluid"
                                     style="margin-left: 15px;width:18px;" onmouseover="this.src='Image/renewgreen.png'"
                                     onmouseout="this.src='Image/renew.png'"></td>
+
                         </tr>
-                        </tbody>
+                    </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container con">
+            <div class="row align-items-center" style="padding-top:10px;">
+                <div class="col-lg-12">
+                    <p class="pcopy">Copyright &copy; Surehealth service by Aventus. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script>
+
+
+    $(window).resize(function () {
+        var width = $(window).width();
+        if (width < 770) {
+            var element = document.getElementById("table");
+            element.classList.remove("table");
+            element.classList.remove("table-borderless");
+            element.classList.add("table-striped");
+        }
+        else {
+            var element = document.getElementById("table");
+            element.classList.add("table");
+            element.classList.add("table-borderless");
+            element.classList.remove("table-striped");
+        }
+    });
+
+
     $(document).ready(function () {
         var _date = new Date();
         $('.tdate').each(function () {
@@ -202,6 +237,9 @@
             }
         }
     }
+
+
+
 </script>
 
 </html>
