@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/contact.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-    <script src='Script\jquery-3.3.1.min.js'></script>
-    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <link href='Css/login.css' rel='stylesheet' type='text/css'>
     <script src='Script\bootstrap.min.js'></script>
     <title>Surehealth - Contact us</title>
 </head>
 
 <body>
-    <div class="container con">
+    <div class="container con conheader">
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-6">
                 <div class="form-inline d-flex">
@@ -45,10 +45,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid connav">
         <div class="container con" style="margin-top:-14px;">
-            <nav class="navbar navbar-expand-md">
-                <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="navbar-brand" href="#">
@@ -57,12 +57,9 @@
                 <div class="collapse navbar-collapse" id="collapse">
                     <div class="col2 ml-auto">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav-link btnservices"
-                                    style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
-                                    href="404.html">Services</a></li>
                             <li><a class="nav-link btnpackages"
                                     style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15x;"
-                                    href="404.html">Packages</a></li>
+                                    href="packages.html">Packages</a></li>
                             <li><a class="nav-link btncontact" target="_self" href="login.html">Login</a></li>
                         </ul>
                     </div>
@@ -71,63 +68,148 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="container con">
-            <div class="row" style="margin-top: 40px;">
-                <div class="col-lg-6">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div id="mapid"></div>
-                            </div>
-                            <div class="carousel-item">
-                                <div id="mapid2"></div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+        <div class="container">
+            <div class="row" style="padding:0px 15px;margin-top: 40px;">
+                <div class="col-lg-5">
+                    <p class=pquestion>We'd like to <br>here from you</p>
+                </div>
+            </div>
+            <div class="row" style="padding:0px 15px;margin-top: 0px;">
+                <div class="col-lg-5">
+                    <div class="form-group">
+                        <hr class="hr1"><br>
+                        <p class=pquestion1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
+                    <div id="mapid">
+
+                    </div>
+                    <div class="form-inline" style="margin-top: 30px;">
+                        <img src="Image/facebook.png" style="margin-right: 15px;cursor: pointer;">
+                        <img src="Image/instagram.png" style="margin-right: 15px;cursor: pointer;">
+                        <img src="Image./twitter.png" style="margin-right: 15px;cursor: pointer;">
+                    </div>
+                </div>
+                <div class="col-lg-7" style="padding-left: 100px;">
+                    <div class="form-group">
+                        <p class="ptitle">FULL NAME<span class="pspan">*</span></p>
+                        <input type="text" class="txtfullname" placeholder="E.g Alfon Labadan">
+                    </div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <p class="ptitle">EMAIL ADDRESS<span class="pspan">*</span></p>
+                        <input type="text" class="txtemailadd" placeholder="E.g alfonlabadan@gmail.com">
+                    </div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <p class="ptitle">CONTACT NUMBER<span class="pspan">*</span></p>
+                        <input type="text" class="txtcontact" placeholder="E.g 0985485878">
+                    </div>
+                    <div class="form-group" style="margin-top: 30px;">
+                        <p class="ptitle">MESSAGE<span class="pspan">*</span></p>
+                        <textarea class="txtmessage"></textarea>
+                    </div>
+                    <button class = "btnsend">SEND</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="background-color: #233645;margin-top:40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 70px;padding-bottom: 40px;">
+                <div class="col-lg-5 text-center">
+                    <img src="Image/logo white.png" class="img-fluid" style="width: 250px;">
+                </div>
+                <div class="col-lg-7 consubscribe text-right">
+                    <label class="psubscribe text-left">Subscribe to<br>Our Newsletter</label>
+                    <input type="text" class="btnsubscribe" placeholder="Your email Address....">
+                </div>
+                <hr class="hrfooter">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="form-group" class="float-right">
+                        <img src="Image/call1.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">MON TO SUN : 8:00 - 10:00</label>
+                        <p class="ptel">+632-840-0588</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/newsletter.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">DO YOU HAVE A QUESTION?</label>
+                        <p class="ptel">aventusmedical@gmail.com</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/social.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">SOCIAL NETWORK</label>
+                        <div class="form-inline" style="margin-left: 45px;">
+                            <img src="Image/facebookfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/twitterfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/linkedinfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-5 col-6 col-location">
+                    <p class="pmorelinks">Location</p>
+                    <p class="pfooterlinks">Alabang, Muntinlupa</p>
+                    <p class="pfooterlinks">BGC, Taguig</p>
+                    <p class="pfooterlinks">Calamba, Laguna</p>
+                    <p class="pfooterlinks">Cebu IT Park</p>
+                    <p class="pfooterlinks">Cebu Cybergate</p>
+                    <p class="pfooterlinks">Clark, Pampanga</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6 col-location">
+                    <p class="pmorelinks" style="color: #233645;">Location</p>
+                    <p class="pfooterlinks">Makati</p>
+                    <p class="pfooterlinks">Manila</p>
+                    <p class="pfooterlinks">Ortigas</p>
+                    <p class="pfooterlinks">Pasay</p>
+                    <p class="pfooterlinks">Quezon</p>
+                    <p class="pfooterlinks">Sta. Rosa</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="Image/surehealthtrans.png" class="img-fluid" style="width:70px;">
+                    <p class="pfooterlinks" style="margin-top:20px;">Get the benefits you need at the price you want
+                        with our 6 SUREHEALTH card variants: Classic,
+                        Elite, Premium, Prestige, Kiddie, and Prime. Gain access to unlimited free consultations with
+                        our experts for one whole year, and enjoy generous discounts on various medical procedures.</p>
+                </div>
+                <hr class="hrfooter">
+                <p class="pcopyright">Copyright&copy;SUREHEALTH. All rights reserved</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 <script>
-    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 15);
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         id: 'mapbox.streets'
     }).addTo(mymap);
+
     L.marker([14.5624078, 121.0122034]).addTo(mymap)
-        .bindPopup("Exact location of Aventus").openPopup();
+        .bindPopup("Aventus Medical Center").openPopup();
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
     var popup = L.popup();
 
-    var mymap2 = L.map('mapid2').setView([14.4281977, 121.0205102], 15);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        id: 'mapbox.streets'
-    }).addTo(mymap2);
-    L.marker([14.4281977, 121.0205102]).addTo(mymap2)
-        .bindPopup("Exact location of Aventus").openPopup();
-    var popup = L.popup();
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
 </script>
 
 </html>
