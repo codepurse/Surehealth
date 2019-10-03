@@ -54,6 +54,34 @@ body, html {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .imglogo {
+    width:70px !important;
+  }
+  .psignin {
+    font-size: 25px !important;
+  }
+  .psignin1 {
+    font-size: 15px !important;
+  }
+  .txtusername {
+    margin-top: -15px !important;
+  }
+  .txtpassword {
+    margin-top: -5px !important;
+  }
+  .lblrememberme {
+    margin-left: 10px !important;
+  }
+  .lblforgot {
+    margin-left: 10px !important;
+    margin-top: -5px !important;
+  }
+  .btnlogin {
+    height: 40px !important;
+  }
+}
+
 .maincontainer {
 	height: 100vh;
 	background: linear-gradient(
