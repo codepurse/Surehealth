@@ -79,6 +79,12 @@
     }
 }
 
+@media only screen and (max-width: 923px) {
+    .hrstep {
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .psubscribe {
         text-align: center !important;
@@ -92,6 +98,15 @@
 @media only screen and (max-width: 572px) {
     .col-location {
         margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .colregister {
+        margin-top: 20px !important;
+    }
+    .div1 {
+        margin-top: 20px !important;
     }
 }
 
@@ -209,6 +224,29 @@ body {
     background-color: #388E3C;
 }
 
+.dot {
+    background-color: #00C853;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border: 7px solid rgb(220,237,200);
+}
+
+.pstepnumber {
+    font-family: Muli semibold;
+    letter-spacing: -0.5px;
+    color: #BDBDBD;
+    font-size: 1.1rem;
+}
+
+.pchoose {
+    font-family: muli;
+    color: #424242;
+    font-size: 0.9rem;
+    padding-top: 40px;
+    line-height: -10px !important;
+}
+
 .card1 {
     transition: 0.2s;
 }
@@ -320,9 +358,9 @@ ul>.b {
     box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
 }
 
-.pterms {
+.pterms, .phow {
     font-family: Keep Calm;
-    color: #424242;
+    color: #1E3056;
     font-size: 25px;
 }
 

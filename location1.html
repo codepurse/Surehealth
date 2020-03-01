@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/location1.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top"
+            style="border-bottom: 1px solid lightgray;background-color: white;">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-brand" href="#">
+                <a href="#"><img src="Image/logotrans.png" class="img-fluid imglogo" style="width: 220px;"></a>
+            </nav>
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="col2 ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-link btnpackages"
+                                style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
+                                href="package.html">Packages</a></li>
+                        <li><a class="nav-link btncontact"
+                                style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
+                                href="contact.html">Contact</a></li>
+                        <li><a class="nav-link btnlogin" target="_self" href="login.html"
+                                style="color: #00C853;padding: 10px 20px 10px 20px;">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row h-100" style="margin-top: 75px;">
+            <div class="col-lg-3 text-center col-md-5 col-sm-5 collocation" style="padding: 15px 15px;">
+                <input type="text" class="txtsearch" id="txtsearch" placeholder="Search here.." onkeyup="myFunction()">
+                <table class="table table-responsive table-borderless" id="table"
+                    style="text-align:left !important;margin-top:-10px;">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding-top: -10px;border-top: 1px solid lightgrey;"
+                                onclick="gotocountry('alabang')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Alabang, Muntinlupa</span>
+                                </div>
+                                <p class="pLocation2">2nd Flr. Sycamore ARCS 1 Building, Buencamino Street cor</p>
+                                <p class="pContactNumber">(02) 8840-3043</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('northexchange')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Ayala, North Exchange</span>
+                                </div>
+                                <p class="pLocation2">3rd Floor, Retail 61 and 62, Ayala North Exchange, Amorsolo
+                                    Street, Ayala Avenue, Makati City</p>
+                                <p class="pContactNumber">(02) 8425-1607</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('bgc')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">BGC, Taguig</span>
+                                </div>
+                                <p class="pLocation2">GF Citi Plaza 34th Street cor. Lane D, Bonifacio Global City,
+                                    Taguig</p>
+                                <p class="pContactNumber">(02) 8352-8335</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('calamba')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Calamba, Laguna</span>
+                                </div>
+                                <p class="pLocation2">Unit 201-203, SQA Corporation Center, Baranggay 1, National
+                                    Highway Crossing</p>
+                                <p class="pContactNumber">(049) 508-1806</p>
+                            </td>
+                        </tr>
+
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('cybergate')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Cebu Cybergate</span>
+                                </div>
+                                <p class="pLocation2">Level 3, Room 00309 & 00302, Robinsons Cybergate, Don Gil
+                                    Garcia & J. Llorente St</p>
+                                <p class="pContactNumber">(032) 236-9028</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('itpark')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Cebu IT Park</span>
+                                </div>
+                                <p class="pLocation2">Unit 203 TGU Tower, Block 1, Lots 6-7, Phase 1, Asiatown, IT
+                                    Park Apas, Cebu City, Cebu 6000</p>
+                                <p class="pContactNumber">(032) 268-8072</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('clark')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Clark, Pampanga</span>
+                                </div>
+                                <p class="pLocation2">GF BPO Building 5, SM City Clark, M.A. Roxas Highway, Brgy.
+                                    Malabanias, Angeles City, Pampanga 2009</p>
+                                <p class="pContactNumber">(045) 499-8417</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('filomena')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Makati Filomena</span>
+                                </div>
+                                <p class="pLocation2">6F Filomena Building, #104 Amorsolo St., Legaspi Village,
+                                    Makati, Metro Manila 1229</p>
+                                <p class="pContactNumber">8817-2715</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('manila')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Manila</span>
+                                </div>
+                                <p class="pLocation2">5th Floor, Times Plaza Building, Taft corner U.N. Avenue,
+                                    Ermita, Manila, Metro Manila 1000</p>
+                                <p class="pContactNumber">8353-6807</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('ortigas')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Ortigas</span>
+                                </div>
+                                <p class="pLocation2">Ground Floor, AIC Grande Tower, Sapphire Street corner Garnet
+                                    Road, Ortigas Center, Pasig City 1605</p>
+                                <p class="pContactNumber">8584-2430</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('pasay')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Pasay</span>
+                                </div>
+                                <p class="pLocation2">Scape Building, 24 Diosdado Macapagal Avenue, Pearl Drive CBP,
+                                    Barangay 76 San Rafael, Pasay City, Metro Manila 1630</p>
+                                <p class="pContactNumber">(02) 8838-0627</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('quezon')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Quezon City</span>
+                                </div>
+                                <p class="pLocation2">GF, 2F PCS Building, 992 EDSA, Baranggay Ramon Magsaysay,
+                                    Quezon City 1105</p>
+                                <p class="pContactNumber">8352-4676</p>
+                            </td>
+                        </tr>
+                        <tr style="border-top: 1px solid lightgray;">
+                            <td onclick="gotocountry('starosa')">
+                                <div class="form-inline">
+                                    <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
+                                        class="lbllocation">Sta. Rosa</span>
+                                </div>
+                                <p class="pLocation2">2nd Floor, Carvajal Building 2, National Highway, Balibago
+                                    City, Sta. Rosa, Laguna 4026</p>
+                                <p class="pContactNumber">(049) 302-5046</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-7" id="colmap">
+                <div id="mapid" style="position:fixed;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
+L.tileLayer(
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+    {
+        maxZoom: 19,
+        attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        id: "mapbox.streets"
+    }
+).addTo(mymap);
+
+L.marker([14.5624078, 121.0122034]).addTo(mymap)
+    .bindPopup("Shurtech Main Office").openPopup();
+
+
+L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+var popup = L.popup();
+
+function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("txtsearch");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+
+var gotocountry = function (c) {
+
+
+    if (c == 'alabang') {
+        mymap.setView(new L.LatLng(14.4281925, 121.0205102), 16);
+        marker = new L.marker([14.4281925, 121.0205102]).addTo(mymap)
+            .bindPopup("Shurhealth Alabang").openPopup();
+    }
+    if (c == 'northexchange') {
+        mymap.setView(new L.LatLng(14.5599165, 121.01367), 16);
+        marker = new L.marker([14.5599165, 121.01367]).addTo(mymap)
+            .bindPopup("Shurhealth NorthExchange").openPopup();
+    }
+    if (c == 'bgc') {
+        mymap.setView(new L.LatLng(14.5541698, 121.0514802), 16);
+        marker = new L.marker([14.5541698, 121.0514802]).addTo(mymap)
+            .bindPopup("Shurhealth BGC,Taguig").openPopup();
+    }
+    if (c == 'calamba') {
+        mymap.setView(new L.LatLng(14.2063345, 121.1527142), 16);
+        marker = new L.marker([14.2063345, 121.1527142]).addTo(mymap)
+            .bindPopup("Shurhealth Calamba,Laguna").openPopup();
+    }
+    if (c == 'cybergate') {
+        mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
+        marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
+            .bindPopup("Shurhealth Cebu,Cybergate").openPopup();
+    }
+    if (c == 'itpark') {
+        mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
+        marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
+            .bindPopup("Shurhealth Cebu,ITpark").openPopup();
+    }
+    if (c == 'clark') {
+        mymap.setView(new L.LatLng(10.3275764, 123.9048761), 16);
+        marker = new L.marker([10.3275764, 123.9048761]).addTo(mymap)
+            .bindPopup("Shurhealth Clark,Pangpanga").openPopup();
+    }
+    if (c == 'filomena') {
+        mymap.setView(new L.LatLng(14.5579373, 121.0123478), 16);
+        marker = new L.marker([14.5579373, 121.0123478]).addTo(mymap)
+            .bindPopup("Shurhealth Makati,Filomena").openPopup();
+    }
+    if (c == 'manila') {
+        mymap.setView(new L.LatLng(14.5824553, 120.9819729), 16);
+        marker = new L.marker([14.5824553, 120.9819729]).addTo(mymap)
+            .bindPopup("Shurhealth Manila").openPopup();
+    }
+    if (c == 'ortigas') {
+        mymap.setView(new L.LatLng(14.5888137,121.059614), 16);
+        marker = new L.marker([14.5888137,121.059614]).addTo(mymap)
+            .bindPopup("Shurhealth Ortigas").openPopup();
+    }
+    if (c == 'pasay') {
+        mymap.setView(new L.LatLng(14.5338239, 120.9865881), 16);
+        marker = new L.marker([14.5338239, 120.9865881]).addTo(mymap)
+            .bindPopup("Shurhealth Pasay").openPopup();
+    }
+    if (c == 'quezon') {
+        mymap.setView(new L.LatLng(14.6564774, 121.0255195), 16);
+        marker = new L.marker([14.6564774, 121.0255195]).addTo(mymap)
+            .bindPopup("Shurhealth Quezon").openPopup();
+    }
+    if (c == 'starosa') {
+        mymap.setView(new L.LatLng(14.2989573, 121.102949), 16);
+        marker = new L.marker([14.2989573, 121.102949]).addTo(mymap)
+            .bindPopup("Shurhealth Sta. Rosa").openPopup();
+    }
+    return;
+};
+
+
+$(window).resize(function () {
+    var width = $(window).width();
+    if (width < 575) {
+        var element = document.getElementById("colmap");
+        element.classList.add("order-first");
+    }
+    else {
+        var element = document.getElementById("colmap");
+        element.classList.remove("order-first");
+    }
+});
+</script>
+<script>
+
+</script>
+
+</html>
