@@ -93,8 +93,8 @@
                                     <div class="image-upload">
                                         <label for="imgInp">
                                             <div class="circle mx-auto d-block">
-                                                <img src="Image/noprofile.jpg" id="blah" alt="" class="img-fluid"
-                                                    style="cursor: pointer;">
+                                                <img src="Image/noprofile.jpg" id="blah" alt=""
+                                                    class="img-fluid imgProf" style="cursor: pointer;">
                                             </div>
                                         </label>
 
@@ -103,7 +103,9 @@
                                     </div>
 
                                     <p class="pfullname"></p>
-                                    <p onclick="changePicture(); return false" id="upload"
+                                    <a style="color: red;font-family: sans-serif;z-index: 99999;"
+                                        class="pFill pFillemail"></a>
+                                    <p onclick="changePicture(); return false" id="upload imgInp"
                                         style="font-family: muli semibold;color: #1976D2;font-size:15px;cursor: pointer;">
                                         Click the image to change the picture</p>
                                 </div>
@@ -113,20 +115,23 @@
                                     <div class="form-group" style="margin-top: 30px;">
                                         <div class="form-inline">
                                             <p class="ptitleinfo">FIRST NAME</p>
-                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
+                                            <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;"
+                                                required>*</p>
                                         </div>
-                                        <input type="text" class="text txtusername">
+                                        <input type="text" class="text txtusername" required>
+                                        <a style="color: red;font-family: sans-serif;" class="pFill"></a>
                                     </div>
                                     <div class="form-group" style="margin-top: 30px;">
                                         <div class="form-inline">
                                             <p class="ptitleinfo">GENDER</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <select class = "input-large form-control">
-                                            <option value = "">Select Gender</option>
-                                            <option value = "M">Male</option>
-                                            <option value = "F">Female  </option>
+                                        <select class="input-large form-control" required="required">
+                                            <option value="">Select Gender</option>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female </option>
                                         </select>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -134,7 +139,8 @@
                                         <div class="form-inline">
                                             <p class="ptitleinfo">MIDDLE INITIAL</p>
                                         </div>
-                                        <input type="text" class="text txtmiddle">
+                                        <input type="text" class="text txtmiddle" required>
+                                        <a style="color: red;font-family: sans-serif;" class="pFill"></a>
                                     </div>
                                     <div class="form-group" style="margin-top: 30px;">
                                         <div class="form-inline">
@@ -142,6 +148,7 @@
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
                                         <input type="date" name="bday" class="bday">
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -150,20 +157,22 @@
                                             <p class="ptitleinfo">LAST NAME</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <input type="text" class="text txtlast">
+                                        <input type="text" class="text txtlast" required>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                     <div class="form-group" style="margin-top: 30px;">
                                         <div class="form-inline">
                                             <p class="ptitleinfo">CIVIL</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <select class = "input-large form-control">
-                                            <option value = "">Select Civil </option>
-                                            <option value = "AL">Single</option>
-                                            <option value = "AL">Married</option>
-                                            <option value = "AL">Widowed</option>
-                                            <option value = "AL">Seperated</option>
+                                        <select class="input-large form-control">
+                                            <option value="">Select Civil </option>
+                                            <option value="AL">Single</option>
+                                            <option value="AL">Married</option>
+                                            <option value="AL">Widowed</option>
+                                            <option value="AL">Seperated</option>
                                         </select>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +183,8 @@
                                             <p class="ptitleinfo">PERMANENT ADDRESS</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <input type="text" class="text">
+                                        <input type="text" class="text" required>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                             </div>
@@ -186,6 +196,7 @@
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
                                         <input type="text" class="text">
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -194,7 +205,8 @@
                                             <p class="ptitleinfo">CITY</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <input type="text" class="text">
+                                        <input type="text" class="text" required>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -204,6 +216,7 @@
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
                                         <input type="text" class="text" onkeypress="return isNumber(event)">
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                             </div>
@@ -215,6 +228,7 @@
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
                                         <input type="text" class="text" onkeypress="return isNumber(event)">
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -223,7 +237,8 @@
                                             <p class="ptitleinfo">MOBILE NUMBER</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <input type="text" class="text">
+                                        <input type="text" class="text" required>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -232,13 +247,14 @@
                                             <p class="ptitleinfo">EMAIL</p>
                                             <p class="pasterisk1 ml-auto" style="color: red;font-weight:  bold;">*</p>
                                         </div>
-                                        <input type="text" class="text" onkeypress="return isNumber(event)">
+                                        <input type="email" class="text email" required>
+                                        <a style="color: red;font-family: sans-serif;"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="row" style="margin-top: 20px;">
-                                <div class="col-lg-12 text-right">
-                                    <input type="button" class="btnsave" value="Proceed">
+                                <div class="col-lg-12 text-right" aria-required="">
+                                    <input type="button" class="btnsave" onClick="toInfopage()" value="Proceed">
                                 </div>
                             </div>
                         </div>
@@ -317,6 +333,8 @@
 </body>
 <script type="text/javascript">
 
+    var imgSrc = $('.imgProf').attr("src");
+
     function isNumber(evt) {
         evt = (evt) ? evt : window.event;
         var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -325,6 +343,7 @@
         }
         return true;
     }
+
 
     $('.txtusername').keyup(function (event) {
         newText = $('.txtusername').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
@@ -342,18 +361,121 @@
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-
             reader.onload = function (e) {
                 $('#blah').attr('src', e.target.result);
+                if (imgSrc === $('#blah').attr("src")) {
+                    $('.pFillemail').text("Please put a valid image");
+                }
+                else {
+                    $('.pFillemail').text("");
+                }
             }
-
             reader.readAsDataURL(input.files[0]);
         }
     }
 
+
+
+
     $("#imgInp").change(function () {
         readURL(this);
     });
+
+
+    //check if the textbox have a valid input whenever the user type or change the value
+    $(document).ready(function () {
+        $('.text').on('keyup change', function () {
+            $(this).next().text($(this).val().length == 0 ? "Please fill" : "");
+        });
+        $('.input-large').on('keyup change', function () {
+            $(this).next().text($(this).val().length == 0 ? "Please fill" : "");
+        });
+        $('.email').on('keyup change', function () {
+            var valid = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(this.value);
+            if (valid == false) {
+                $('.email').next().text("Please put a valid email");
+            }
+        });
+        $('.bday').on('keyup change', function () {
+
+            var variant = "premiere";
+
+            if (variant === "kids") {
+                var today = new Date();
+                var birthDate = new Date($('.bday').val());
+                var age = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (age > 17) {
+                    $('.bday').next().text("Age should be not lower than 17");
+                }
+                else {
+                    $('.bday').next().text("");
+                }
+            } else {
+                let [year, month, day] = $('.bday').val().split('-');
+                if (year > "1970" && month < 12) {
+                    $('.bday').next().text("");
+                }
+                else {
+                    $('.bday').next().text("Please put a valid birthday");
+                }
+            }
+
+        });
+    });
+
+
+
+    //check if the textbox have a valid input in windows.load function
+    $(window).load(function () {
+        //all textbox
+        $('.text').each(function () {
+            if (!$(this).val()) {
+                $(this).next().text($(this).val().length == 0 ? "Please fill" : "");
+            }
+        });
+
+        if ($('.imgProf').attr("src") == imgSrc) {
+            $('.pFillemail').text("Please put a valid Image");
+        }
+        //select box
+        $('.input-large').each(function () {
+            if ($(this).val() === "") {
+                $(this).next().text($(this).val().length == 0 ? "Please Choose" : "");
+            }
+        });
+        //email
+        $('.email').on('load', function () {
+            var valid = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(this.value);
+            if (valid == false) {
+                $('.email').next().text("Please put a valid email");
+            }
+        });
+        //bday
+        let [year, month, day] = $('.bday').val().split('-');
+        if (year > "1990" && month < 12) {
+            return false;
+        }
+        else {
+            $('.bday').next().text("Please put a valid birthday");
+        }
+    });
+
+    //toinfopage
+
+    function toInfopage() {
+        $('.pFill').each(function () {
+            if ($(this).text() === "") {
+                alert("pwede na");
+                return false;
+            }
+            else {
+                alert("bawal pa");
+                return false;
+            }
+        });
+    }
+
 </script>
 
 </html>

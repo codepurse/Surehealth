@@ -34,12 +34,10 @@
     }
 }
 
-
-
 @media only screen and (max-width: 991px) {
     .consubscribe {
-        margin-top: 30px;  
-        display:inline-block;
+        margin-top: 30px;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
         clear: both;
@@ -54,7 +52,7 @@
     }
     .btnsubscribe {
         width: auto !important;
-        margin-top:20px;
+        margin-top: 20px;
     }
 }
 
@@ -64,11 +62,8 @@
     }
 }
 
-
-
-
-
-body, html {
+body,
+html {
     width: 100%;
     height: auto;
     overflow-x: hidden;
@@ -82,7 +77,10 @@ body, html {
     margin-top: 10px;
 }
 
-.btnservices:hover, .btnpackages:hover, .btnfinddoctor:hover, .btnclinic:hover {
+.btnservices:hover,
+.btnpackages:hover,
+.btnfinddoctor:hover,
+.btnclinic:hover {
     cursor: pointer;
     transition: 0.2s;
     color: #00C853 !important;
@@ -149,7 +147,8 @@ body, html {
     font-family: hind;
 }
 
-.accordion a:hover, .accordion a:hover::after {
+.accordion a:hover,
+.accordion a:hover::after {
     cursor: pointer;
     color: #00C853;
 }
@@ -237,12 +236,13 @@ body, html {
     background-color: #00C853;
 }
 
+
 /* Footer */
 
 .psubscribe {
     color: white;
     font-family: Muli;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .btnsubscribe {
@@ -263,16 +263,15 @@ body, html {
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.2);
     border: 0 none;
-    margin-top:50px;
-} 
+    margin-top: 50px;
+}
 
 .ptime {
     font-family: muli;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
-    font-size:12px;
+    font-size: 12px;
     margin-left: 15px;
-  
 }
 
 .ptel {
@@ -281,19 +280,19 @@ body, html {
     color: white;
     font-size: 18px;
     margin-left: 45px;
-    margin-top:-10px !important;
+    margin-top: -10px !important;
 }
 
 .pmorelinks {
     font-family: muli;
     font-weight: bold;
     color: white;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .pfooterlinks {
     font-family: muli;
-    font-size:14px;
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
     transition: 0.2s;
     cursor: pointer;
@@ -307,7 +306,7 @@ body, html {
     font-family: muli semibold;
     color: white;
     font-size: 13px;
-    margin-top:10px;
-    margin:auto;
+    margin-top: 10px;
+    margin: auto;
     padding-bottom: 10px;
 }
