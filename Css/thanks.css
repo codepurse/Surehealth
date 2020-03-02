@@ -4,12 +4,6 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .smallcon {
-        max-width: 1000px !important;
-    }
-}
-
 @media only screen and (max-width: 1317px) {
     .conheader {
         display: none !important;
@@ -19,42 +13,38 @@
     }
 }
 
-@media only screen and (max-width: 758px) {
-    #mapid {
-        margin-top: 20px !important;
-    }
-    .btnlogin {
-        border: 0px !important;
-        padding: 0px !important;
-        color: #424242 !important;
-        font-weight: normal !important;
-        font-family: muli semibold !important;
-        margin-top: 5px;
-    }
-    .btnlogin:hover {
-        background-color: transparent !important;
-        color: #424242 !important;
-    }
-    .lblwhychoosesub {
-        width: 100% !important;
+@media only screen and (max-width: 770px) {
+    .pquestion {
+        font-size: 35px !important;
     }
 }
 
+@media only screen and (max-width: 433px) {
+    .pquestion {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .pquestion {
+        font-size: 25px !important;
+    }
+    .pquestion1 {
+        font-size: 13px !important;
+    }
+}
+
+
+
 @media only screen and (max-width: 991px) {
     .consubscribe {
-        margin-top: 30px;
-        display: inline-block;
+        margin-top: 30px;  
+        display:inline-block;
         margin-left: auto;
         margin-right: auto;
         clear: both;
         text-align: center !important;
         float: none !important;
-    }
-}
-
-@media only screen and (max-width: 572px) {
-    .col-location {
-        margin-top: 20px;
     }
 }
 
@@ -64,22 +54,19 @@
     }
     .btnsubscribe {
         width: auto !important;
-        margin-top: 10px !important;
-    }
-    .pquestion {
-        font-size: 30px !important;
-    }
-    .coltext {
-        margin-top: 40px !important;
-        padding-left: 15px !important;
-    }
-    .txtfullname, .txtemailadd, .txtcontact, .txtmessage {
-        width: 100% !important;
-    }
-    .hr1 {
-        width: 100% !important;
+        margin-top:20px;
     }
 }
+
+@media only screen and (max-width: 572px) {
+    .col-location {
+        margin-top: 20px;
+    }
+}
+
+
+
+
 
 body, html {
     width: 100%;
@@ -101,7 +88,9 @@ body, html {
     color: #00C853 !important;
 }
 
-.btnlogin {
+.btncontact {
+    color: #00C853 !important;
+    padding: 10px 20px 10px 20px !important;
     border: 2px solid #00C853;
     background-color: transparent;
     border-radius: 25px;
@@ -125,19 +114,10 @@ body, html {
     border: 0 none;
 }
 
-.hr1 {
-    width: 400px;
-    height: 2px;
-    margin: 0 0 !important;
-    background-color: #9E9E9E;
-    border: 0 none;
-    text-align: left;
-}
-
 .pquestion {
-    font-family: Keep Calm;
+    font-family: Avenir LT Std 45;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     color: #424242;
     margin-top: 5%;
 }
@@ -146,54 +126,60 @@ body, html {
     font-family: muli semibold;
     font-size: 15px;
     color: #757575;
-    letter-spacing: -0.5px;
-    margin-top: -15px;
+    margin-top: -10px;
+    width: 70%;
 }
 
-.ptitle {
+.pdetails {
+    font-family:  muli;
+    font-weight: bold;
+    color: #212121;
+    font-size: 25px;
+}
+
+.ptype {
+    font-family: muli Semibold;
+    font-size: 15px;
+    margin-top: -10px;
+    color: #546E7A;
+}
+
+.ptype1 {
+    color: #212121;
+}
+
+.pdesc {
+    font-family: muli;
+    color: #9E9E9E;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.box {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #E0E0E0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.pcontact {
     font-family: muli;
     font-weight: bold;
+    color: #212121;
+    font-size: 18px;
     letter-spacing: -0.5px;
-    font-size: 15px;
-    color: #424242;
-    margin-left: 5px;
 }
 
-.pspan {
-    color: red;
-}
-
-.txtfullname, .txtemailadd, .txtcontact {
+.pusername, .pstate, .pcity, .pstreet, .pcard {
     font-family: muli semibold;
     font-size: 18px;
-    color: #212121;
-    border: 0px;
-    background-color: transparent;
+    color: #546E7A;
     letter-spacing: -0.5px;
-    border-bottom: 1px solid #9E9E9E;
-    width: 80%;
-    outline: none;
-    padding: 5px;
-}
-
-#mapid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.txtmessage {
-    font-family: muli semibold;
-    color: #212121;
-    border: 1px solid #9E9E9E;
-    width: 80%;
-    height: 100px;
-    outline: none;
-    padding: 5px;
-    background-color: transparent;
-    transition: all 0.2s;
+    margin-top: -14px;
 }
 
 .psubscribe {
@@ -212,7 +198,6 @@ body, html {
     border: 0px;
     width: 350px;
     margin-top: -20px;
-    outline: none;
 }
 
 .hrfooter {
@@ -270,14 +255,17 @@ body, html {
     padding-bottom: 10px;
 }
 
-.btnsend {
+.psubtotal {
     font-family: muli semibold;
-    color: white;
-    background-color: #00C853;
-    cursor: pointer;
-    width: 200px;
-    padding: 10px 0px;
-    margin-top: 10px;
-    border: 0px;
-    border-radius: 25px;
+    color: #757575;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+}
+
+.ptotal {
+    font-family: muli;
+    font-weight: bold;
+    color: #212121;
+    letter-spacing: -0.5px;
+    font-size: 25px;
 }
