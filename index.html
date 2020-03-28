@@ -199,7 +199,8 @@
                                         procedures</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Classic"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +227,8 @@
                                     <li class="a pdescription">Free Annual Physical Examination</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Elite"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -258,7 +260,8 @@
                                     <li class="a pdescription">Free Annual Physical Examination</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Prime"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +280,7 @@
                                 alt="Card image cap" style="width:55px;">
                             <div class="card-body">
                                 <h5 class="card-title text-center"
-                                    style="font-family: Muli;font-weight: bold;color: #424242">Veteran</h5>
+                                    style="font-family: Muli;font-weight: bold;color: #424242">Premium</h5>
                                 <p class="text-center pprice">&#8369;1499</p>
                                 <hr class="hrfooter"
                                     style="background-color: #E0E0E0;margin-top:10px;width:90%;margin-bottom: 20px;">
@@ -295,7 +298,8 @@
                                     <li class="a pdescription">Free Basic Executive Checkup</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Premium"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +327,8 @@
                                     <li class="a pdescription">Free Comprehensive Executive Checkup</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Prestige"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +337,7 @@
                                 style="width:70px;">
                             <div class="card-body">
                                 <h5 class="card-title text-center"
-                                    style="font-family: Muli;font-weight: bold;color:#424242">Youth
+                                    style="font-family: Muli;font-weight: bold;color:#424242">Kiddie
                                 </h5>
                                 <p class="text-center pprice">&#8369;1499</p>
                                 <hr class="hrfooter"
@@ -346,7 +351,8 @@
                                         procedures</li>
                                 </ul>
                                 <div class="text-center">
-                                    <input type="button" value="Buy now" class="btnsurehealth">
+                                    <input type="button" value="Buy now" class="btnsurehealth" name="Kiddie"
+                                        onclick='storeVar(this.name)'>
                                 </div>
                             </div>
                         </div>
@@ -513,9 +519,14 @@
     }
 
     mymap.on('click', onMapClick);
-    
+
     window.onload = function () {
         console.log('page is loaded');
+    }
+
+    function storeVar(v) {
+        sessionStorage.setItem('variant', v);
+        window.location.href = "signup.html";
     }
 </script>
 

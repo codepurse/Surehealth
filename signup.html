@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="container-fluid maincontainer flex-fil">
-        <nav class="navbar navbar-expand-md nav-dark sticky-top">
+    <div class="container-fluid maincontainer">
+        <nav class="navbar navbar-expand-md nav-dark sticky-top" style="background-color: transparent;z-index: -99999;">
             <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,9 +37,9 @@
         </nav>
         <div class="container h-100">
             <div class="row h-100 align-items-center" style="position: relative;">
-                <div class="col-lg-7" style="margin-top:-100px;">
+                <div class="col-lg-6" style="margin-top:-100px;">
                     <img src="Image/surehealthtrans.png" class="img-fluid" style="width:100px;">
-                    <p class="psignin">Create an account</p>
+                    <p class="psignin" style="margin-top: px;">Create an account</p>
                     <p class="psignin1">Please fill up the credentials below <br>and start insuring your family</p>
                     <div class="form-group" style="margin-top:40px;">
                         <form>
@@ -52,20 +52,22 @@
                             <label alt='Password' placeholder='Password'></label>
                         </form>
                         <div class="form-inline">
-                            <span id="msg"
-                                style="font-family: hind semibold;font-size:13px;margin-left: 10px;">
-                        </span>
-                        <span id = "prog" style = "background-color: crimson;height: 8px;border-radius: 5px;margin-top:-15px;margin-left: 10px;transition: all 0.2s;"></span>
+                            <span id="msg" style="font-family: hind semibold;font-size:13px;margin-left: 10px;">
+                            </span>
+                            <span id="prog"
+                                style="background-color: crimson;height: 8px;border-radius: 5px;margin-top:-15px;margin-left: 10px;transition: all 0.2s;"></span>
                         </div>
                         <form>
                             <input required='' type='password' class="txtpassword">
                             <label alt='Confirm Password' placeholder='Confirm Password'></label>
-                        </form id = "form1">
+                        </form id="form1">
                         <div class="div1">
-                            <label class="lblrememberme"><input type="checkbox" style="margin-top:10px;"> I agree all statements included in Terms of Use</label>
+                            <label class="lblrememberme"><input type="checkbox" style="margin-top:10px;"> I agree all
+                                statements included in Terms of Use</label>
                         </div>
                         <input type="button" class="btnlogin" value="Login">
-                        <p class="lbldonthave">Allready have an account? <a href="login.html"><span class="lblsign">Log in 
+                        <p class="lbldonthave">Allready have an account? <a href="login.html"><span class="lblsign">Log
+                                    in
                                     here</span></a></p>
                     </div>
 
@@ -73,7 +75,8 @@
                 <p
                     style="position: absolute;bottom:6%;font-family:hind;font-size:14px;color: #9E9E9E;margin-left: 10px;">
                     2019 All rights Reserved Surehealth by Aventus Privacy and Terms.</p>
-                <div class="col-lg-5 colright">
+
+                <!--<div class="col-lg-5 colright align-self-center">
                     <label class="phealth">Surehealth</label><br>
                     <p class="phealth1">Start insuring your family's health. Insuring life insuring healthcare.Gain
                         access to unlimited free consultations with our experts for one whole year, and enjoy generous
@@ -94,6 +97,8 @@
                         <img src="Image/gmail.png" class="img-fluid imgfooterlogo"
                             style="width: 20px;margin-right: 20px;cursor: pointer;">
                     </div>
+                </div>-->
+                <div class="col-lg-6 colright h-100">
                 </div>
             </div>
 
@@ -139,7 +144,7 @@
 
 
     function validatePassword(password) {
-        
+
         if (password.length === 0) {
             document.getElementById("msg").innerHTML = "";
             document.getElementById("msg").style.marginBottom = "0px";
@@ -151,10 +156,10 @@
         }
 
         var matchedCase = new Array();
-        matchedCase.push("[$@$!%*#?&]"); 
-        matchedCase.push("[A-Z]");    
-        matchedCase.push("[0-9]");      
-        matchedCase.push("[a-z]");   
+        matchedCase.push("[$@$!%*#?&]");
+        matchedCase.push("[A-Z]");
+        matchedCase.push("[0-9]");
+        matchedCase.push("[a-z]");
 
         var ctr = 0;
         for (var i = 0; i < matchedCase.length; i++) {
@@ -162,7 +167,7 @@
                 ctr++;
             }
         }
-       
+
         var color = "";
         var strength = "";
         switch (ctr) {
@@ -197,6 +202,32 @@
             document.getElementById("prog").style.width = "46%";
             document.getElementById("prog").style.backgroundColor = "green";
         }
+    }
+
+    var data = sessionStorage.getItem('variant')
+
+
+
+    if (data === "Classic") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/2-1.jpg')");
+    }
+    else if (data === "Elite") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/2-2.jpg')");
+    }
+    else if (data === "Prime") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/2-3.jpg')");
+    }
+    else if (data === "Premium") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/4.jpg')");
+    }
+    else if (data === "Prestige") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/2-5.jpg')");
+    }
+    else if (data === "Kiddie") {
+        $('.maincontainer').css("background-image", "url('') , url('Image/2-6.jpg')");
+    }
+    else {
+        alert("Choose variant");
     }
 </script>
 

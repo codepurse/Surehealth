@@ -70,7 +70,13 @@
                 <p
                     style="position: absolute;bottom:6%;font-family:hind;font-size:14px;color: #9E9E9E;margin-left: 10px;">
                     2019 All rights Reserved Surehealth by Aventus Privacy and Terms.</p>
+
                 <div class="col-lg-5 colright">
+                    <p class="colright">asdasdasd</p>
+                </div>
+
+                <!-- 
+                    <div class="col-lg-5 colright">
                     <label class="phealth">Surehealth</label><br>
                     <p class="phealth1">Start insuring your family's health. Insuring life insuring healthcare.Gain
                         access to unlimited free consultations with our experts for one whole year, and enjoy generous
@@ -92,6 +98,7 @@
                             style="width: 20px;margin-right: 20px;cursor: pointer;">
                     </div>
                 </div>
+                -->
             </div>
 
         </div>
@@ -133,6 +140,17 @@
         $('.hr1').css("background-color", "rgba(255,255,255,0.5)");
         $('.hr2').css("background-color", "rgba(255,255,255,0.5)");
     });
+
+    var data = sessionStorage.getItem('variant')
+
+
+
+    if (data === "Classic") {
+        $("p").css("background-color", "red");
+    }
+    else {
+        alert("mali");
+    }
 </script>
 
 </html>
