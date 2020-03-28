@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/beta.css' rel='stylesheet' type='text/css'>
+    <link href='Css/bootstrap-combobox.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/ax5ui/ax5core/master/dist/ax5core.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid conNav">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-brand" href="#">
+                <a href="#"><img src="Image/logotrans.png" class="img-fluid imglogo" style="width: 185px;"></a>
+            </nav>
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="col2 ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-link btnpackages"
+                                style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;margin-top: 5px;"
+                                href="package.html">Packages</a></li>
+                        <li><a class="nav-link btncontact"
+                                style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;margin-top: 5px;"
+                                href="contact.html">Contact</a></li>
+                        <li><a class="nav-link btnlogin" target="_self" href="login.html"
+                                style="color: #00C853;padding: 10px 20px 10px 20px;">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container h-100 con">
+        <div class="row h-100 align-items-center" style="margin-top: -50px;">
+            <div class="col-lg-5">
+                <p class="pTitle">Activate your membership</p>
+                <p class="pStart">To start using the service please create and set up the account following with three
+                    easy steps. </p>
+                <div class="divSteps">
+                    <div class="divBox">
+                        <p class="pTitleStep">Step 1. Create your Account</p>
+                        <p class="pFill">Fill all the required fields that are needed to continue to the next step.</p>
+                        <div class="form-inline">
+                            <p class="pStep">Step 1</p> <span class="arrow-right">&#x27A4;</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px;" class="divBoxTrans">
+                        <p class="pTitleStep">Step 2. Fill up membership form</p>
+                        <p class="pFill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore.</p>
+                        <div class="form-inline">
+                            <p class="pStep">Step 2</p> <span class="arrow-right">&#x27A4;</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px;" class="divBoxTrans">
+                        <p class="pTitleStep">Step 3. Review your account.</p>
+                        <p class="pFill">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="form-inline">
+                            <p class="pStep">Step 3</p> <span class="arrow-right">&#x27A4;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="divCreate">
+                    <p class="pCreate">Create an account</p>
+                    <p class="pPlease">Please fill up the credentials below
+                        and start insuring your family</p>
+                    <hr>
+                    <form>
+                        <input required='' type='text' class="txtusername">
+                        <label alt='Username' placeholder='Username'></label>
+                    </form>
+                    <form>
+                        <input required='' type='password' class="txtpassword" onkeyup="validatePassword(this.value);">
+                        <label alt='Password' placeholder='Password'></label>
+                    </form>
+                    <div class="form-inline">
+                        <span id="msg" style="font-family: hind semibold;font-size:13px;margin-left: 10px;">
+                        </span>
+                        <span id="prog"
+                            style="background-color: crimson;height: 8px;border-radius: 5px;margin-top:-15px;margin-left: 10px;transition: all 0.2s;"></span>
+                    </div>
+                    <form>
+                        <input required='' type='password' class="txtpassword">
+                        <label alt='Confirm Password' placeholder='Confirm Password'></label>
+                    </form id="form1">
+                    <div class="form-inline" style="margin-left: 10px;">
+                        <label class="lblrememberme"><input type="checkbox" style="margin-top:2px;margin-right: 10px;">
+                            I agree all
+                            statements included in Terms of Use</label>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-lg-6">
+                            <button class="btnBack">Back</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="btnCreate">Create / Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function validatePassword(password) {
+
+        if (password.length === 0) {
+            document.getElementById("msg").innerHTML = "";
+            document.getElementById("msg").style.marginBottom = "0px";
+            document.getElementById("prog").style.width = "0%";
+            return;
+        }
+        else {
+            document.getElementById("msg").style.marginBottom = "14px";
+        }
+
+        var matchedCase = new Array();
+        matchedCase.push("[$@$!%*#?&]");
+        matchedCase.push("[A-Z]");
+        matchedCase.push("[0-9]");
+        matchedCase.push("[a-z]");
+
+        var ctr = 0;
+        for (var i = 0; i < matchedCase.length; i++) {
+            if (new RegExp(matchedCase[i]).test(password)) {
+                ctr++;
+            }
+        }
+
+        var color = "";
+        var strength = "";
+        switch (ctr) {
+            case 0:
+            case 1:
+            case 2:
+                strength = "Very Weak";
+                color = "red";
+                break;
+            case 3:
+                strength = "Medium";
+                color = "orange";
+                break;
+            case 4:
+                strength = "Strong";
+                color = "green";
+                break;
+        }
+        document.getElementById("msg").innerHTML = strength;
+        document.getElementById("msg").style.color = color;
+
+
+        if (strength === "Very Weak") {
+            document.getElementById("prog").style.width = "10%";
+            document.getElementById("prog").style.backgroundColor = "red";
+        }
+        else if (strength === "Medium") {
+            document.getElementById("prog").style.width = "25%";
+            document.getElementById("prog").style.backgroundColor = "orange";
+        }
+        else if (strength === "Strong") {
+            document.getElementById("prog").style.width = "46%";
+            document.getElementById("prog").style.backgroundColor = "green";
+        }
+    }
+</script>
+
+</html>
