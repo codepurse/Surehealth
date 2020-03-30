@@ -492,3 +492,14 @@ select::-ms-expand {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+.pVariant {
+    color: #00C853;
+}
+
+.pPrice {
+    font-family: Roboto;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

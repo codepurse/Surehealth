@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="divMembership" style="display: none;">
-                    <p class="pCreate">Membership form</p>
+                    <p class="pCreate"><span class="pVariant"></span>&nbsp;Membership form</p>
                     <p class="pPlease">Please ensure that the details that you've input are correct. Kindly double-check
                         all of your
                         information before proceeding. Fill up all the required fields.</p>
@@ -290,7 +290,7 @@
                             <p class="pSide">Variant:</p>
                         </div>
                         <div class="col-lg-9">
-                            <p class="pResult pVariant">Classic</p>
+                            <label class="pResult pVariant"></label><span>&nbsp;-&nbsp;</span><span class="pPrice"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -494,6 +494,7 @@
         $('.pPhone').text($('.txtPhone').val());
         $('.pMobile').text($('.txtMobile').val());
         $('.pVariant').text(data);
+        $('.pPrice').text(price);
         $('.pBday').text($('.bday').val());
         $('.pAddress').text($('.txtAddress').val());
     });
@@ -522,8 +523,29 @@
         $(".divMembership").css("display", "block");
     });
 
-
+    var price;
     var data = sessionStorage.getItem('variant');
+
+    if (data === "Classic") {
+        price = 600;
+    }
+    else if (data === "Elite") {
+        price = 999;
+    }
+    else if (data === "Prime") {
+        price = 2999;
+    }
+    else if (data === "Premium") {
+        price = 1499;
+    }
+    else if (data === "Prestige") {
+        price = 9999;
+    }
+    else if (data === "Kiddie") {
+        price = "1499";
+    }
+
+    $('.pVariant').text(data);
 </script>
 
 </html>
