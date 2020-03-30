@@ -102,7 +102,7 @@ body {
     margin-bottom: 0px;
 }
 
-.divBox {
+.divBoxActive {
     padding: 15px 15px;
     border-radius: 10px;
     transition: all 0.2s;
@@ -113,8 +113,14 @@ body {
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
 }
 
-.divBoxTrans {
+.divBox {
     padding: 15px 15px;
+}
+
+.divBoxTrans {
+    background-color: #f5f5f5;
+    border: none;
+    box-shadow: none;
 }
 
 @-webkit-keyframes bounceRight {
@@ -174,10 +180,11 @@ body {
     margin-left: 20px;
 }
 
-.divCreate {
+.divCreate, .divMembership, .divOverview, .divPersonalInfo {
     margin: auto;
     position: relative;
     width: 500px;
+    animation-duration: 0.3s !important;
 }
 
 .pCreate {
@@ -327,7 +334,7 @@ input[type="password"][required]+label[placeholder]:before {
     color: #00C853;
 }
 
-.btnBack {
+.btnBack, .btnBack1, .btnBack2 {
     color: #00C853;
     background-color: transparent;
     padding: 10px 20px;
@@ -340,7 +347,7 @@ input[type="password"][required]+label[placeholder]:before {
     outline: none;
 }
 
-.btnCreate {
+.btnCreate, .btnSubmit, .btnPayment, .btnNext {
     color: white;
     background-color: #00C853;
     padding: 10px 20px;
@@ -350,4 +357,137 @@ input[type="password"][required]+label[placeholder]:before {
     width: 100%;
     cursor: pointer;
     outline: none;
+}
+
+.divPersonalInfo, .divAddress {
+    animation-duration: 0.3s !important;
+}
+
+
+.image-upload>input {
+    display: none;
+}
+
+.imgProf {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 40px
+}
+
+.pClick {
+    font-family: Roboto;
+    color: #424242;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.selectdiv {
+    position: relative;
+    width: 100%;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #898989;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    position: absolute;
+    pointer-events: none;
+}
+
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    display: block;
+    border-radius: 25px;
+    width: 220px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #898989;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+.bday {
+    font-family: Roboto;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    outline: none;
+    color: #898989;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 25px;
+}
+
+.divNext, .pNext {
+    font-family: Roboto;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.divBack, .divNext1 {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.divNext:hover, .divBack:hover, .divNext1:hover {
+    color: #00C853;
+}
+
+.pFullName {
+    font-family: Roboto;
+    color: #212121;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.pEmail {
+    font-family: Roboto;
+    color: #898989;
+    font-size: 0.9rem;
+    margin-top: -15px;
+}
+
+.pSide {
+    font-family: Roboto;
+    color: #898989;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.pResult {
+    font-family: Roboto;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: 500;
 }

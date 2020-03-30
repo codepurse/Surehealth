@@ -7,16 +7,11 @@
     <script src='Script\jquery-3.3.1.min.js'></script>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/beta.css' rel='stylesheet' type='text/css'>
-    <link href='Css/bootstrap-combobox.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/ax5ui/ax5core/master/dist/ax5core.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.rawgit.com/ax5ui/ax5ui-combobox/master/dist/ax5combobox.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
@@ -52,14 +47,14 @@
                 <p class="pStart">To start using the service please create and set up the account following with three
                     easy steps. </p>
                 <div class="divSteps">
-                    <div class="divBox">
+                    <div class="divBoxActive divBox divStep1">
                         <p class="pTitleStep">Step 1. Create your Account</p>
                         <p class="pFill">Fill all the required fields that are needed to continue to the next step.</p>
                         <div class="form-inline">
                             <p class="pStep">Step 1</p> <span class="arrow-right">&#x27A4;</span>
                         </div>
                     </div>
-                    <div style="margin-top: 15px;" class="divBoxTrans">
+                    <div style="margin-top: 15px;" class="divBox divStep2">
                         <p class="pTitleStep">Step 2. Fill up membership form</p>
                         <p class="pFill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore.</p>
@@ -67,7 +62,7 @@
                             <p class="pStep">Step 2</p> <span class="arrow-right">&#x27A4;</span>
                         </div>
                     </div>
-                    <div style="margin-top: 15px;" class="divBoxTrans">
+                    <div style="margin-top: 15px;" class="divBox divStep3">
                         <p class="pTitleStep">Step 3. Review your account.</p>
                         <p class="pFill">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="form-inline">
@@ -77,8 +72,13 @@
                 </div>
             </div>
             <div class="col-lg-6">
+                <div class="bgWhite">
+
+                </div>
+
+
                 <div class="divCreate">
-                    <p class="pCreate">Create an account</p>
+                    <p class=" pCreate">Create an account</p>
                     <p class="pPlease">Please fill up the credentials below
                         and start insuring your family</p>
                     <hr>
@@ -114,11 +114,258 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="divMembership" style="display: none;">
+                    <p class="pCreate">Membership form</p>
+                    <p class="pPlease">Please ensure that the details that you've input are correct. Kindly double-check
+                        all of your
+                        information before proceeding. Fill up all the required fields.</p>
+                    <hr>
+                    <div class="divPersonalInfo" style="width: 100%;">
+                        <div class="image-upload text-center" style="margin-top: 20px;">
+                            <label for="imgInp">
+                                <div class="circle mx-auto d-block">
+                                    <img src="Image/noprofile.jpg" id="blah" alt="" class="img-fluid imgProf"
+                                        style="cursor: pointer;">
+                                </div>
+                            </label>
+                            <input id="imgInp" type="file" style="display: none;" onchange="readURL(this.value)" />
+                        </div>
+                        <p class="pClick">Click the image to change the picture</p>
+                        <div class="row" style="width: 100%;padding: 0px;">
+                            <div class="col-lg-4">
+                                <form>
+                                    <input required='' type='text' class="txtfirstname">
+                                    <label alt='First name' placeholder='First Name'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <form>
+                                    <input required='' type='text' class="txtmiddle">
+                                    <label alt='M.I' placeholder='M.I'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <form>
+                                    <input required='' type='text' class="txtlast">
+                                    <label alt='Last name' placeholder='Last Name'></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-6">
+                                <div class="selectdiv">
+                                    <label>
+                                        <select>
+                                            <option selected> Gender </option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="selectdiv">
+                                    <label>
+                                        <select>
+                                            <option selected> Civil </option>
+                                            <option>Single</option>
+                                            <option>Married</option>
+                                            <option>Widowed</option>
+                                            <option>Seperated</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-12">
+                                <input type="date" name="bday" class="bday">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button class="btnBack1">Back</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="divNext">
+                                    <button class="btnNext" style="margin-top: -10px;">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divAddress" style="display: none;" data-aos="fade-in">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form>
+                                    <input required='' type='text' class="txtAddress">
+                                    <label alt='Permanent Address' placeholder='Permanent Address'></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text'>
+                                    <label alt='Barangay' placeholder='Barangay'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text'>
+                                    <label alt='City' placeholder='City'></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text'>
+                                    <label alt='Zip Code' placeholder='Zip Code'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text' class="txtPhone">
+                                    <label alt='Phone Number' placeholder='Phone Number'></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text' class="txtMobile">
+                                    <label alt='Mobile Number' placeholder='Mobile Number'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <form>
+                                    <input required='' type='text' class="txtEmail">
+                                    <label alt='Email' placeholder='Email'></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="divBack form-inline">
+                                    <div style=" transform: rotate(180deg);margin-right: 10px;">&#x27A4;</div>
+                                    <p class="pNext" style="text-align: left !important;margin-top: 15px;">Back 1/2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <button class="btnSubmit" style="margin-top: -2px;">Submit / Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divOverview" style="display: none;">
+                    <p class="pCreate">Overview of your account</p>
+                    <p class="pPlease">This is the overview of your account please check if theres an important details
+                        that you missed out, if none you can proceed to payment.</p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="image-upload form-inline">
+                                <label for="imgInp1">
+                                    <div class="circle mx-auto d-block">
+                                        <img src="Image/noprofile.jpg" id="blah" alt=""
+                                            class="img-fluid imgProf imgOverview" style="cursor: pointer;">
+                                    </div>
+                                </label>
+                                <input id="imgInp1" type="file" style="display: none;" onchange="readURL(this.value)" />
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="divName" style="margin-top: 25px;">
+                                <p class="pFullName"></p>
+                                <p class="pEmail"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-3">
+                            <p class="pSide">Variant:</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="pResult pVariant">Classic</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="pSide">Full name:</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="pResult pFullName">Classic</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="pSide">Contact:</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="pResult pPhone">Classic</p>
+                            <p class="pResult pMobile" style="margin-top: -5px;">Classic</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="pSide">Birthday:</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="pResult pBday">Classic</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <p class="pSide">Address:</p>
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="pResult pAddress  ">Classic</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="btnBack2">Back</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="btnPayment">Payments</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script>
+    var imgSrc = $('.imgProf').attr("src");
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+                if (imgSrc === $('#blah').attr("src")) {
+                    $('.pFillemail').text("Please put a valid image");
+                }
+                else {
+                    $('.pFillemail').text("");
+                }
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imgInp").change(function () {
+        readURL(this);
+    });
+
+
     function validatePassword(password) {
 
         if (password.length === 0) {
@@ -179,6 +426,104 @@
             document.getElementById("prog").style.backgroundColor = "green";
         }
     }
+
+    $(".btnCreate").click(function () {
+        const element = document.querySelector('.divCreate')
+        element.classList.add('animated', 'fadeOut');
+        $(".divStep1").removeClass("divBoxActive");
+        $(".divStep2").addClass("divBoxActive");
+        $(".divCreate").css("display", "none");
+        $(".divCreate").removeClass("animated");
+        $(".divCreate").removeClass("fadeOut");
+        $(".divMembership").css("display", "block");
+        const element1 = document.querySelector('.divMembership')
+        element1.classList.add('animated', 'fadeIn');
+    });
+
+    $(".btnBack1").click(function () {
+        const element = document.querySelector('.divMembership')
+        element.classList.add('animated', 'fadeOut');
+        $(".divMembership").css("display", "none");
+        $(".divMembership").removeClass("animated");
+        $(".divMembership").removeClass("fadeOut");
+        $(".divStep2").removeClass("divBoxActive");
+        $(".divStep1").addClass("divBoxActive");
+        const element1 = document.querySelector('.divCreate')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divCreate").css("display", "block");
+    });
+
+    $(".divNext").click(function () {
+        const element = document.querySelector('.divPersonalInfo')
+        element.classList.add('animated', 'fadeOut');
+        $(".divPersonalInfo").css("display", "none");
+        $(".divPersonalInfo").removeClass("animated");
+        $(".divPersonalInfo").removeClass("fadeOut");
+        $(".divAddress").css("display", "block");
+        const element1 = document.querySelector('.divAddress')
+        element1.classList.add('animated', 'fadeIn');
+    });
+
+    $(".divBack").click(function () {
+        const element = document.querySelector('.divAddress')
+        element.classList.add('animated', 'fadeOut');
+        $(".divAddress").css("display", "none");
+        $(".divAddress").removeClass("animated");
+        $(".divAddress").removeClass("fadeOut");
+        const element1 = document.querySelector('.divPersonalInfo')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divPersonalInfo").css("display", "block");
+    });
+
+
+    $(".btnSubmit").click(function () {
+        const element = document.querySelector('.divMembership')
+        element.classList.add('animated', 'fadeOut');
+        $(".divMembership").css("display", "none");
+        $(".divMembership").removeClass("animated");
+        $(".divMembership").removeClass("fadeOut");
+        $(".divStep2").removeClass("divBoxActive");
+        $(".divStep3").addClass("divBoxActive");
+        const element1 = document.querySelector('.divOverview')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divOverview").css("display", "block");
+        $(".imgOverview").attr("src", $(".imgProf").attr('src'));
+        newText = $('.txtfirstname').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+        $('.pFullName').text(newText);
+        $('.pEmail').text($('.txtEmail').val());
+        $('.pPhone').text($('.txtPhone').val());
+        $('.pMobile').text($('.txtMobile').val());
+        $('.pVariant').text(data);
+        $('.pBday').text($('.bday').val());
+        $('.pAddress').text($('.txtAddress').val());
+    });
+
+    $(".btnBack").click(function () {
+        const element = document.querySelector('.divOverview')
+        element.classList.add('animated', 'fadeOut');
+        $(".divOverview").css("display", "none");
+        $(".divOverview").removeClass("animated");
+        $(".divOverview").removeClass("fadeOut");
+        const element1 = document.querySelector('.divMembership')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divMembership").css("display", "block");
+    });
+
+    $(".btnBack2").click(function () {
+        const element = document.querySelector('.divOverview')
+        element.classList.add('animated', 'fadeOut');
+        $(".divOverview").css("display", "none");
+        $(".divOverview").removeClass("animated");
+        $(".divOverview").removeClass("fadeOut");
+        $(".divStep3").removeClass("divBoxActive");
+        $(".divStep2").addClass("divBoxActive");
+        const element1 = document.querySelector('.divMembership')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divMembership").css("display", "block");
+    });
+
+
+    var data = sessionStorage.getItem('variant');
 </script>
 
 </html>
