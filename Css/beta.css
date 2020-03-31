@@ -656,7 +656,8 @@ select::-ms-expand {
     width: 125px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%) z-index: 222222222222222;
+    transform: translateX(-50%);
+    z-index: 222222222222222;
     -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
