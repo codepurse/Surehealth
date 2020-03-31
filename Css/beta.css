@@ -55,6 +55,7 @@
     }
     .conMain {
         height: auto !important;
+        padding-bottom: 70px !important;
     }
     .imgCheck {
         width: 15px !important;
