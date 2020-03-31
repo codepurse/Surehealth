@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='Css/owl.carousel.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
     <script src='Script\jquery-3.3.1.min.js'></script>
+    <script src="script/owl.carousel.min.js"></script>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/beta.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
@@ -40,16 +43,17 @@
             </div>
         </nav>
     </div>
-    <div class="container h-100 con">
+    <div class="container conMain h-100 con">
         <div class="row h-100 align-items-center" style="margin-top: -50px;">
-            <div class="col-lg-5">
+            <div class="col-lg-5 colSteps">
                 <p class="pTitle">Activate your membership</p>
                 <p class="pStart">To start using the service please create and set up the account following with three
                     easy steps. </p>
                 <div class="divSteps">
                     <div class="divBoxActive divBox divStep1">
-                        <p class="pTitleStep">Step 1. Create your Account</p>
-                        <p class="pFill">Fill all the required fields that are needed to continue to the next step.</p>
+                        <p class="pTitleStep">Step 1. Choose a variant</p>
+                        <p class="pFill">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore.</p>
                         <div class="form-inline">
                             <p class="pStep">Step 1</p> <span class="arrow-right">&#x27A4;</span>
                         </div>
@@ -71,46 +75,313 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="bgWhite">
-
-                </div>
-
+            <div class="col-lg-6 colForm" style="padding-left: 100px;">
 
                 <div class="divCreate">
-                    <p class=" pCreate">Create an account</p>
-                    <p class="pPlease">Please fill up the credentials below
-                        and start insuring your family</p>
+                    <p class=" pCreate">Choose a variant</p>
+                    <p class="pPlease">Get the benefits you need at the price you want with our 6 SUREHEALTH card.</p>
                     <hr>
-                    <form>
-                        <input required='' type='text' class="txtusername">
-                        <label alt='Username' placeholder='Username'></label>
-                    </form>
-                    <form>
-                        <input required='' type='password' class="txtpassword" onkeyup="validatePassword(this.value);">
-                        <label alt='Password' placeholder='Password'></label>
-                    </form>
-                    <div class="form-inline">
-                        <span id="msg" style="font-family: hind semibold;font-size:13px;margin-left: 10px;">
-                        </span>
-                        <span id="prog"
-                            style="background-color: crimson;height: 8px;border-radius: 5px;margin-top:-15px;margin-left: 10px;transition: all 0.2s;"></span>
-                    </div>
-                    <form>
-                        <input required='' type='password' class="txtpassword">
-                        <label alt='Confirm Password' placeholder='Confirm Password'></label>
-                    </form id="form1">
-                    <div class="form-inline" style="margin-left: 10px;">
-                        <label class="lblrememberme"><input type="checkbox" style="margin-top:2px;margin-right: 10px;">
-                            I agree all
-                            statements included in Terms of Use</label>
-                    </div>
-                    <div class="row" style="margin-top: 15px;">
-                        <div class="col-lg-6">
-                            <button class="btnBack">Back</button>
+                    <div class="owl-carousel">
+                        <div class="divCarousel">
+                            <div class="divVariant divActive divVariantClassic">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/classic.png" class="img-fluid imgPic imgActive" style="width: 40px;">
+                                <p class="pVariantBox pVariantActive">Classic</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <button class="btnCreate">Create / Next</button>
+                        <div class="divCarousel">
+                            <div class="divVariant divNotActive divVariantElite">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/elite.png" class="img-fluid imgPic imgNotActive" style="width: 40px;">
+                                <p class="pVariantBox">Elite</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
+                        </div>
+                        <div class="divCarousel">
+                            <div class="divVariant divNotActive divVariantPrime">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/Prime.png" class="img-fluid imgPic imgNotActive" style="width: 40px;">
+                                <p class="pVariantBox">Prime</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
+                        </div>
+                        <div class="divCarousel">
+                            <div class="divVariant divNotActive divVariantVeteran">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/veterantrans.png" class="img-fluid imgPic imgNotActive"
+                                    style="width: 40px;">
+                                <p class="pVariantBox">Veteran</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
+                        </div>
+                        <div class="divCarousel">
+                            <div class="divVariant divNotActive divVariantPrestige">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/prestige.png" class="img-fluid imgPic imgNotActive"
+                                    style="width: 40px;">
+                                <p class="pVariantBox">Prestige</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
+                        </div>
+                        <div class="divCarousel">
+                            <div class="divVariant divNotActive divVariantKiddie">
+                                <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
+                                <img src="Image/youthtrans.png" class="img-fluid imgPic imgNotActive"
+                                    style="width: 40px;">
+                                <p class="pVariantBox">Kiddie</p>
+                                <button class="btnSelect">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="pMember">Member benefits</p>
+                        </div>
+                    </div>
+                    <div class="divBenefits divClassic" style="width: 110%;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Unlimited consultations with our medical
+                                        consultants</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Fixed
+                                        fee of PHP 400 for specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">10%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Free
+                                        dental checkup, plus a 10% discount on other dental procedures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divBenefits divElite" style="width: 110%;display: none;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Unlimited consultations with our medical
+                                        consultants</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Fixed
+                                        fee of PHP 400 for specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">15%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Free
+                                        dental checkup, plus a 10% discount on other dental procedures</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">15%
+                                        discount on physical therapy services (available only in our Makati and Calamba
+                                        clinics)</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Free
+                                        Annual Physical Examination</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divBenefits divPrime" style="width: 110%;display: none;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Unlimited consultations with our medical
+                                        consultants</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Fixed
+                                        fee of PHP 400 for specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">20%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Free
+                                        dental checkup, plus a 20% discount on other dental procedures</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">20%
+                                        discount on physical therapy services (available only in our Makati and Calamba
+                                        clinics)</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">20%
+                                        discount on Free Bio-Z (available only in our Makati and Manila clinics)</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">20%
+                                        discount on Electrocardiogram</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" class="imgCheck"
+                                            style="margin-right: 10px;">Free
+                                        Annual Physical Examination</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divBenefits divVeteran" style="width: 110%;display: none;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png"
+                                            style="margin-right: 10px;">Unlimited consultations with our medical
+                                        consultants</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Fixed
+                                        fee of PHP 400 for specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Free
+                                        Annual Physical Examination</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on physical therapy services (available only in our Makati and Calamba
+                                        clinics)</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on Free Bio-Z (available only in our Makati and Manila clinics)</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on Electrocardiogram</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Free
+                                        dental checkup, plus a 10% discount on other dental procedures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divBenefits divPrestige" style="width: 110%;display: none;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png"
+                                            style="margin-right: 10px;">Unlimited consultations with our medical
+                                        consultants</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Fixed
+                                        fee of PHP 300 for specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">20%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on Electrocardiogram</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Free
+                                        dental checkup, plus a 10% discount on other dental procedures</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Free
+                                        Bio-Z (available only in our Makati and Manila clinics)</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on ultrasound service</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">15%
+                                        discount on physical therapy services (available only in our Makati and Calamba
+                                        clinics)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divBenefits divKiddie" style="width: 110%;display: none;">
+                        <div class="container-fluid" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">For
+                                        0-17 years of age</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png"
+                                            style="margin-right: 10px;">Unlimited consulations with our pediatricians
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">220%
+                                        discount on laboratory & diagnostic services</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Fixed
+                                        consultations fee with our other specialists</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="pBenefits"><img src="Image/check1.png" style="margin-right: 10px;">Free
+                                        dental checkup, plus a 20% discount on other dental procedures</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,7 +561,8 @@
                             <p class="pSide">Variant:</p>
                         </div>
                         <div class="col-lg-9">
-                            <label class="pResult pVariant"></label><span>&nbsp;-&nbsp;</span><span class="pPrice"></span>
+                            <label class="pResult pVariant"></label><span>&nbsp;-&nbsp;</span><span
+                                class="pPrice"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -345,6 +617,10 @@
     </script>
 </body>
 <script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+    });
+
     var imgSrc = $('.imgProf').attr("src");
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -546,6 +822,110 @@
     }
 
     $('.pVariant').text(data);
+
+
+    $(".divVariant").click(function () {
+        $(".divVariant").removeClass("divActive");
+        $(".divVariant").addClass("divNotActive");
+        $(".divVariant").find('.imgPic').removeClass("imgActive");
+        $(".divVariant").find('.pVariantBox').removeClass("pVariantActive");
+        $(this).find('.imgPic').addClass("imgActive");
+        $(this).find('.pVariantBox').addClass("pVariantActive");
+        $(this).removeClass("divNotActive");
+        $(this).addClass("divActive");
+    });
+
+    $(".divVariantClassic").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        const element1 = document.querySelector('.divClassic')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divClassic").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+    $(".divVariantElite").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        $(".imgTick").css("display", "none");
+        const element1 = document.querySelector('.divElite')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divElite").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+    $(".divVariantPrime").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        const element1 = document.querySelector('.divPrime')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divPrime").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+    $(".divVariantVeteran").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        const element1 = document.querySelector('.divVeteran')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divVeteran").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+    $(".divVariantPrestige").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        const element1 = document.querySelector('.divPrestige')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divPrestige").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+    $(".divVariantKiddie").click(function () {
+        const element = document.querySelector('.divBenefits')
+        element.classList.add('animated', 'fadeOut');
+        $(".divBenefits").css("display", "none");
+        const element1 = document.querySelector('.divKiddie')
+        element1.classList.add('animated', 'fadeIn');
+        $(".divKiddie").css("display", "block");
+        $(this).find('.imgTick').css("display", "block");
+    });
+
+
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3,
+                loop: false
+            }
+        }
+    })
+
+
+    jQuery(window).resize(function () {
+        var screen = $(window)
+        if (screen.width < 500) {
+            $(".conMain").removeClass("h-100");
+        }
+        else {
+            $(".conMain").addClass("h-100");
+        }
+    });
 </script>
 
 </html>
