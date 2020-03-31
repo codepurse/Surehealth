@@ -101,7 +101,7 @@
                         <div class="divCarousel">
                             <div class="divVariant divNotActive divVariantPrime">
                                 <img src="Image/tick.png" class="imgTick" style="width: 16px;display: none;">
-                                <img src="Image/Prime.png" class="img-fluid imgPic imgNotActive" style="width: 40px;">
+                                <img src="Image/prime.png" class="img-fluid imgPic imgNotActive" style="width: 40px;">
                                 <p class="pVariantBox">Prime</p>
                                 <button class="btnSelect">Select</button>
                             </div>
@@ -426,7 +426,7 @@
                         <div class="row" style="width: 100%;">
                             <div class="col-lg-6">
                                 <div class="selectdiv">
-                                    <label>
+                                    <label style="width: 100%;">
                                         <select>
                                             <option selected> Gender </option>
                                             <option>Male</option>
@@ -435,9 +435,9 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="selectdiv">
-                                    <label>
+                            <div class="col-lg-6" >
+                                <div class="selectdiv" >
+                                    <label style="width: 100%;">
                                         <select>
                                             <option selected> Civil </option>
                                             <option>Single</option>
@@ -454,7 +454,7 @@
                                 <input type="date" name="bday" class="bday">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="display: none;">
                             <div class="col-lg-6">
                                 <button class="btnBack1">Back</button>
                             </div>
@@ -615,10 +615,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                    <button class = "btnNext">Back</button>
+                    <button class="btnBackFooter">Back</button>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                    <button class = "btnNext">Next</button>
+                    <button class="btnNextFooter">Next</button>
                 </div>
             </div>
         </div>
@@ -810,7 +810,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divMembership").css("display", "block");
     });
-
+    var variant;
     var price;
     var data = sessionStorage.getItem('variant');
 
@@ -833,7 +833,7 @@
         price = "1499";
     }
 
-    $('.pVariant').text(data);
+    
 
 
     $(".divVariant").click(function () {
@@ -855,6 +855,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divClassic").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Classic";
     });
 
     $(".divVariantElite").click(function () {
@@ -866,6 +867,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divElite").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Elite";
     });
 
     $(".divVariantPrime").click(function () {
@@ -876,6 +878,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divPrime").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Prime";
     });
 
     $(".divVariantVeteran").click(function () {
@@ -886,6 +889,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divVeteran").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Veteran";
     });
 
     $(".divVariantPrestige").click(function () {
@@ -896,6 +900,7 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divPrestige").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Prestige";
     });
 
     $(".divVariantKiddie").click(function () {
@@ -906,12 +911,12 @@
         element1.classList.add('animated', 'fadeIn');
         $(".divKiddie").css("display", "block");
         $(this).find('.imgTick').css("display", "block");
+        variant = "Kiddie";
     });
 
 
 
     $('.owl-carousel').owlCarousel({
-        loop: true,
         margin: 10,
         responsiveClass: true,
         responsive: {
@@ -936,6 +941,104 @@
         }
         else {
             $(".conMain").addClass("h-100");
+        }
+    });
+
+    var next = 1;
+    var back = 1;
+    $(".btnNextFooter").click(function () {
+        if (next === 1) {
+            const element = document.querySelector('.divCreate')
+            element.classList.add('animated', 'fadeOut');
+            $(".divStep1").removeClass("divBoxActive");
+            $(".divStep2").addClass("divBoxActive");
+            $(".divCreate").css("display", "none");
+            $(".divCreate").removeClass("animated");
+            $(".divCreate").removeClass("fadeOut");
+            $(".divMembership").css("display", "block");
+            const element1 = document.querySelector('.divMembership')
+            element1.classList.add('animated', 'fadeIn');
+            $('.pVariant').text(variant);
+            next = 2;
+            back = 2;
+        }
+        else if (next === 2) {
+            const element = document.querySelector('.divPersonalInfo')
+            element.classList.add('animated', 'fadeOut');
+            $(".divPersonalInfo").css("display", "none");
+            $(".divPersonalInfo").removeClass("animated");
+            $(".divPersonalInfo").removeClass("fadeOut");
+            $(".divAddress").css("display", "block");
+            const element1 = document.querySelector('.divAddress')
+            element1.classList.add('animated', 'fadeIn');
+            next = 3;
+            back = 2;
+        }
+        else if (next === 3) {
+            const element = document.querySelector('.divMembership')
+            element.classList.add('animated', 'fadeOut');
+            $(".divMembership").css("display", "none");
+            $(".divMembership").removeClass("animated");
+            $(".divMembership").removeClass("fadeOut");
+            $(".divStep2").removeClass("divBoxActive");
+            $(".divStep3").addClass("divBoxActive");
+            const element1 = document.querySelector('.divOverview')
+            element1.classList.add('animated', 'fadeIn');
+            $(".divOverview").css("display", "block");
+            $(".imgOverview").attr("src", $(".imgProf").attr('src'));
+            newText = $('.txtfirstname').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+            $('.pFullName').text(newText);
+            $('.pEmail').text($('.txtEmail').val());
+            $('.pPhone').text($('.txtPhone').val());
+            $('.pMobile').text($('.txtMobile').val());
+            $('.pVariant').text(variant);
+            $('.pPrice').text(price);
+            $('.pBday').text($('.bday').val());
+            $('.pAddress').text($('.txtAddress').val());
+            back = 3;
+        }
+    });
+
+    $(".btnBackFooter").click(function () {
+        if (back === 1) {
+            window.location = "index.html";
+        }
+        else if (back === 2) {
+            const element = document.querySelector('.divMembership')
+            element.classList.add('animated', 'fadeOut');
+            $(".divMembership").css("display", "none");
+            $(".divMembership").removeClass("animated");
+            $(".divMembership").removeClass("fadeOut");
+            $(".divStep2").removeClass("divBoxActive");
+            $(".divStep1").addClass("divBoxActive");
+            const element1 = document.querySelector('.divCreate')
+            element1.classList.add('animated', 'fadeIn');
+            $(".divCreate").css("display", "block");
+            next = 1;
+        }
+        else if (back === 3) {
+            const element = document.querySelector('.divAddress')
+            element.classList.add('animated', 'fadeOut');
+            $(".divAddress").css("display", "none");
+            $(".divAddress").removeClass("animated");
+            $(".divAddress").removeClass("fadeOut");
+            const element1 = document.querySelector('.divPersonalInfo')
+            element1.classList.add('animated', 'fadeIn');
+            $(".divPersonalInfo").css("display", "block");
+            back = 2;
+            next = 2;
+        }
+        else if (back === 4) {
+            const element = document.querySelector('.divOverview')
+            element.classList.add('animated', 'fadeOut');
+            $(".divOverview").css("display", "none");
+            $(".divOverview").removeClass("animated");
+            $(".divOverview").removeClass("fadeOut");
+            $(".divStep3").removeClass("divBoxActive");
+            $(".divStep2").addClass("divBoxActive");
+            const element1 = document.querySelector('.divMembership')
+            element1.classList.add('animated', 'fadeIn');
+            $(".divMembership").css("display", "block");
         }
     });
 </script>
