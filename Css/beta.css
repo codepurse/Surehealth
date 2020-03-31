@@ -66,6 +66,10 @@
     .divBenefits {
         padding-left: 10px;
     }
+    .conFooter {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -692,6 +696,7 @@ select::-ms-expand {
     border: 1px solid lightgray;
     padding: 10px;
     padding-top: 0px;
+    padding-bottom: 5px;
     position: fixed;
     bottom: 0px;
 }
