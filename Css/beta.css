@@ -737,26 +737,29 @@ select::-ms-expand {
 }
 
 .btnBackFooter {
+    font-family: Roboto;
     color: white;
     background-color: #00C853;
     padding: 10px 20px;
     border-radius: 5px;
     border: 0px;
     margin-top: 15px;
-    width: 100%;
+    width: 45%;
     cursor: pointer;
     box-shadow: 0 2px 16px -6px #00C853 !important;
     outline: none;
+    margin-right: 20px;
 }
 
 .btnNextFooter {
+    font-family: Roboto;
     color: white;
     background-color: #00C853;
     padding: 10px 20px;
     border-radius: 5px;
     border: 0px;
     margin-top: 15px;
-    width: 100%;
+    width: 45%;
     cursor: pointer;
     box-shadow: 0 2px 16px -6px #00C853 !important;
     outline: none;
