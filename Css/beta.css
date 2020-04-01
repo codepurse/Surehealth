@@ -80,6 +80,9 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
     }
+    .colMiddle {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -437,9 +440,15 @@ input[type="password"][required]+label[placeholder]:before {
 }
 
 .imgProf {
+    margin-right: 40px;
     border-radius: 50%;
     width: 100px;
-    margin-right: 40px
+}
+
+.imgOverview {
+    margin-right: 40px;
+    border-radius: 50%;
+    width: 100px;
 }
 
 .pClick {
@@ -736,4 +745,40 @@ select::-ms-expand {
     cursor: pointer;
     box-shadow: 0 2px 16px -6px #00C853 !important;
     outline: none;
+}
+
+.txt {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 2px 16px -6px #F5F5F5 !important;
+    padding-left: 15px;
+    padding-right: 10px;
+    min-height: 60px;
+    max-height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    
+}
+
+.txtTop {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    color: #9E9E9E;
+}
+
+.pResult {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #616161;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    padding-right: 5px;
 }

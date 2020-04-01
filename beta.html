@@ -395,9 +395,13 @@
                     <div class="divPersonalInfo" style="width: 100%;">
                         <div class="image-upload text-center" style="margin-top: 20px;">
                             <label for="imgInp">
-                                <div class="circle mx-auto d-block">
+                                <div class="circle mx-auto d-block" style="position: relative;">
                                     <img src="Image/noprofile.jpg" id="blah" alt="" class="img-fluid imgProf"
                                         style="cursor: pointer;">
+                                    <div class="divCamera"
+                                        style="position: absolute;border-radius: 50%;width: 27px;height: 27px;background-color: #00C853;top:70px;left: 70px;box-shadow: 0 2px 16px -6px #00C853 !important;">
+                                        <img src="Image/photo-camera.png" class="img-fluid" style="margin-top: -3px;">
+                                    </div>
                                 </div>
                             </label>
                             <input id="imgInp" type="file" style="display: none;" onchange="readURL(this.value)" />
@@ -435,8 +439,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-lg-6" >
-                                <div class="selectdiv" >
+                            <div class="col-lg-6">
+                                <div class="selectdiv">
                                     <label style="width: 100%;">
                                         <select>
                                             <option selected> Civil </option>
@@ -531,74 +535,86 @@
                     </div>
                 </div>
 
-                <div class="divOverview" style="display: none;">
-                    <p class="pCreate">Overview of your account</p>
-                    <p class="pPlease">This is the overview of your account please check if theres an important details
+                <div class="divOverview" style="display: none;width: 100%;">
+                    <p class="pCreate text-center" style="display: none;">Overview of your account</p>
+                    <p class="pPlease" style="display: none;">This is the overview of your account please check if
+                        theres an important details
                         that you missed out, if none you can proceed to payment.</p>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="image-upload form-inline">
-                                <label for="imgInp1">
-                                    <div class="circle mx-auto d-block">
-                                        <img src="Image/noprofile.jpg" id="blah" alt=""
-                                            class="img-fluid imgProf imgOverview" style="cursor: pointer;">
-                                    </div>
-                                </label>
-                                <input id="imgInp1" type="file" style="display: none;" onchange="readURL(this.value)" />
+                    <div class="image-upload text-center" style="margin-top: 20px;">
+                        <label for="imgInp">
+                            <div class="circle mx-auto d-block" style="position: relative;">
+                                <img src="Image/noprofile.jpg" id="blah" alt="" class="img-fluid imgOverview imgProf"
+                                    style="cursor: pointer;">
+                                <div class="divCamera"
+                                    style="position: absolute;border-radius: 50%;width: 27px;height: 27px;background-color: #00C853;top:70px;left: 70px;box-shadow: 0 2px 16px -6px #00C853 !important;">
+                                    <img src="Image/photo-camera.png" class="img-fluid" style="margin-top: -3px;">
+                                </div>
+                            </div>
+                        </label>
+                        <input id="imgInp" type="file" style="display: none;" onchange="readURL(this.value)" />
+                    </div>
 
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-lg-4 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">First Name</p>
+                                <p class="pFirst pResult"></p>
                             </div>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="divName" style="margin-top: 25px;">
-                                <p class="pFullName"></p>
-                                <p class="pEmail"></p>
+                        <div class="col-lg-4 colMiddle">
+                            <div class="txt">
+                                <p class="txtTop">Middle Name</p>
+                                <p class="pMiddle pResult"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">Last Name</p>
+                                <p class="pLast pResult"></p>
                             </div>
                         </div>
                     </div>
-                    <hr>
+
                     <div class="row" style="margin-top: 10px;">
-                        <div class="col-lg-3">
-                            <p class="pSide">Variant:</p>
+                        <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">Email Address</p>
+                                <p class="pEmail pResult"></p>
+                            </div>
                         </div>
-                        <div class="col-lg-9">
-                            <label class="pResult pVariant"></label><span>&nbsp;-&nbsp;</span><span
-                                class="pPrice"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="pSide">Full name:</p>
-                        </div>
-                        <div class="col-lg-9">
-                            <p class="pResult pFullName">Classic</p>
+                        <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">Birthday</p>
+                                <p class="pBday pResult"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="pSide">Contact:</p>
-                        </div>
-                        <div class="col-lg-9">
-                            <p class="pResult pPhone">Classic</p>
-                            <p class="pResult pMobile" style="margin-top: -5px;">Classic</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="pSide">Birthday:</p>
-                        </div>
-                        <div class="col-lg-9">
-                            <p class="pResult pBday">Classic</p>
+
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-12">
+                            <div class="txt">
+                                <p class="txtTop">Permanent Address</p>
+                                <p class="pAddress pResult"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p class="pSide">Address:</p>
+
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">Mobile Number</p>
+                                <p class="pMobile pResult"></p>
+                            </div>
                         </div>
-                        <div class="col-lg-9">
-                            <p class="pResult pAddress  ">Classic</p>
+                        <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="txt">
+                                <p class="txtTop">Phone Number</p>
+                                <p class="pPhone pResult"></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
+
+                    <div class="row" style="display: none;">
                         <div class="col-lg-6">
                             <button class="btnBack2">Back</button>
                         </div>
@@ -833,7 +849,7 @@
         price = "1499";
     }
 
-    
+
 
 
     $(".divVariant").click(function () {
@@ -987,6 +1003,9 @@
             $(".divOverview").css("display", "block");
             $(".imgOverview").attr("src", $(".imgProf").attr('src'));
             newText = $('.txtfirstname').val() + ' ' + $('.txtmiddle').val() + ' ' + $('.txtlast').val();
+            $('.pFirst').text($('.txtfirstname').val());
+            $('.pMiddle').text($('.txtmiddle').val());
+            $('.pLast').text($('.txtlast').val());
             $('.pFullName').text(newText);
             $('.pEmail').text($('.txtEmail').val());
             $('.pPhone').text($('.txtPhone').val());
