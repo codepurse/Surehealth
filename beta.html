@@ -76,7 +76,37 @@
                 </div>
             </div>
             <div class="col-lg-6 colForm" style="padding-left: 100px;">
+                <div class="divStep" style="display: none;">
+                    <div class="row text-center" style="width: 100%;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center">
+                            <div class="divNumberStep text-center mx-auto d-block" style="position: relative;">
+                                <label class="p1 text-center">1</label>
+                                <p style="font-family: Roboto;font-size: 0.8rem;color: #424242;font-weight: 400;">STEP 1
+                                </p>
+                                <div class="divLine1">
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center">
+                            <div class="divNumberStep" style="position: relative;">
+                                <label class="p2">2</label>
+                                <p style="font-family: Roboto;font-size: 0.8rem;color: #424242;font-weight: 400;">STEP 2
+                                </p>
+                                <div class="divLine2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                            <div class="divNumberStep" style="position: relative;">
+                                <label class="p3">3</label>
+                                <p style="font-family: Roboto;font-size: 0.8rem;color: #424242;font-weight: 400;">STEP 3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="divCreate">
                     <p class=" pCreate">Choose a variant</p>
                     <p class="pPlease">Get the benefits you need at the price you want with our 6 SUREHEALTH card.</p>
@@ -407,7 +437,7 @@
                             <input id="imgInp" type="file" style="display: none;" onchange="readURL(this.value)" />
                         </div>
                         <p class="pClick">Click the image to change the picture</p>
-                        <div class="row" style="width: 100%;padding: 0px;">
+                        <div class="row" style="width: 100%;padding: 0px;margin-top: 25px;">
                             <div class="col-lg-4">
                                 <form>
                                     <input required='' type='text' class="txtfirstname">
@@ -479,27 +509,33 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4 col-sm-4 col-4">
                                 <form>
                                     <input required='' type='text'>
                                     <label alt='Barangay' placeholder='Barangay'></label>
                                 </form>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-4 col-sm-4 col-4">
                                 <form>
                                     <input required='' type='text'>
                                     <label alt='City' placeholder='City'></label>
                                 </form>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4 col-sm-4 col-4">
                                 <form>
                                     <input required='' type='text'>
                                     <label alt='Zip Code' placeholder='Zip Code'></label>
                                 </form>
                             </div>
-                            <div class="col-lg-6">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-6">
+                                <form>
+                                    <input required='' type='text' class="txtMobile">
+                                    <label alt='Mobile Number' placeholder='Mobile Number'></label>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-6">
                                 <form>
                                     <input required='' type='text' class="txtPhone">
                                     <label alt='Phone Number' placeholder='Phone Number'></label>
@@ -507,13 +543,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <form>
-                                    <input required='' type='text' class="txtMobile">
-                                    <label alt='Mobile Number' placeholder='Mobile Number'></label>
-                                </form>
-                            </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <form>
                                     <input required='' type='text' class="txtEmail">
                                     <label alt='Email' placeholder='Email'></label>
@@ -614,6 +644,15 @@
                         </div>
                     </div>
 
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-12">
+                            <div class="txt">
+                                <p class="txtTop">Variant</p>
+                                <p class="pVariant pResult"></p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row" style="display: none;">
                         <div class="col-lg-6">
                             <button class="btnBack2">Back</button>
@@ -627,8 +666,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid conFooter">
-        <div class="container">
+    <div class="container-fluid conMainFooter">
+        <div class="container conFooter">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <button class="btnBackFooter">Back</button>
@@ -977,6 +1016,8 @@
             $('.pVariant').text(variant);
             next = 2;
             back = 2;
+            $(".divLine1").css("background-color", "#00C853");
+            $(".p2").css("background-color", "#00C853");
         }
         else if (next === 2) {
             const element = document.querySelector('.divPersonalInfo')
@@ -1015,6 +1056,8 @@
             $('.pBday').text($('.bday').val());
             $('.pAddress').text($('.txtAddress').val());
             back = 3;
+            $(".divLine2").css("background-color", "#00C853");
+            $(".p3").css("background-color", "#00C853");
         }
     });
 
@@ -1034,6 +1077,7 @@
             element1.classList.add('animated', 'fadeIn');
             $(".divCreate").css("display", "block");
             next = 1;
+
         }
         else if (back === 3) {
             const element = document.querySelector('.divAddress')
