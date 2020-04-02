@@ -8,6 +8,7 @@
     <link href='Css/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
     <script src='Script\jquery-3.3.1.min.js'></script>
     <script src="Script\owl.carousel.min.js"></script>
+    <script src='Script\bootstrap.min.js'></script>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/beta.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 <body>
     <div class="container-fluid conNav">
         <nav class="navbar navbar-expand-md navbar-light sticky-top">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="collapse">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-brand" href="#">
@@ -1061,11 +1062,11 @@
             }
 
 
-            $(".imgArrow").css("display","block");
+            $(".imgArrow").css("display", "block");
             $(".btnNextFooter").html("Pay" + " " + "\u20B1" + price);
             $(".btnNextFooter").html("Pay" + " " + "\u20B1" + price);
-            $(".btnBackFooter").css("width","18%");
-            $(".btnNextFooter").css("width","75%");
+            $(".btnBackFooter").css("width", "18%");
+            $(".btnNextFooter").css("width", "75%");
         }
     });
 
@@ -1098,7 +1099,7 @@
             $(".divPersonalInfo").css("display", "block");
             back = 2;
             next = 2;
-            $(".imgArrow").css("display","none");
+            $(".imgArrow").css("display", "none");
             $(".btnNextFooter").html("Next");
         }
         else if (back === 4) {
