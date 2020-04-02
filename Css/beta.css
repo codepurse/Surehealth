@@ -52,8 +52,8 @@
     .conFooter {
         margin-left: 3% !important;
     }
-    .divBenefits {
-        padding-bottom: 70px !important;;
+    .divBenefits, .divPersonalInfo, .divOverview {
+        padding-bottom: 70px !important;
     }
 }
 
@@ -300,6 +300,7 @@ body {
 input[type="text"] {
     font-family: Roboto;
     font-weight: 400;
+    color: #212121;
     box-sizing: border-box;
     width: 100%;
     height: calc(3em + 2px);
