@@ -20,7 +20,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
     .pBenefits {
         font-weight: 500;
     }
@@ -468,12 +468,20 @@ input[type="password"][required]+label[placeholder]:before {
     margin-right: 40px;
     border-radius: 50%;
     width: 100px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
 }
 
 .imgOverview {
     margin-right: 40px;
     border-radius: 50%;
     width: 100px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.10);
 }
 
 .pClick {
@@ -759,6 +767,7 @@ select::-ms-expand {
     box-shadow: 0 2px 16px -6px #00C853 !important;
     outline: none;
     margin-right: 20px;
+    transition: all 0.2s;
 }
 
 .btnNextFooter {
@@ -773,6 +782,7 @@ select::-ms-expand {
     cursor: pointer;
     box-shadow: 0 2px 16px -6px #00C853 !important;
     outline: none;
+    transition: all 0.2s;
 }
 
 .txt {

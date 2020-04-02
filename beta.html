@@ -458,7 +458,7 @@
                             </div>
                         </div>
                         <div class="row" style="width: 100%;">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="selectdiv">
                                     <label style="width: 100%;">
                                         <select>
@@ -469,7 +469,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="selectdiv">
                                     <label style="width: 100%;">
                                         <select>
@@ -669,9 +669,11 @@
     <div class="container-fluid conMainFooter">
         <div class="container conFooter">
             <div class="row">
-                <div class="col-lg-12 form-inline">
+                <div class="col-lg-12 form-inline" style="display: relative;">
                     <button class="btnBackFooter">Back</button>
-                    <button class="btnNextFooter">Next</button>
+                    <button class="btnNextFooter" style="position: relative;">Next</button>
+                    <img src="Image/right-arrow.png" class="imgArrow"
+                        style="position: absolute;right: 59px; top: 30px;display: none;">
                 </div>
             </div>
         </div>
@@ -865,26 +867,8 @@
     });
     var variant;
     var price;
-    var data = sessionStorage.getItem('variant');
 
-    if (data === "Classic") {
-        price = 600;
-    }
-    else if (data === "Elite") {
-        price = 999;
-    }
-    else if (data === "Prime") {
-        price = 2999;
-    }
-    else if (data === "Premium") {
-        price = 1499;
-    }
-    else if (data === "Prestige") {
-        price = 9999;
-    }
-    else if (data === "Kiddie") {
-        price = "1499";
-    }
+
 
 
 
@@ -1057,6 +1041,31 @@
             $(".divLine2").css("background-color", "#00C853");
             $(".p3").css("background-color", "#00C853");
 
+            if (variant === "Classic") {
+                price = "600.00";
+            }
+            else if (variant === "Elite") {
+                price = "999.00";
+            }
+            else if (variant === "Prime") {
+                price = "2999.00";
+            }
+            else if (variant === "Premium") {
+                price = "1499.00";
+            }
+            else if (variant === "Prestige") {
+                price = "9999.00";
+            }
+            else if (variant === "Kiddie") {
+                price = "1499.00";
+            }
+
+
+            $(".imgArrow").css("display","block");
+            $(".btnNextFooter").html("Pay" + " " + "\u20B1" + price);
+            $(".btnNextFooter").html("Pay" + " " + "\u20B1" + price);
+            $(".btnBackFooter").css("width","18%");
+            $(".btnNextFooter").css("width","75%");
         }
     });
 
@@ -1089,6 +1098,8 @@
             $(".divPersonalInfo").css("display", "block");
             back = 2;
             next = 2;
+            $(".imgArrow").css("display","none");
+            $(".btnNextFooter").html("Next");
         }
         else if (back === 4) {
             const element = document.querySelector('.divOverview')
