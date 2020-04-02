@@ -135,6 +135,7 @@ body {
     -moz-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.18);
     border-bottom: 1px solid lightgray;
+    z-index: 99999999999999;
 }
 
 .btncontact:hover, .btnpackages:hover {
@@ -163,7 +164,7 @@ body {
 
 .pTitle {
     font-family: Catamaran;
-    color: #212121;
+    color: #00C853;
     font-size: 2.3rem;
     font-weight: 800;
 }
@@ -875,29 +876,22 @@ select::-ms-expand {
 }
 
 .owl-next, .owl-prev {
-    font-family: Roboto;
-    color: #212121 !important;
+    font-family: Catamaran !important;
     font-weight: 700 !important;
-    font-size: 2.2rem !important; 
+    font-size: 2.5rem !important;
+    transition: all 0.2s;
+    margin-top: -20px !important;
+}
+
+.owl-next:hover , .owl-prev:hover {
+    color: #00C853 !important;
+    background-color: transparent !important;
 }
 
 .owl-prev {
     margin-right: 10px !important;
 }
 
-.owl-nav {
+.owl-dots {
     display: none !important;
-}
-
-.owl-theme .owl-controls .owl-page {
-    display: inline-block;
-}
-.owl-theme .owl-controls .owl-page span {
-    background: none repeat scroll 0 0 #869791;
-    border-radius: 20px;
-    display: block;
-    height: 12px;
-    margin: 5px 7px;
-    opacity: 0.5;
-    width: 12px;
 }
