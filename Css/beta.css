@@ -45,6 +45,12 @@
     }
     .divCreate {
         margin-top: 20px !important;
+    } 
+    .divStep {
+        margin-left: 5% !important;
+    }
+    .conFooter {
+        margin-left: 3% !important;
     }
 }
 
