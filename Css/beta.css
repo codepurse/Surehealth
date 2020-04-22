@@ -20,6 +20,19 @@
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .txtzip {
+        background-color: black !important;
+        padding-left: 0px !important;
+    }
+    input[type="text"][required]+label[placeholder]  {
+        margin-left: -25px !important;
+    }
+    .btnBackFooter {
+        padding: 10px 5px !important;
+    }
+}
+
 @media only screen and (max-width: 540px) {
     .pBenefits {
         font-weight: 500;
@@ -45,7 +58,7 @@
     }
     .divCreate {
         margin-top: 20px !important;
-    } 
+    }
     .divStep {
         margin-left: 5% !important;
     }
@@ -110,11 +123,15 @@
     }
 }
 
-
-
 @media only screen and (max-width: 600px) {
     .colForm {
         margin-top: 50px !important;
+    }
+}
+
+@media only screen and (max-height: 850px) {
+    .divMembership {
+        padding-bottom: 50px !important;
     }
 }
 
@@ -330,7 +347,7 @@ input[type="text"][required]:focus+label[placeholder]:before {
 input[type="text"][required]:focus+label[placeholder]:before, input[type="text"][required]:valid+label[placeholder]:before {
     transition-duration: 0.2s;
     -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-    transform: translate(0, -1.5em) scale(0.9, 0.9);
+    transform: translate(0, -1.8em) scale(0.9, 0.9);
 }
 
 input[type="text"][required]:invalid+label[placeholder][alt]:before {
@@ -341,7 +358,7 @@ input[type="text"][required]+label[placeholder] {
     display: block;
     pointer-events: none;
     line-height: 1.25em;
-    margin-top: calc(-3em - 5px);
+    margin-top: calc(-3em - 2px);
     margin-bottom: calc((3em - 1em) + 2px);
 }
 
@@ -883,7 +900,7 @@ select::-ms-expand {
     margin-top: -20px !important;
 }
 
-.owl-next:hover , .owl-prev:hover {
+.owl-next:hover, .owl-prev:hover {
     color: #00C853 !important;
     background-color: transparent !important;
 }

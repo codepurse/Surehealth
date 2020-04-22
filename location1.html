@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src='Script\bootstrap.min.js'></script>
     <title>Document</title>
 </head>
@@ -32,10 +33,10 @@
                 <div class="col2 ml-auto">
                     <ul class="nav navbar-nav">
                         <li><a class="nav-link btnpackages"
-                                style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
+                                style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;font-weight: 500;"
                                 href="package.html">Packages</a></li>
                         <li><a class="nav-link btncontact"
-                                style="margin-right: 20px;color:#424242;font-family: Muli Semibold;font-size: 15px;"
+                                style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;font-weight: 500;"
                                 href="contact.html">Contact</a></li>
                         <li><a class="nav-link btnlogin" target="_self" href="login.html"
                                 style="color: #00C853;padding: 10px 20px 10px 20px;">Login</a></li>
@@ -43,15 +44,13 @@
                 </div>
             </div>
         </nav>
-        <div class="row h-100" style="margin-top: 75px;">
+        <div class="row h-100 rowLocation" style="margin-top: 75px;">
             <div class="col-lg-3 text-center col-md-5 col-sm-5 collocation" style="padding: 15px 15px;">
                 <input type="text" class="txtsearch" id="txtsearch" placeholder="Search here.." onkeyup="myFunction()">
                 <table class="table table-responsive table-borderless" id="table"
-                    style="text-align:left !important;margin-top:-10px;">
+                    style="text-align:left !important;margin-top:10px;">
                     <thead>
-                        <tr>
-                            <th scope="col"></th>
-                        </tr>
+
                     </thead>
                     <tbody>
                         <tr>
@@ -61,8 +60,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Alabang, Muntinlupa</span>
                                 </div>
-                                <p class="pLocation2">2nd Flr. Sycamore ARCS 1 Building, Buencamino Street cor</p>
-                                <p class="pContactNumber">(02) 8840-3043</p>
+                                <div id="mapid1" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid img1" style="width: 15px;">
+                                    <p class="pLocation2 loc1">2nd Flr. Sycamore ARCS 1 Building, Buencamino Street cor</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(02) 8840-3043</p>
+                                </div>
+
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -71,9 +81,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Ayala, North Exchange</span>
                                 </div>
-                                <p class="pLocation2">3rd Floor, Retail 61 and 62, Ayala North Exchange, Amorsolo
-                                    Street, Ayala Avenue, Makati City</p>
-                                <p class="pContactNumber">(02) 8425-1607</p>
+                                <div id="mapid2" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">3rd Floor, Retail 61 and 62, Ayala North Exchange, Amorsolo
+                                        Street, Ayala Avenue, Makati City</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(02) 8425-1607</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -82,9 +102,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">BGC, Taguig</span>
                                 </div>
-                                <p class="pLocation2">GF Citi Plaza 34th Street cor. Lane D, Bonifacio Global City,
-                                    Taguig</p>
-                                <p class="pContactNumber">(02) 8352-8335</p>
+                                <div id="mapid3" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2 loc2">GF Citi Plaza 34th Street cor. Lane D, Bonifacio Global City,
+                                        Taguig</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(02) 8352-8335</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -93,9 +123,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Calamba, Laguna</span>
                                 </div>
-                                <p class="pLocation2">Unit 201-203, SQA Corporation Center, Baranggay 1, National
-                                    Highway Crossing</p>
-                                <p class="pContactNumber">(049) 508-1806</p>
+                                <div id="mapid4" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">Unit 201-203, SQA Corporation Center, Baranggay 1, National
+                                        Highway Crossing</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(049) 508-1806</p>
+                                </div>
                             </td>
                         </tr>
 
@@ -105,9 +145,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Cebu Cybergate</span>
                                 </div>
-                                <p class="pLocation2">Level 3, Room 00309 & 00302, Robinsons Cybergate, Don Gil
-                                    Garcia & J. Llorente St</p>
-                                <p class="pContactNumber">(032) 236-9028</p>
+                                <div id="mapid5" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">Level 3, Room 00309 & 00302, Robinsons Cybergate, Don Gil
+                                        Garcia & J. Llorente St</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(032) 236-9028</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -116,9 +166,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Cebu IT Park</span>
                                 </div>
-                                <p class="pLocation2">Unit 203 TGU Tower, Block 1, Lots 6-7, Phase 1, Asiatown, IT
-                                    Park Apas, Cebu City, Cebu 6000</p>
-                                <p class="pContactNumber">(032) 268-8072</p>
+                                <div id="mapid6" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">Unit 203 TGU Tower, Block 1, Lots 6-7, Phase 1, Asiatown, IT
+                                        Park Apas, Cebu City, Cebu 6000</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(032) 268-8072</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -127,9 +187,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Clark, Pampanga</span>
                                 </div>
-                                <p class="pLocation2">GF BPO Building 5, SM City Clark, M.A. Roxas Highway, Brgy.
-                                    Malabanias, Angeles City, Pampanga 2009</p>
-                                <p class="pContactNumber">(045) 499-8417</p>
+                                <div id="mapid7" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">GF BPO Building 5, SM City Clark, M.A. Roxas Highway, Brgy.
+                                        Malabanias, Angeles City, Pampanga 2009</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(045) 499-8417</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -138,9 +208,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Makati Filomena</span>
                                 </div>
-                                <p class="pLocation2">6F Filomena Building, #104 Amorsolo St., Legaspi Village,
-                                    Makati, Metro Manila 1229</p>
-                                <p class="pContactNumber">8817-2715</p>
+                                <div id="mapid8" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">6F Filomena Building, #104 Amorsolo St., Legaspi Village,
+                                        Makati, Metro Manila 12299</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">8817-2715</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -149,9 +229,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Manila</span>
                                 </div>
-                                <p class="pLocation2">5th Floor, Times Plaza Building, Taft corner U.N. Avenue,
-                                    Ermita, Manila, Metro Manila 1000</p>
-                                <p class="pContactNumber">8353-6807</p>
+                                <div id="mapid9" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">5th Floor, Times Plaza Building, Taft corner U.N. Avenue,
+                                        Ermita, Manila, Metro Manila 1000</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">8353-6807</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -160,9 +250,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Ortigas</span>
                                 </div>
-                                <p class="pLocation2">Ground Floor, AIC Grande Tower, Sapphire Street corner Garnet
-                                    Road, Ortigas Center, Pasig City 1605</p>
-                                <p class="pContactNumber">8584-2430</p>
+                                <div id="mapid10" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">Ground Floor, AIC Grande Tower, Sapphire Street corner Garnet
+                                        Road, Ortigas Center, Pasig City 1605</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">8584-2430</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -171,9 +271,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Pasay</span>
                                 </div>
-                                <p class="pLocation2">Scape Building, 24 Diosdado Macapagal Avenue, Pearl Drive CBP,
-                                    Barangay 76 San Rafael, Pasay City, Metro Manila 1630</p>
-                                <p class="pContactNumber">(02) 8838-0627</p>
+                                <div id="mapid11" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">Scape Building, 24 Diosdado Macapagal Avenue, Pearl Drive CBP,
+                                        Barangay 76 San Rafael, Pasay City, Metro Manila 1630</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(02) 8838-0627</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -182,9 +292,19 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Quezon City</span>
                                 </div>
-                                <p class="pLocation2">GF, 2F PCS Building, 992 EDSA, Baranggay Ramon Magsaysay,
-                                    Quezon City 1105</p>
-                                <p class="pContactNumber">8352-4676</p>
+                                <div id="mapid12" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">GF, 2F PCS Building, 992 EDSA, Baranggay Ramon Magsaysay,
+                                        Quezon City 1105</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">8352-4676</p>
+                                </div>
                             </td>
                         </tr>
                         <tr style="border-top: 1px solid lightgray;">
@@ -193,16 +313,26 @@
                                     <img src="Image/location.png" class="img-fluid" style="width: 15px;"> <span
                                         class="lbllocation">Sta. Rosa</span>
                                 </div>
-                                <p class="pLocation2">2nd Floor, Carvajal Building 2, National Highway, Balibago
-                                    City, Sta. Rosa, Laguna 4026</p>
-                                <p class="pContactNumber">(049) 302-5046</p>
+                                <div id="mapid13" class = "map" style="width: 100%;height: 140px;border-radius: 5px;margin-top: 15px;display: none;">
+
+                                </div>
+                                <div class="form-inline" style="margin-top: 10px;">
+                                    <img src="Image/home-run.png" class="img-fluid" style="width: 15px;">
+                                    <p class="pLocation2">2nd Floor, Carvajal Building 2, National Highway, Balibago
+                                        City, Sta. Rosa, Laguna 4026</p>
+                                </div>
+                                <div class="form-inline" style="margin-top: -10px;">
+                                    <img src="Image/phone(1).png" class="img-fluid"
+                                        style="width: 15px;margin-top: -15px;">
+                                    <p class="pContactNumber">(049) 302-5046</p>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col-lg-9 col-md-7 col-sm-7" id="colmap">
-                <div id="mapid" style="position:fixed;">
+            <div class="col-lg-9 col-md-7 col-sm-7" id="colmap" style="padding: 0px;">
+                <div id="mapid" style="position: fixed;">
 
                 </div>
             </div>
@@ -212,133 +342,482 @@
 
 <script>
 
-var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
 
-L.tileLayer(
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-    {
-        maxZoom: 19,
-        attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        id: "mapbox.streets"
-    }
-).addTo(mymap);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap);
 
-L.marker([14.5624078, 121.0122034]).addTo(mymap)
-    .bindPopup("Shurtech Main Office").openPopup();
-
-
-L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
-]).addTo(mymap).bindPopup("I am a polygon.");
+    L.marker([14.5624078, 121.0122034]).addTo(mymap)
+        .bindPopup("Surhealth Main Office").openPopup();
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
 
 
-var popup = L.popup();
+    var popup = L.popup();
 
-function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("txtsearch");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("table");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
+
+    // Map 1 // 
+    var mymap1 = L.map('mapid1').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap1);
+
+    L.marker([14.5624078, 121.0122034]).addTo(mymap1)
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap1).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map1 //
+
+    // Map 2 //
+    var mymap2 = L.map('mapid2').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap2);
+
+    L.marker([14.5624078, 121.0122034]).addTo(mymap2)
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap2).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map2 //
+
+    // Map 3 //
+    var mymap3 = L.map('mapid3').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap3);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap3)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap3).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map3 //
+
+    // Map 4 //
+    var mymap4 = L.map('mapid4').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap4);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap4)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap4).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map4 //
+
+    // Map 5 //
+    var mymap5 = L.map('mapid5').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap5);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap5)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap5).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map5 //
+
+    // Map 6 //
+    var mymap6 = L.map('mapid6').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap6);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap6)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap6).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map6 //
+
+    // Map 7 //
+    var mymap7 = L.map('mapid7').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap7);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap7)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap7).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map7 //
+
+    // Map 8 //
+    var mymap8 = L.map('mapid8').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap8);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap8)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap8).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map8 //
+
+    // Map 9 //
+    var mymap9 = L.map('mapid9').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap9);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap9)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap9).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map9 //
+
+      // Map 10 //
+      var mymap10 = L.map('mapid10').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap10);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap10)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap10).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map10 //
+
+  // Map 11 //
+  var mymap11 = L.map('mapid11').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap11);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap11)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap11).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map11 //
+
+      // Map 12 //
+      var mymap12 = L.map('mapid12').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap12);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap12)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap12).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map12 //
+
+      // Map 13 //
+      var mymap13 = L.map('mapid13').setView([14.5624078, 121.0122034], 16);
+    L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            id: "mapbox.streets"
+        }
+    ).addTo(mymap13);
+    L.marker([14.5624078, 121.0122034]).addTo(mymap13)
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap13).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+
+    // End of map9 //
+
+
+
+
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("txtsearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
             }
         }
     }
-}
 
-var gotocountry = function (c) {
-
-
-    if (c == 'alabang') {
-        mymap.setView(new L.LatLng(14.4281925, 121.0205102), 16);
-        marker = new L.marker([14.4281925, 121.0205102]).addTo(mymap)
-            .bindPopup("Shurhealth Alabang").openPopup();
-    }
-    if (c == 'northexchange') {
-        mymap.setView(new L.LatLng(14.5599165, 121.01367), 16);
-        marker = new L.marker([14.5599165, 121.01367]).addTo(mymap)
-            .bindPopup("Shurhealth NorthExchange").openPopup();
-    }
-    if (c == 'bgc') {
-        mymap.setView(new L.LatLng(14.5541698, 121.0514802), 16);
-        marker = new L.marker([14.5541698, 121.0514802]).addTo(mymap)
-            .bindPopup("Shurhealth BGC,Taguig").openPopup();
-    }
-    if (c == 'calamba') {
-        mymap.setView(new L.LatLng(14.2063345, 121.1527142), 16);
-        marker = new L.marker([14.2063345, 121.1527142]).addTo(mymap)
-            .bindPopup("Shurhealth Calamba,Laguna").openPopup();
-    }
-    if (c == 'cybergate') {
-        mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
-        marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
-            .bindPopup("Shurhealth Cebu,Cybergate").openPopup();
-    }
-    if (c == 'itpark') {
-        mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
-        marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
-            .bindPopup("Shurhealth Cebu,ITpark").openPopup();
-    }
-    if (c == 'clark') {
-        mymap.setView(new L.LatLng(10.3275764, 123.9048761), 16);
-        marker = new L.marker([10.3275764, 123.9048761]).addTo(mymap)
-            .bindPopup("Shurhealth Clark,Pangpanga").openPopup();
-    }
-    if (c == 'filomena') {
-        mymap.setView(new L.LatLng(14.5579373, 121.0123478), 16);
-        marker = new L.marker([14.5579373, 121.0123478]).addTo(mymap)
-            .bindPopup("Shurhealth Makati,Filomena").openPopup();
-    }
-    if (c == 'manila') {
-        mymap.setView(new L.LatLng(14.5824553, 120.9819729), 16);
-        marker = new L.marker([14.5824553, 120.9819729]).addTo(mymap)
-            .bindPopup("Shurhealth Manila").openPopup();
-    }
-    if (c == 'ortigas') {
-        mymap.setView(new L.LatLng(14.5888137,121.059614), 16);
-        marker = new L.marker([14.5888137,121.059614]).addTo(mymap)
-            .bindPopup("Shurhealth Ortigas").openPopup();
-    }
-    if (c == 'pasay') {
-        mymap.setView(new L.LatLng(14.5338239, 120.9865881), 16);
-        marker = new L.marker([14.5338239, 120.9865881]).addTo(mymap)
-            .bindPopup("Shurhealth Pasay").openPopup();
-    }
-    if (c == 'quezon') {
-        mymap.setView(new L.LatLng(14.6564774, 121.0255195), 16);
-        marker = new L.marker([14.6564774, 121.0255195]).addTo(mymap)
-            .bindPopup("Shurhealth Quezon").openPopup();
-    }
-    if (c == 'starosa') {
-        mymap.setView(new L.LatLng(14.2989573, 121.102949), 16);
-        marker = new L.marker([14.2989573, 121.102949]).addTo(mymap)
-            .bindPopup("Shurhealth Sta. Rosa").openPopup();
-    }
-    return;
-};
+    var gotocountry = function (c) {
 
 
-$(window).resize(function () {
-    var width = $(window).width();
-    if (width < 575) {
-        var element = document.getElementById("colmap");
-        element.classList.add("order-first");
-    }
-    else {
-        var element = document.getElementById("colmap");
-        element.classList.remove("order-first");
-    }
-});
+        if (c == 'alabang') {
+            mymap.setView(new L.LatLng(14.4281925, 121.0205102), 16);
+            marker = new L.marker([14.4281925, 121.0205102]).addTo(mymap)
+                .bindPopup("Shurhealth Alabang").openPopup();
+        }
+        if (c == 'northexchange') {
+            mymap.setView(new L.LatLng(14.5599165, 121.01367), 16);
+            marker = new L.marker([14.5599165, 121.01367]).addTo(mymap)
+                .bindPopup("Shurhealth NorthExchange").openPopup();
+        }
+        if (c == 'bgc') {
+            mymap.setView(new L.LatLng(14.5541698, 121.0514802), 16);
+            marker = new L.marker([14.5541698, 121.0514802]).addTo(mymap)
+                .bindPopup("Shurhealth BGC,Taguig").openPopup();
+        }
+        if (c == 'calamba') {
+            mymap.setView(new L.LatLng(14.2063345, 121.1527142), 16);
+            marker = new L.marker([14.2063345, 121.1527142]).addTo(mymap)
+                .bindPopup("Shurhealth Calamba,Laguna").openPopup();
+        }
+        if (c == 'cybergate') {
+            mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
+            marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
+                .bindPopup("Shurhealth Cebu,Cybergate").openPopup();
+        }
+        if (c == 'itpark') {
+            mymap.setView(new L.LatLng(10.3104285, 123.8896549), 16);
+            marker = new L.marker([10.3104285, 123.8896549]).addTo(mymap)
+                .bindPopup("Shurhealth Cebu,ITpark").openPopup();
+        }
+        if (c == 'clark') {
+            mymap.setView(new L.LatLng(10.3275764, 123.9048761), 16);
+            marker = new L.marker([10.3275764, 123.9048761]).addTo(mymap)
+                .bindPopup("Shurhealth Clark,Pangpanga").openPopup();
+        }
+        if (c == 'filomena') {
+            mymap.setView(new L.LatLng(14.5579373, 121.0123478), 16);
+            marker = new L.marker([14.5579373, 121.0123478]).addTo(mymap)
+                .bindPopup("Shurhealth Makati,Filomena").openPopup();
+        }
+        if (c == 'manila') {
+            mymap.setView(new L.LatLng(14.5824553, 120.9819729), 16);
+            marker = new L.marker([14.5824553, 120.9819729]).addTo(mymap)
+                .bindPopup("Shurhealth Manila").openPopup();
+        }
+        if (c == 'ortigas') {
+            mymap.setView(new L.LatLng(14.5888137, 121.059614), 16);
+            marker = new L.marker([14.5888137, 121.059614]).addTo(mymap)
+                .bindPopup("Shurhealth Ortigas").openPopup();
+        }
+        if (c == 'pasay') {
+            mymap.setView(new L.LatLng(14.5338239, 120.9865881), 16);
+            marker = new L.marker([14.5338239, 120.9865881]).addTo(mymap)
+                .bindPopup("Shurhealth Pasay").openPopup();
+        }
+        if (c == 'quezon') {
+            mymap.setView(new L.LatLng(14.6564774, 121.0255195), 16);
+            marker = new L.marker([14.6564774, 121.0255195]).addTo(mymap)
+                .bindPopup("Shurhealth Quezon").openPopup();
+        }
+        if (c == 'starosa') {
+            mymap.setView(new L.LatLng(14.2989573, 121.102949), 16);
+            marker = new L.marker([14.2989573, 121.102949]).addTo(mymap)
+                .bindPopup("Shurhealth Sta. Rosa").openPopup();
+        }
+        return;
+    };
+
+
+    $(window).resize(function () {
+        var width = $(window).width();
+        if (width < 575) {
+            var element = document.getElementById("colmap");
+            element.classList.add("order-first");
+        }
+        else {
+            var element = document.getElementById("colmap");
+            element.classList.remove("order-first");
+        }
+    });
 </script>
 <script>
 
