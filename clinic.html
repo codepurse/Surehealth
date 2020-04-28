@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/clinic.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="icon" type="image/png" href="Image/titlelogo.png">
+    <link rel="apple-touch-icon" type="image/png" href="/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container con conheader">
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-6">
+                <div class="form-inline d-flex">
+                    <img src="Image/maps.png" class="img-fluid"
+                        style="width:20px;margin-left: 20px;margin-right:5px;" />
+                    <p class="padd" style="margin-top: 18px;">6F Filomena Building, #104 Amorsolo St., Legaspi Village,
+                        Makati, Metro Manila 1229
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-inline" style="margin-right: 25px;">
+                    <img src="Image/mail.png" class="img-fluid ml-auto"
+                        style="width:18px;margin-top:-4px;margin-right:5px;" />
+                    <p class="padd" style="margin-right:10px;margin-left: 5px;">aventusmedical@gmail.com</p>
+                    <img src="Image/cel.png" class="img-fluid" style="width:17px;margin-right:5px;margin-top:-4px;" />
+                    <p class="padd" style="margin-top: 15px;margin-left: 5px;">63-2-840-0588</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:-10px;">
+            <div class="col-lg-12">
+                <hr class="hrheader">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container con" style="margin-top:-14px;">
+            <nav class="navbar navbar-expand-md navbar-light" style="padding: 0px 0px;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/a.png" class="img-fluid imglogo"
+                            style="width: 220px;margin-left: 0px;;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnpackages"
+                                    style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;margin-top: 10px;font-weight: 500;"
+                                    href="package.html">Packages</a></li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:#424242;font-family: Roboto;font-size: 15px;margin-top: 10px;font-weight: 500;"
+                                    href="contact.html">Contact</a></li>
+                            <li><a class="nav-link btnlogin" target="_self" href="login.html"
+                                    style="color: #00C853;padding: 10px 20px 10px 20px;">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid maincontainer w-100">
+        <div id="mapid">
+
+        </div>
+        <div class="bgwhite">
+            <div class="container w-100 h-100" style="z-index:3;">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6">
+                        <p class="pWe">We offer <br>comprehensive<br>Various services.</p>
+                        <p class="pWeSub">Currently, we have 13 clinic branches. 8 in Metro Manila, 2 in Laguna, 1 in
+                            Pampanga, and 2 in Cebu</p>
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Learn More</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container conBox mx-auto">
+        <div class="row mx-auto" style="margin-top: 40px;">
+            <div class="col-lg-4 mx-auto">
+                <div class="box mx-auto">
+                    <div class="form-inline">
+                        <div class="imgBox1">
+                            <img src="Image/first-aid-kit.png" class="img-fluid"
+                                style="margin-top: 12px;margin-left: 13px;">
+                        </div>
+                        <p class="pTitleBox">Emergency Call</p>
+                    </div>
+                    <p class="pText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="pCall">Call Us: <span>63-2-840-0588</span></p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box mx-auto">
+                    <div class="form-inline">
+                        <div class="imgBox2">
+                            <img src="Image/calbox.png" class="img-fluid" style="margin-top: 12px;margin-left: 13px;">
+                        </div>
+                        <p class="pTitleBox">Book Appointment</p>
+                    </div>
+                    <p class="pText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="pCall" style="font-weight: 600;color: #00c974;">Appointment &#x2b;</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box mx-auto">
+                    <div class="form-inline">
+                        <div class="imgBox3">
+                            <img src="Image/clockbox.png" class="img-fluid" style="margin-top: 12px;margin-left: 13px;">
+                        </div>
+                        <p class="pTitleBox">Doctor's Timetable</p>
+                    </div>
+                    <p class="pText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="pCall" style="font-weight: 600;color: #FFB389;">Know More &#x2b;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container conBox">
+        <div class="row" style="margin-top: 70px;;">
+            <div class="col-lg-12 text-center">
+                <p class="pOur">Our Clinics Locations</p>
+                <label class="pSub">Currently, we have 13 clinic branches.
+                    8 in Metro Manila, 2 in Laguna, 1 in Pampanga, and 2 in Cebu.</label>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/alabang.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Alabang</h5>
+                            <p class="card-text"> 2nd Flr. Sycamore ARCS 1 Building, Buencamino Street cor.
+                                Alabang-Zapote Road, Alabang, Muntinlupa City </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/bgc.jpg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">BGC</h5>
+                            <p class="card-text"> GF Citi Plaza 34th Street cor. Lane D, Bonifacio Global City, Taguig
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/calamba.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Calamba, Laguna</h5>
+                            <p class="card-text">Unit 201-203, SQA Corporation Center, Baranggay 1, National Highway
+                                Crossing, Calamba City, Laguna
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Cebu.jpg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Cebu Cybergate</h5>
+                            <p class="card-text"> Level 3, Room 00309 & 00302, Robinsons Cybergate, Don Gil Garcia & J.
+                                Llorente St. Cebu City
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/cebuit.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Cebu IT Park</h5>
+                            <p class="card-text"> Unit 203 TGU Tower, Block 1, Lots 6-7, Phase 1, Asiatown, IT Park
+                                Apas, Cebu City, Cebu
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/clark.png" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Clark</h5>
+                            <p class="card-text"> GF BPO Building 5, SM City Clark, M.A. Roxas Highway, Brgy.
+                                Malabanias, Angeles City, Pampanga
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/makati.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Makati</h5>
+                            <p class="card-text"> 6F Filomena Building, #104 Amorsolo St. Legaspi Village, Makati City
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/manila.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Manila</h5>
+                            <p class="card-text"> 5th Floor, Times Plaza Building, Taft corner U.N. Avenue, Ermita,
+                                Manila
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/ortigas.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Ortigas</h5>
+                            <p class="card-text"> Ground Floor, AIC Grande Tower, Sapphire Street corner Garnet Road,
+                                Ortigas Center, Pasig City
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/pasay.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Pasay</h5>
+                            <p class="card-text"> Scape Building, 24 Diosdado Macapagal Avenue, Pearl Drive CBP,
+                                Barangay 76 San Rafael, Pasay City
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/north.png" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">North Edsa</h5>
+                            <p class="card-text"> GF, 2F PCS Building, 992 EDSA, Baranggay Ramon Magsaysay, Quezon City
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/starosa.jpeg" alt="Card image cap">
+                        <div class="card-body" style="padding: 0px;">
+                            <h5 class="card-title">Sta Rosa</h5>
+                            <p class="card-text"> 2nd Floor, Carvajal Building 2, National Highway, Balibago City, Sta.
+                                Rosa, Laguna
+                            </p>
+                            <p class="pMore">More details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container conBox">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-lg-4" style="padding-right: 30px;">
+                <p class="pCheck">Check out our offered services</p>
+                <p class="pNote">Note! Some of our services are available only in selected clinics.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage">
+                        <img src="Image/Services/blood.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">24-Hour Ambulatory Blood Pressure Monitoring</p>
+                    <p class="pServicesDesc">Twenty four hour ambulatory blood pressure monitoring (24‐H ABPM) plays an
+                        important part in the management of subjects with suspected and confirmed disorders of blood
+                        pressure regulation.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #fff9e9;">
+                        <img src="Image/Services/ecg-lines.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">24-Hour Holter Monitoring</p>
+                    <p class="pServicesDesc">A Holter monitor is a battery-operated portable device that measures and
+                        records your heart's activity (ECG) continuously for 24 hours or longer. The device is the size
+                        of a small camera.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ebedfe;">
+                        <img src="Image/Services/cardiovascular.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">2D Echo</p>
+                    <p class="pServicesDesc">A 2D Echo uses a two-dimensional ultrasound to create images of the heart,
+                        which are then used in the diagnosis, management, and follow-up of patients with any suspected
+                        or known heart diseases.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/injection.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Medicine and Vaccine Administration</p>
+                    <p class="pServicesDesc">Our doctors will recommend the right medication as per your needs, or help
+                        guard you from infectious diseases with vaccines.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(18,115,235,0.1)">
+                        <img src="Image/Services/muscle.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Annual Physical Examination </p>
+                    <p class="pServicesDesc">A physical examination helps a primary care provider (PCP) to determine the
+                        general status of an individual's health.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(18,115,235,0.1)">
+                        <img src="Image/Services/hearing-aid.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Audiometry</p>
+                    <p class="pServicesDesc">The purpose of audiometry is to establish an individual's range of hearing.
+                        It is most often performed when hearing loss is suspected. Audiometry can establish the extent
+                        as well as the type of hearing loss.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(55,73,87,0.1)">
+                        <img src="Image/Services/blood-pressure-gauge.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Bio-Z</p>
+                    <p class="pServicesDesc">The Impedance Cardiography (ICG) test is a completely non-invasive test
+                        that provides information about (a) your heart's ability to deliver blood to the rest of your
+                        body, (b) the force your heart has to pump against with each heartbeat, and (c) the amount of
+                        fluid in your chest..</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage">
+                        <img src="Image/Services/tooth.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Dental</p>
+                    <p class="pServicesDesc">Our Dental Care program offers a wide range of preventive and diagnostic
+                        services. All of our dental services are performed by licensed dentists, hygienists, and
+                        assistants.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #fff9e9;">
+                        <img src="Image/Services/skin.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Dermatological Procedures Cautery</p>
+                    <p class="pServicesDesc">Cautery can be used in various minor surgical procedures in dermatology,
+                        ophthalmology, otolaryngology, plastic surgery, and urology.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ebedfe;">
+                        <img src="Image/Services/vaccine.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Drug Test</p>
+                    <p class="pServicesDesc">A drug test is a technical analysis of a biological specimen to determine
+                        the presence or absence of specified parent drugs or their metabolites.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/heartbeat.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Electrocardiogram</p>
+                    <p class="pServicesDesc">An ECG can record the rhythm of the electrical impulses that travel through
+                        your heart. Your doctor can then use the resulting signal patterns to diagnose various heart
+                        conditions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/runny-nose.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Ear, Nose, and Throat (ENT) Procedures</p>
+                    <p class="pServicesDesc">Otorhinolaryngology is the diagnosis, evaluation and management of a wide
+                        range of diseases of the head and neck, including the ear, nose and throat regions.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(18,115,235,0.1)">
+                        <img src="Image/Services/optometrist.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Executive Checkup (ECU)</p>
+                    <p class="pServicesDesc">An executive physical examination is incredibly comprehensive and provides
+                        patients with a great opportunity to have an illness diagnosed just as it starts.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(55,73,87,0.1)">
+                        <img src="Image/Services/doctor.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Intellicare / Avega Referrals</p>
+                    <p class="pServicesDesc">Intellicare and Avega are Aventus's sister companies, so we can refer you
+                        to affiliated healthcare professionals, associations, and/or facilities if necessary.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ffecec;">
+                        <img src="Image/Services/lab.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Laboratory Tests (Routine and Special)</p>
+                    <p class="pServicesDesc">Laboratory tests are often part of a routine checkup to look for changes in
+                        your health. They also help doctors diagnose medical conditions, plan or evaluate treatments,
+                        and monitor diseases.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #fff9e9;">
+                        <img src="Image/Services/gloves.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Minor Surgery</p>
+                    <p class="pServicesDesc">Minor surgery is any invasive operative procedure in which only skin or
+                        mucus membranes and connective tissue is resected.
+                        It falls into two distinct groups: cutting procedures and injections.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ebedfe;">
+                        <img src="Image/Services/fetus.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Obstetrics - Gynecology (OB-GYN) Procedures</p>
+                    <p class="pServicesDesc">OB/GYNs typically evaluate infertility, abnormal uterine bleeding,
+                        leiomyomata, pelvic masses, pelvic organ prolapse, abnormal Pap smears, pelvic pain,
+                        endometriosis, breast disorders, and urinary incontinence.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/eye.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Ophthalmology Procedures</p>
+                    <p class="pServicesDesc">Our highly trained ophthalmologists are equipped with the most modern
+                        diagnostic and surgical equipment. We excel at properly screening and devising individualized
+                        treatment plans for all of our patients with eye problems.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/uterus.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Pap Smear</p>
+                    <p class="pServicesDesc">The Papanicolaou Test (a.k.a. Pap Test, Pap Smear, Cervical Smear, or Smear
+                        Test) is a method of cervical screening used to detect potentially pre-cancerous and cancerous
+                        processes in the cervix.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: rgba(18,115,235,0.1)">
+                        <img src="Image/Services/form.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Pre-Employment Physical Examination (PPE)</p>
+                    <p class="pServicesDesc">Aventus MCI physicians will carefully review your medical and occupational
+                        history before proceeding with the physical examination.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ebecee;">
+                        <img src="Image/Services/patient.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Rehabilitation Medicine</p>
+                    <p class="pServicesDesc">Rehabilitation medicine aims to enhance and restore functional ability and
+                        quality of life to those with physical impairments or disabilities affecting the brain, spinal
+                        cord, nerves, bones, joints, ligaments, muscles, and tendons.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ffecec;">
+                        <img src="Image/Services/hr.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Specialty Consultation</p>
+                    <p class="pServicesDesc">Consultations can be broken down into three different types: advice on
+                        diagnosis, advice on management, or arrangements for a specific procedure or test.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #fff9e9;">
+                        <img src="Image/Services/lung.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Spirometry
+                        (Pulmonary Function Test)</p>
+                    <p class="pServicesDesc">Spirometry is used to assess how well your lungs work. With it, doctors can
+                        diagnose asthma, chronic obstructive pulmonary disease (COPD) and other conditions that affect
+                        breathing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #ebedfe;">
+                        <img src="Image/Services/ultrasound.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">Ultrasound</p>
+                    <p class="pServicesDesc">Ultrasound imaging uses sound waves to produce pictures of the inside of
+                        the body. It is used to help diagnose the causes of pain, swelling and infection in the body’s
+                        internal organs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="boxServices">
+                    <div class="boxImage" style="background-color: #e5f9fb;">
+                        <img src="Image/Services/x-ray.png" class="img-fluid"
+                            style="width: 40px;margin-top:14px;margin-left: 15px;">
+                    </div>
+                    <p class="pServices">X-Ray</p>
+                    <p class="pServicesDesc">An X-ray is a quick, painless test that produces images of the structures
+                        inside your body — particularly your bones. Dense materials, such as bone and metal, show up as
+                        white on X-rays. The air in your lungs shows up as black. Fat and muscle appear as shades of
+                        gray..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class=" container-fluid" style="background-color: #233645;margin-top:40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 70px;padding-bottom: 40px;">
+                <div class="col-lg-5 text-center">
+                    <img src="Image/logo white.png" class="img-fluid" style="width: 250px;">
+                </div>
+                <div class="col-lg-7 consubscribe text-right">
+                    <label class="psubscribe text-left">Subscribe to<br>Our Newsletter</label>
+                    <input type="text" class="btnsubscribe" placeholder="Your email Address....">
+                </div>
+                <hr class="hrfooter">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="form-group" class="float-right">
+                        <img src="Image/call1.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">MON TO SUN : 8:00 - 10:00</label>
+                        <p class="ptel">+632-840-0588</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/newsletter.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">DO YOU HAVE A QUESTION?</label>
+                        <p class="ptel">aventusmedical@gmail.com</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/social.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">SOCIAL NETWORK</label>
+                        <div class="form-inline" style="margin-left: 45px;">
+                            <img src="Image/facebookfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/twitterfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/linkedinfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-5 col-6 col-location">
+                    <p class="pmorelinks">Location</p>
+                    <p class="pfooterlinks">Alabang, Muntinlupa</p>
+                    <p class="pfooterlinks">BGC, Taguig</p>
+                    <p class="pfooterlinks">Calamba, Laguna</p>
+                    <p class="pfooterlinks">Cebu IT Park</p>
+                    <p class="pfooterlinks">Cebu Cybergate</p>
+                    <p class="pfooterlinks">Clark, Pampanga</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6 col-location">
+                    <p class="pmorelinks" style="color: #233645;">Location</p>
+                    <p class="pfooterlinks">Makati</p>
+                    <p class="pfooterlinks">Manila</p>
+                    <p class="pfooterlinks">Ortigas</p>
+                    <p class="pfooterlinks">Pasay</p>
+                    <p class="pfooterlinks">Quezon</p>
+                    <p class="pfooterlinks">Sta. Rosa</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="Image/surehealthtrans.png" class="img-fluid" style="width:70px;">
+                    <p class="pfooterlinks" style="margin-top:20px;">Get the benefits you need at the
+                        price you want
+                        with our 6 SUREHEALTH card variants: Classic,
+                        Elite, Premium, Prestige, Kiddie, and Prime. Gain access to unlimited free
+                        consultations with
+                        our experts for one whole year, and enjoy generous discounts on various medical
+                        procedures.</p>
+                </div>
+                <hr class="hrfooter">
+                <p class="pcopyright">Copyright&copy;SUREHEALTH. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+</script>
+
+</html>
