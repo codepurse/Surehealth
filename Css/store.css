@@ -15,7 +15,7 @@ body, html {
 }
 
 .padd {
-    font-family: Roboto;
+    font-family: Manrope;
     font-weight: 500;
     color: #424242;
     font-size: 14px;
@@ -32,7 +32,7 @@ body, html {
     border: 2px solid #00C853;
     background-color: transparent;
     border-radius: 25px;
-    font-family: Muli;
+    font-family: Manrope;
     font-weight: bold;
     font-size: 15px;
     transition: 0.2s;
@@ -70,6 +70,8 @@ body, html {
     cursor: pointer;
     transition: all 0.2s;
 }
+
+
 
 .divLeftImg:hover, .divRightImg:hover, .divRightImg1:hover {
     border: 1px solid #00C853;
@@ -158,7 +160,7 @@ body, html {
     text-align: center;
 }
 
-hr {
+.hr1 {
     background-color: #00C853;
     height: 2px;
     width: 55px;
@@ -318,10 +320,6 @@ hr {
     --color-eight: #ffffff;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .accordion {
     display: flex;
     flex-wrap: wrap;
@@ -347,6 +345,11 @@ html {
     text-align: center;
     padding: 1% 5% 1% 5%;
     margin-right: 1px;
+    transition: all 0.2s;
+}
+
+.accordion__label:hover {
+    color: #00C853;
 }
 
 .accordion__radio {
@@ -360,6 +363,10 @@ html {
 .accordion input[type="radio"]+label {
     color: var(--color-six);
     z-index: 1;
+}
+
+.accordion input[type="radio"]:hover {
+    color: #00C853;
 }
 
 .accordion input[type="radio"]:checked+label {
@@ -457,6 +464,7 @@ html {
     background-color: #f6f7fb;
     padding: 20px;
     border-left: 2px solid #00C853;
+    height: 100px;
 }
 
 .draw-border {
@@ -469,6 +477,7 @@ html {
     -webkit-transition: color 0.25s 0.0833333333s;
     transition: color 0.25s 0.0833333333s;
     position: relative;
+    outline: none !important;
 }
 
 .draw-border::before, .draw-border::after {
