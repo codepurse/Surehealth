@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/store.css' rel='stylesheet' type='text/css'>
+    <link href='Css/lightbox.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="icon" type="image/png" href="Image/titlelogo.png">
+    <link rel="apple-touch-icon" type="image/png" href="/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Clinic - Makati</title>
+</head>
+
+<body>
+    <div class="container con conheader">
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-6">
+                <div class="form-inline d-flex">
+                    <img src="Image/maps.png" class="img-fluid"
+                        style="width:20px;margin-left: 20px;margin-right:5px;" />
+                    <p class="padd" style="margin-top: 18px;">6F Filomena Building, #104 Amorsolo St., Legaspi Village,
+                        Makati, Metro Manila 1229
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-inline" style="margin-right: 25px;">
+                    <img src="Image/mail.png" class="img-fluid ml-auto"
+                        style="width:18px;margin-top:-4px;margin-right:5px;" />
+                    <p class="padd" style="margin-right:10px;margin-left: 5px;">aventusmedical@gmail.com</p>
+                    <img src="Image/cel.png" class="img-fluid" style="width:17px;margin-right:5px;margin-top:-4px;" />
+                    <p class="padd" style="margin-top: 15px;margin-left: 5px;">63-2-840-0588</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:-10px;">
+            <div class="col-lg-12">
+                <hr class="hrheader">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container con" style="margin-top:-14px;">
+            <nav class="navbar navbar-expand-md navbar-light" style="padding: 0px 0px;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/a.png" class="img-fluid imglogo"
+                            style="width: 220px;margin-left: 0px;;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnpackages"
+                                    style="margin-right: 20px;color:#424242;font-family: Manrope;font-size: 15px;margin-top: 10px;font-weight: 500;"
+                                    href="package.html">Packages</a></li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:#424242;font-family: Manrope;font-size: 15px;margin-top: 10px;font-weight: 500;"
+                                    href="contact.html">Contact</a></li>
+                            <li><a class="nav-link btnlogin" target="_self" href="login.html"
+                                    style="color: #00C853;padding: 10px 20px 10px 20px;">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-lg-12">
+                <p class="pLocation">Makati</p>
+                <div class="form-inline" style="margin-top: -5px;">
+                    <img src="Image/maps.png" class="img-fluid" style="width: 20px;margin-top: -15px;">
+                    <p class="pAddress"> 6F Filomena Building, #104 Amorsolo St. Legaspi Village, Makati City</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 400px;">
+            <div class="col-lg-8" style="height: 100%;padding: 0px;">
+                <a href="Image/Clinics/makati1.jpeg" data-lightbox="roadtrip" data-title="Right Corridor">
+                    <div class="divLeftImg"
+                        style="background: url(Image/Clinics/makati1.jpeg);background-size:cover;background-position: 50% 50%;">
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" style="height: 100%;">
+                <a href="Image/Clinics/makati2.jpeg" data-lightbox="roadtrip" data-title="Reception">
+                    <div class="divRightImg" style="background: url(Image/Clinics/makati2.jpeg);background-size:cover;">
+
+                    </div>
+                </a>
+                <a href="Image/Clinics/makati3.jpeg" data-lightbox="roadtrip" data-title="Lobby">
+                    <div class="divRightImg1"
+                        style="background: url(Image/Clinics/makati3.jpeg);background-size:cover;">
+                        <div class="divShade">
+                            <p class="pMorePhotos">+2</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Image/Clinics/makati4.jpeg" data-lightbox="roadtrip" data-title="Lobby"
+                    style="display: none;"></a>
+                <a href="Image/Clinics/makati5.jpeg" data-lightbox="roadtrip" data-title="Lobby"
+                    style="display: none;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-4">
+                <div>
+                    <div class="form-inline">
+                        <div class="divImage">
+                            <img src="Image/call.png" class="img-fluid"
+                                style="width: 25px;margin-top: 15px;margin-left: 15px;">
+                        </div>
+                        <div class="divNumber" style="line-height: 0.7rem;margin-top: 10px;">
+                            <p class="pTitleBox ">Contact us</p>
+                            <p class="pNumber">8817-2715, 8817-1464</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div>
+                    <div class="form-inline">
+                        <div class="divImage">
+                            <img src="Image/timeanddate.png" class="img-fluid"
+                                style="width: 25px;margin-top: 15px;margin-left: 15px;">
+                        </div>
+                        <div class="divNumber" style="line-height: 0.7rem;margin-top: 10px;">
+                            <p class="pTitleBox ">Time and Date</p>
+                            <p class="pNumber"> MON - SAT / 7:00AM - 05:00PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div>
+                    <div class="form-inline">
+                        <div class="divImage" style="margin-top: -10px;">
+                            <img src="Image/team.png" class="img-fluid"
+                                style="width: 25px;margin-top: 15px;margin-left: 15px;">
+                        </div>
+                        <div class="divNumber" style="line-height: 0.7rem;margin-top: 10px;">
+                            <p class="pTitleBox ">Personel</p>
+                            <p class="pNumber">Mr. Alex-Zandro Casauran</p>
+                            <p class="pNumber">Ms. Nikkole Dayne Clariz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-lg-12">
+                <p class="pOur">Doctor's Schedule</p>
+                <hr class="hr1">
+            </div>
+            <div class="col-lg-12" style="margin-top: 40px;">
+                <div class="accordion">
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-one" checked />
+                    <label class="accordion__label" for="tab-one">Monday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/blood.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">07:00AM - 02:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">03:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/tooth.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">10:00AM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/skin.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dermatology</p>
+                                            <p class="pTimeDoctor">10:00AM -02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/hr.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">07:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/runny-nose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/uterus.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">09:00AM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/eye.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/lung.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pulmology</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/lung.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 02:30PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/patient.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Rehabilitation</p>
+                                            <p class="pTimeDoctor">10:00AM - 11:30AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/gloves.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-two" />
+                    <label class="accordion__label" for="tab-two">Tuesday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/blood.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">08:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/tooth.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">10:00AM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/runny-nose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/doctor.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Family Medicine</p>
+                                            <p class="pTimeDoctor">07:00AM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/hr.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">07:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/healthcare-and-medical.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Internal Medicine</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/uterus.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">07:00 AM - 11:00 AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">12:00 PM - 04:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/form.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Sonology</p>
+                                            <p class="pTimeDoctor">09:00AM - 10:00AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/eye.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">10:00AM - 02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/lung.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pulmology</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/x-ray.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">By: Appointment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/x-ray.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Rehabilitation</p>
+                                            <p class="pTimeDoctor">12:00PM - 01:30PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/gloves.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">08:00AM - 12:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/urology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Urology</p>
+                                            <p class="pTimeDoctor">11:00 AM - 12:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-three" />
+                    <label class="accordion__label" for="tab-three">Wednesday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/heart.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">07:00AM - 09:00AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/dentistry.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">10:00AM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/spots.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dermatology</p>
+                                            <p class="pTimeDoctor">10:00AM - 02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/earnose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/familymedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Family Medicine</p>
+                                            <p class="pTimeDoctor">08:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/generalmedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">08:00 AM - 05:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/Gynecology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">08:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/oph.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/pulmology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pulmology</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;height: auto !important;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/radiology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">09:30AM - 11:00AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:30PM - 04:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">By: Appointment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/rehabilitiation.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Rehabilitation</p>
+                                            <p class="pTimeDoctor">10:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/surgery.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">03:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-four" />
+                    <label class="accordion__label" for="tab-four">Thursday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/heart.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">07:00AM - 09:00AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/dentistry.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">10:00AM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/spots.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dermatology</p>
+                                            <p class="pTimeDoctor">10:00AM - 02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/earnose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/familymedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Family Medicine</p>
+                                            <p class="pTimeDoctor">08:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/generalmedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">07:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/internalmedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Internal Medicine</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/Gynecology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">07:00AM - 11:00AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">12:00PM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/sonology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Sonology</p>
+                                            <p class="pTimeDoctor">07:00AM - 11:00AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">12:00PM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/oph.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/Orthopaedics.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Orthopaedics</p>
+                                            <p class="pTimeDoctor">12:00PM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/surgery.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">08:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/urology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Urology</p>
+                                            <p class="pTimeDoctor">11:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px; height: auto !important;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/radiology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 02:30PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">By: Appointment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-five" />
+                    <label class="accordion__label" for="tab-five">Friday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/heart.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">07:00AM - 02:30PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/dentistry.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">10:00AM - 03:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/earnose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/earnose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/Gynecology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">08:00AM - 04:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/eye.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">11:00AM - 02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/motherhood.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pediatrics</p>
+                                            <p class="pTimeDoctor">08:00AM - 02:30PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/pulmology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pulmology</p>
+                                            <p class="pTimeDoctor">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;height: auto;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/radiology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 02:30PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">By: Appointment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/rehabilitiation.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Rehabilitation</p>
+                                            <p class="pTimeDoctor">11:00AM - 01:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/surgery.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">08:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input class="accordion__radio" type="radio" name="accordion-tabs" id="tab-six" />
+                    <label class="accordion__label" for="tab-six">Saturday
+                        <span class="accordion-tab--status"></span>
+                    </label>
+                    <div class="accordion__content">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/heart.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Cardiology</p>
+                                            <p class="pTimeDoctor">07:00 AM - 10:00 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/dentistry.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dentistry</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/spots.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Dermatology</p>
+                                            <p class="pTimeDoctor">10:30AM - 02:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/earnose.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">ENT</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/generalmedecine.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">General Medicine</p>
+                                            <p class="pTimeDoctor">08:00AM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/oph.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Ophthalmology</p>
+                                            <p class="pTimeDoctor">02:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/pulmology.png  " class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Pulmology</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/rehabilitiation.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Rehabilitation</p>
+                                            <p class="pTimeDoctor">10:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;height: auto !important;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/Gynecology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">OB - Gynecology</p>
+                                            <p class="pTimeDoctor">09:00AM - 12:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">09:00AM - 12:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">01:00PM - 05:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;height: auto !important;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/radiology.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Radiology/Sonology</p>
+                                            <p class="pTimeDoctor">07:30AM - 08:30AM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">12:30PM - 02:00PM</p>
+                                            <p class="pTimeDoctor" style="margin-top: 0px;">By: Appointment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="box" style="margin-top: 20px;">
+                                    <div class="form-inline">
+                                        <img src="Image/Services/surgery.png" class="img-fluid"
+                                            style="width: 25px;margin-top: 0px;">
+                                        <div style="margin-left: 20px;">
+                                            <p class="pDoctor">Surgery</p>
+                                            <p class="pTimeDoctor">10:00AM - 12:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-lg-12">
+                <p class="pOur">Our Services</p>
+                <hr class="hr1">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/abpm.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">24-Hour Ambulatory Blood Pressure Monitoring</h5>
+                            <p class="card-text">Ambulatory Blood Pressure Monitoring (ABPM) is the process of measuring
+                                your blood pressure as you go about your normal daily routine. It uses a small digital
+                                BP machine that is attached to a belt around your body and which is connected to a cuff
+                                around your upper arm.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/holter_monitor.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">24-Hour Holter Monitoring</h5>
+                            <p class="card-text">A Holter monitor is a battery-operated portable device that measures
+                                and records your heart's activity (ECG) continuously for 24 hours or longer. The device
+                                is the size of a small camera.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/2d_echo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">2D Echo</h5>
+                            <p class="card-text">A 2D Echo uses a two-dimensional ultrasound to create images of the
+                                heart, which are then used in the diagnosis, management, and follow-up of patients with
+                                any suspected or known heart diseases.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/med_vac_admin.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicine and Vaccine Administration</h5>
+                            <p class="card-text">Our doctors will recommend the right medication as per your needs, or
+                                help guard you from infectious diseases with vaccines.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ape.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Annual Physical Examination (APE)</h5>
+                            <p class="card-text">A physical examination helps a primary care provider (PCP) to determine
+                                the general status of an individual's health.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/audiometry.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Audiometry</h5>
+                            <p class="card-text">The purpose of audiometry is to establish an individual's range of
+                                hearing. It is most often performed when hearing loss is suspected. Audiometry can
+                                establish the extent as well as the type of hearing loss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row2" style="display: none;transition: all 0.2s;">
+            <div class="col-lg-12">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/bio_z.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bio-Z</h5>
+                            <p class="card-text">The Impedance Cardiography (ICG) test is a completely non-invasive test
+                                that provides information about (a) your heart's ability to deliver blood to the rest of
+                                your body, (b) the force your heart has to pump against with each heartbeat, and (c) the
+                                amount of fluid in your chest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/dental.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dental Procedures</h5>
+                            <p class="card-text">Our Dental Care program offers a wide range of preventive and
+                                diagnostic services. All of our dental services are performed by licensed dentists,
+                                hygienists, and assistants.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/cautery.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dermatological Procedures Cautery</h5>
+                            <p class="card-text">Cautery can be used in various minor surgical procedures in
+                                dermatology, ophthalmology, otolaryngology, plastic surgery, and urology.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/drug_test.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Drug Test (DT)</h5>
+                            <p class="card-text">A drug test is a technical analysis of a biological specimen to
+                                determine the presence or absence of specified parent drugs or their metabolites.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ecg.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Electrocardiogram (ECG)</h5>
+                            <p class="card-text">An ECG can record the rhythm of the electrical impulses that travel
+                                through your heart. Your doctor can then use the resulting signal patterns to diagnose
+                                various heart conditions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ent.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ear, Nose, and Throat (ENT) Procedures</h5>
+                            <p class="card-text">Otorhinolaryngology is the diagnosis, evaluation and management of a
+                                wide range of diseases of the head and neck, including the ear, nose and throat regions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ecu.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Executive Checkup (ECU)</h5>
+                            <p class="card-text">An executive physical examination is incredibly comprehensive and
+                                provides patients with a great opportunity to have an illness diagnosed just as it
+                                starts
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/partners_referral.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Intellicare / Avega Referrals</h5>
+                            <p class="card-text">An executive physical examination is incredibly comprehensive and
+                                provides patients with a great opportunity to have an illness diagnosed just as it
+                                starts
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/lab_test.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Laboratory Tests (Routine and Special)</h5>
+                            <p class="card-text">Laboratory tests are often part of a routine checkup to look for
+                                changes in your health. They also help doctors diagnose medical conditions, plan or
+                                evaluate treatments, and monitor diseases.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/minor_surgery.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Minor Surgery</h5>
+                            <p class="card-text">Minor surgery is any invasive operative procedure in which only skin or
+                                mucus membranes and connective tissue is resected.
+                                It falls into two distinct groups: cutting procedures and injections.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ob_gyn.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Obstetrics - Gynecology (OB-GYN) Procedures</h5>
+                            <p class="card-text">OB/GYNs typically evaluate infertility, abnormal uterine bleeding,
+                                leiomyomata, pelvic masses, pelvic organ prolapse, abnormal Pap smears, pelvic pain,
+                                endometriosis, breast disorders, and urinary incontinence.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Image/Services/ophthalmology.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ophthalmology Procedures</h5>
+                            <p class="card-text">Our highly trained ophthalmologists are equipped with the most modern
+                                diagnostic and surgical equipment. We excel at properly screening and devising
+                                individualized treatment plans for all of our patients with eye problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container con2" style="display: none;">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/pap_smear.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pap Smear</h5>
+                        <p class="card-text">The Papanicolaou Test (a.k.a. Pap Test, Pap Smear, Cervical Smear, or
+                            Smear Test) is a method of cervical screening used to detect potentially pre-cancerous
+                            and cancerous processes in the cervix
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/ppe.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pre-Employment Physical Examination (PPE)</h5>
+                        <p class="card-text">Aventus MCI physicians will carefully review your medical and
+                            occupational history before proceeding with the physical examination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/rehab.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Rehabilitation Medicine</h5>
+                        <p class="card-text">Rehabilitation medicine aims to enhance and restore functional ability
+                            and quality of life to those with physical impairments or disabilities affecting the
+                            brain, spinal cord, nerves, bones, joints, ligaments, muscles, and tendons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/specialty_consult.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Specialty Consultations</h5>
+                        <p class="card-text">Consultations can be broken down into three different types: advice on
+                            diagnosis, advice on management, or arrangements for a specific procedure or test.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/spirometry.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Spirometry
+                            (Pulmonary Function Test)</h5>
+                        <p class="card-text">Spirometry is used to assess how well your lungs work. With it, doctors can
+                            diagnose asthma, chronic obstructive pulmonary disease (COPD) and other conditions that
+                            affect breathing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/ultrasound.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultrasound</h5>
+                        <p class="card-text">Ultrasound imaging uses sound waves to produce pictures of the inside of
+                            the body. It is used to help diagnose the causes of pain, swelling and infection in the
+                            body’s internal organs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="Image/Services/xray.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">X-Ray</h5>
+                        <p class="card-text">An X-ray is a quick, painless test that produces images of the structures
+                            inside your body — particularly your bones. Dense materials, such as bone and metal, show up
+                            as white on X-rays. The air in your lungs shows up as black. Fat and muscle appear as shades
+                            of gray.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-12 text-center">
+                <button class="btn draw-border">Load more</button>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid" style="background-color: #233645;margin-top:40px;">
+        <div class="container">
+            <div class="row" style="padding-top: 70px;padding-bottom: 40px;">
+                <div class="col-lg-5 text-center">
+                    <img src="Image/logo white.png" class="img-fluid" style="width: 250px;">
+                </div>
+                <div class="col-lg-7 consubscribe text-right">
+                    <label class="psubscribe text-left">Subscribe to<br>Our Newsletter</label>
+                    <input type="text" class="btnsubscribe" placeholder="Your email Address....">
+                </div>
+                <hr class="hrfooter">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="form-group" class="float-right">
+                        <img src="Image/call1.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">MON TO SUN : 8:00 - 10:00</label>
+                        <p class="ptel">+632-840-0588</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/newsletter.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">DO YOU HAVE A QUESTION?</label>
+                        <p class="ptel">aventusmedical@gmail.com</p>
+                    </div>
+                    <div class="form-group" class="float-right">
+                        <img src="Image/social.png" class="img-fluid" style="width: 30px;margin-top:10px;">
+                        <label class="ptime">SOCIAL NETWORK</label>
+                        <div class="form-inline" style="margin-left: 45px;">
+                            <img src="Image/facebookfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/twitterfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                            <img src="Image/linkedinfooter.png" class="img-fluid"
+                                style="margin-right: 10px;width: 15px;cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-5 col-6 col-location">
+                    <p class="pmorelinks">Location</p>
+                    <p class="pfooterlinks">Alabang, Muntinlupa</p>
+                    <p class="pfooterlinks">BGC, Taguig</p>
+                    <p class="pfooterlinks">Calamba, Laguna</p>
+                    <p class="pfooterlinks">Cebu IT Park</p>
+                    <p class="pfooterlinks">Cebu Cybergate</p>
+                    <p class="pfooterlinks">Clark, Pampanga</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-6 col-location">
+                    <p class="pmorelinks" style="color: #233645;">Location</p>
+                    <p class="pfooterlinks">Makati</p>
+                    <p class="pfooterlinks">Manila</p>
+                    <p class="pfooterlinks">Ortigas</p>
+                    <p class="pfooterlinks">Pasay</p>
+                    <p class="pfooterlinks">Quezon</p>
+                    <p class="pfooterlinks">Sta. Rosa</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="Image/surehealthtrans.png" class="img-fluid" style="width:70px;">
+                    <p class="pfooterlinks" style="margin-top:20px;">Get the benefits you need at the
+                        price you want
+                        with our 6 SUREHEALTH card variants: Classic,
+                        Elite, Premium, Prestige, Kiddie, and Prime. Gain access to unlimited free
+                        consultations with
+                        our experts for one whole year, and enjoy generous discounts on various medical
+                        procedures.</p>
+                </div>
+                <hr class="hrfooter">
+                <p class="pcopyright">Copyright&copy;SUREHEALTH. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src='Script\lightbox.js'></script>
+</body>
+<script>
+    var x;
+    x = 1;
+    $(".draw-border").click(function () {
+        if (x === 1) {
+            $(".row2").css("display", "block");
+            x = 2;
+        }
+        else if (x === 2) {
+            $(".con2").css("display", "block");
+            x = 3;
+            $(".draw-border").text("Load less");
+        }
+        else if (x === 3) {
+            $(".row2").css("display", "none");
+            $(".con2").css("display", "none");
+            x = 1;
+            $(".draw-border").text("Load more");
+        }
+    });
+</script>
+
+</html>
