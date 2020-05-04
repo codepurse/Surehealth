@@ -46,6 +46,9 @@
     .conNavbar {
         padding: 10px 0px;
     }
+    .pLocation {
+        font-size: 1.5rem !important;
+    }
     .imgMap {
         margin-right: 10px !important;
         margin-top: 5px !important;
@@ -573,4 +576,20 @@ body, html {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.lb-next {
+    background: url(../Image/right.png) no-repeat scroll right 48% transparent !important;
+}
+
+.lb-prev {
+    background: url(../Image/left.png) no-repeat scroll left 48% transparent !important;
+}
+
+.lb-close {
+    background: url(../Image/close.png) no-repeat scroll left 48% transparent !important;
+}
+
+.lb-nav a.lb-next, .lb-nav a.lb-prev {
+    opacity: 1;
 }
