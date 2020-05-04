@@ -462,13 +462,6 @@ body, html {
     .accordion__content__image__container {
         width: 100%;
     }
-    .accordion__content__image {
-        padding: 0;
-        margin: 0;
-        object-fit: cover;
-        height: 300px;
-        width: 100%;
-    }
     .accordion__content__text {
         font-size: 0.9em;
         margin: 4% 5% 4% 5%;
