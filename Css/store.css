@@ -593,3 +593,16 @@ body, html {
 .lb-nav a.lb-next, .lb-nav a.lb-prev {
     opacity: 1;
 }
+
+.card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+.card-deck .card {
+    display: block;
+    flex-basis: 23.3%;
+    /* change this value for each breakpoint*/
+}
