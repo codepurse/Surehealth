@@ -7,7 +7,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
     .conheader {
         display: none !important;
     }
@@ -20,6 +20,9 @@
     .pSub {
         width: 100% !important;
         font-size: 0.9rem !important;
+    }
+    .conNavbar {
+        padding: 10px 0px;
     }
 }
 
