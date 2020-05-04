@@ -7,6 +7,67 @@
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .consubscribe {
+        margin-top: 30px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        text-align: center !important;
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .psubscribe {
+        text-align: center !important;
+    }
+    .btnsubscribe {
+        width: auto !important;
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .conheader {
+        display: none !important;
+    }
+    .pWe {
+        font-size: 1.4rem !important;
+    }
+    .pOur {
+        font-size: 1.2rem !important;
+    }
+    .pSub {
+        width: 100% !important;
+        font-size: 0.9rem !important;
+    }
+    .conNavbar {
+        padding: 10px 0px;
+    }
+    .imgMap {
+        margin-right: 10px !important;
+        margin-top: 5px !important;
+    }
+    .pAddress {
+        margin-left: 25px !important;
+        margin-top: -20px !important;
+    }
+    .row1 {
+        height: 300px !important;
+    }
+    .colLeft {
+        padding-left: 15px !important;
+    }
+    .colBox {
+        margin-top: 10px !important;
+    }
+    .box {
+        width: 107% !important;
+    }
+}
+
 body, html {
     width: 100%;
     height: auto;
@@ -70,8 +131,6 @@ body, html {
     cursor: pointer;
     transition: all 0.2s;
 }
-
-
 
 .divLeftImg:hover, .divRightImg:hover, .divRightImg1:hover {
     border: 1px solid #00C853;
@@ -177,16 +236,9 @@ body, html {
 }
 
 .card-deck {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    align-items: stretch;
-}
-
-.card-deck .card {
-    display: block;
-    flex-basis: 23.3%;
-    /* change this value for each breakpoint*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
 }
 
 .card-title {
