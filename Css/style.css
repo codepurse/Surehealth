@@ -55,7 +55,6 @@
     }
 }
 
-
 @media only screen and (max-width: 397px) {
     .imglogo {
         width: 180px !important;
@@ -224,7 +223,7 @@ body {
     width: 28px;
     height: 28px;
     border-radius: 50px;
-    border: 7px solid rgb(220,237,200);
+    border: 7px solid rgb(220, 237, 200);
 }
 
 .pstepnumber {
@@ -469,4 +468,10 @@ ul>.b {
     margin-top: 10px;
     margin: auto;
     padding-bottom: 10px;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .5rem;
 }
